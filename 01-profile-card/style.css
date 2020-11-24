@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* -- Custom Properties -- */
+:root {
+  --clr-bg: hsl(185, 75%, 39%);
+  --clr-fg: hsl(229, 23%, 23%);
+  --clr-accent: hsl(227, 10%, 46%);
+  --clr-neutral: hsl(0, 0%, 59%);
+
+  --fs-200: 0.8rem;
+  --fs-300: 1rem;
+  --fs-400: 1.125rem;
+
+  --fw-norm: 400;
+  --fw-bold: 700;
+}
+
+/* -- Resets -- */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+h1,
+span,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+/* -- General Styles -- */
+body {
+  background-color: var(--clr-bg);
+  color: var(--clr-fg, #2d3248);
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: var(--fs-400, 1.125rem);
+  font-weight: var(--fw-norm, 400);
+  line-height: 1.6;
+  text-align: center;
+  width: 100%;
+}
+
+/* -- Profile Card -- */
+
+/* -- Page Footer -- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

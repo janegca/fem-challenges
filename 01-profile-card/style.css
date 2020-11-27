@@ -28,12 +28,21 @@ p {
   margin: 0;
 }
 
+p:last-of-type {
+  font-size: var(--fs-200);
+  color: var(--clr-neutral);
+}
+
 /* -- General Styles -- */
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: var(--fs-400);
+  line-height: 1.6rem;
 
   /* size the body to the viewport */
   min-width: 100vw;
@@ -56,6 +65,7 @@ body {
   overflow: hidden;
 }
 
+/* Photo */
 .profile-card .photo {
   width: 22rem;
   height: 9rem;
@@ -72,18 +82,31 @@ body {
   bottom: -6rem;
 }
 
+/* Person */
 .profile-card .person {
+  text-align: center;
 }
 
+.profile-card .person p:first-of-type {
+  padding-top: 4rem;
+  font-weight: var(--fw-bold);
+}
+
+.profile-card .age {
+  font-weight: var(--fw-norm);
+  color: var(--clr-neutral);
+}
+
+/* Statistics */
 .profile-card .statistics {
   border-top: 1px solid var(--clr-neutral);
 }
 
-.profile-card ul {
+.profile-card .statistics ul {
   list-style: none;
 }
 
-.profile-card li {
+.profile-card .statistics li {
   display: inline-block;
 }
 

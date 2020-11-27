@@ -3,6 +3,7 @@
 /* -- Custom Properties -- */
 :root {
   --clr-bg: hsl(185, 75%, 39%);
+  --clr-bg-card: white;
   --clr-fg: hsl(229, 23%, 23%);
   --clr-accent: hsl(227, 10%, 46%);
   --clr-neutral: hsl(0, 0%, 59%);
@@ -22,15 +23,18 @@
   box-sizing: border-box;
 }
 
-h1,
-span,
-p {
+p,
+span {
   margin: 0;
+}
+
+p:first-of-type {
+  font-weight: var(--fw-bold);
 }
 
 p:last-of-type {
   font-size: var(--fs-200);
-  color: var(--clr-neutral);
+  color: var(--clr-accent);
 }
 
 /* -- General Styles -- */
@@ -43,6 +47,7 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: var(--fs-400);
   line-height: 1.6rem;
+  color: var(--clr-fg);
 
   /* size the body to the viewport */
   min-width: 100vw;
@@ -51,18 +56,18 @@ body {
 
   background: url(./images/bg-pattern-top.svg) top 200% left -50% no-repeat,
     url(./images/bg-pattern-bottom.svg) bottom 200% right -50% no-repeat;
-  background-color: #1ca5b5;
-  /* mix-blend-mode: color; */
+  background-color: var(--clr-bg);
 }
 
 /* -- Profile Card -- */
 .profile-card {
-  background-color: white;
+  background-color: var(--clr-bg-card);
   display: grid;
-  grid-template-rows: 2fr 2fr 1.5fr;
-  border-radius: 1.5em;
+  grid-template-rows: 1fr 1fr 0.6fr;
+  border-radius: 1.5rem;
+  text-align: center;
   margin: 0 auto;
-  overflow: hidden;
+  overflow: hidden; /* keep rounded corners */
 }
 
 /* Photo */
@@ -73,28 +78,26 @@ body {
 }
 
 .profile-card .photo > img {
+  display: block;
   width: 6rem;
   height: 6rem;
-  border: 0.4rem solid white;
+  border: 0.4rem solid var(--clr-bg-card);
   border-radius: 50%;
+
+  /* offset image */
   position: relative;
   left: 8rem;
   bottom: -6rem;
 }
 
 /* Person */
-.profile-card .person {
-  text-align: center;
-}
-
 .profile-card .person p:first-of-type {
   padding-top: 4rem;
-  font-weight: var(--fw-bold);
 }
 
 .profile-card .age {
   font-weight: var(--fw-norm);
-  color: var(--clr-neutral);
+  color: var(--clr-accent);
 }
 
 /* Statistics */
@@ -103,7 +106,10 @@ body {
 }
 
 .profile-card .statistics ul {
+  display: flex;
+  justify-content: space-around;
   list-style: none;
+  padding-left: 0;
 }
 
 .profile-card .statistics li {

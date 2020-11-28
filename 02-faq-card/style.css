@@ -2,6 +2,7 @@
 
 /* -- Custom Properties -- */
 :root {
+  --clr-bg-main: white;
   --clr-fg: hsl(237, 12%, 33%);
   --clr-fg-light: hsl(240, 6%, 50%);
   --clr-dividers: hsl(240, 5%, 91%);
@@ -18,6 +19,9 @@
 
   --fw-400: 400;
   --fw-700: 700;
+
+  --arrow-down: url("./images/icon-arrow-down.svg");
+  --arrow-up: rotate(var(--arrow-down), 90deg);
 
   min-height: 100%; /* to stretch gradient across full page */
 }
@@ -42,6 +46,30 @@ body {
 
   background-image: linear-gradient(var(--clr-grad-1), var(--clr-grad-2));
   color: var(--clr-fg);
+}
+
+main {
+  background-color: var(--clr-bg-main);
+  border-radius: 1.2rem;
+  margin: 1rem;
+}
+
+/* -- FAQ -- */
+.faq header {
+  text-align: center;
+}
+
+.faq details {
+  padding: 0.5em 0.5em 0;
+}
+
+.faq details summary {
+  list-style-image: var(--arrow-down);
+}
+
+.faq details[open] summary {
+  font-weight: var(--fw-700);
+  color: var(--clr-accent-dark);
 }
 
 /* -- Footer -- */

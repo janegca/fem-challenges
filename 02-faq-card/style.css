@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* -- Custom Properties -- */
+:root {
+  --clr-fg: hsl(237, 12%, 33%);
+  --clr-fg-light: hsl(240, 6%, 50%);
+  --clr-dividers: hsl(240, 5%, 91%);
+  --clr-accent-dark: hsl(238, 29%, 16%);
+  --clr-accent-light: hsl(14, 88%, 65%);
+  --clr-grad-1: hsl(273, 75%, 66%);
+  --clr-grad-2: hsl(240, 73%, 65%);
+
+  --fs-300: 0.75rem;
+  --fs-400: 1rem;
+  --fs-600: 1.5rem;
+  --fs-700: 1.75rem;
+  --fs-800: 2rem;
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  min-height: 100%; /* to stretch gradient across full page */
+}
+
+/* -- Resets -- */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  margin: auto;
+}
+
+/* -- General Styling -- */
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: var(--fs-400);
+  line-height: 1.6rem;
+
+  background-image: linear-gradient(var(--clr-grad-1), var(--clr-grad-2));
+  color: var(--clr-fg);
+}
+
+/* -- Footer -- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

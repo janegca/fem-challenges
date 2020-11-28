@@ -12,10 +12,12 @@ Your users should be able to:
 ## Design Decisions
 
 - designed for mobile (375px) first, media query will handle large page sizes
+- used a free online site (aconvert.com) to rotate the icon-arrow-down.svg
+  figure and create an icon-arrow-up.svg file
 
 References:
 
 - [MDN: details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
-- [Details/Summary Easiest...Accordian](https://css-tricks.com/quick-reminder-that-details-summary-is-the-easiest-way-ever-to-make-an-accordion/)
 - [MDN: linear-gradient()](<https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient()>)
 - [Stackoverflow: Making Gradient Fill the Page with CSS](https://stackoverflow.com/questions/16841323/making-gradient-background-fill-page-with-css)
+- [ACONVERT - Rotate Image](https://www.aconvert.com/image/rotate/#)

@@ -1,12 +1,36 @@
 # fem-challenges
 
-Page/Component styling challenges from Frontend Mentor
+Design and coding challenges from
+[Frontend Mentor](https://www.frontendmentor.io/challenges)
 
-## Newbie Challenges
+## Basic Approach to the Challenges
 
-[Profile Card](https://janegca.github.io/fem-challenges/01-profile-card/index.html)
+1. Create a single git repo for all Frontend Mentor challenges and a separate
+   folder and branch for each project (did not create a separate branch for the
+   first project)
+1. Create a README for each project folder to keep track of design decisions,
+   references used, issues that you'd like to resolve down the road, insights,
+   etc.
+1. Download the challenge and read the directions and style-guide
 
-References:
+   - Review the design with the above in mind, making note of general
+     appearance, sections, components, similarities across sections/pages,
+     graphics, etc.
 
-- [Understanding Multiple Backgrounds](https://ishadeed.com/article/css-multiple-backgrounds/)
-- [The Quirks of CSS Grid and Absolute Positioning](https://webdesign.tutsplus.com/tutorials/the-quirks-of-css-grid-and-absolute-positioning--cms-31437)
+1. HTML - Structure the content using semantic HTML
+1. CSS
+   - Define custom properties (adapt
+     [Kevin Powell](https://www.kevinpowell.co/)'s naming style)
+   - Focus on general styles first
+   - Add enhancements one section at a time to keep commits as clean as possible
+   - Refactor as necessary
+1. Review code, cleanup where necessary
+1. Run the HTML and CSS through the W3 Validators, make any necessary
+   corrections
+1. Submit solution on Frontend Mentor
+
+## Completed Challenges
+
+### Newbie Challenges
+
+1. [Profile Card](https://janegca.github.io/fem-challenges/01-profile-card/index.html)

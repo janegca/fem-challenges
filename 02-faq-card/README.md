@@ -12,6 +12,8 @@ Your users should be able to:
 ## Design Decisions
 
 - designed for mobile (375px) first, media query will handle large page sizes
+- decided the graphic was not part of the FAQ itself but a presentation element,
+  gave it its own section
 - used a free online site (aconvert.com) to rotate the icon-arrow-down.svg
   figure and create an icon-arrow-up.svg file
 

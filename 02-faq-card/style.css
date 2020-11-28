@@ -12,10 +12,6 @@
   --clr-grad-2: hsl(240, 73%, 65%);
 
   --fs-300: 0.75rem;
-  --fs-400: 1rem;
-  --fs-600: 1.5rem;
-  --fs-700: 1.75rem;
-  --fs-800: 2rem;
 
   --fw-400: 400;
   --fw-700: 700;
@@ -33,11 +29,6 @@
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-  margin: auto;
-}
-
 /* -- General Styling -- */
 body {
   font-family: "Kumbh Sans", sans-serif;
@@ -50,9 +41,21 @@ body {
 }
 
 main {
-  background-color: var(--clr-bg-main);
-  border-radius: 1.2rem;
-  margin: 1rem;
+  display: grid;
+  grid-template-rows: 0.3fr 2fr;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+/* -- FAQ Graphic -- */
+.faq-graphic {
+  width: 16rem;
+  height: 12rem;
+  background: url("./images/illustration-woman-online-mobile.svg") no-repeat,
+    url("./images/bg-pattern-mobile.svg") bottom -10% right -50% no-repeat;
+  justify-self: center;
+  position: relative;
+  bottom: -6rem;
 }
 
 /* -- FAQ -- */
@@ -61,11 +64,17 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  background-color: var(--clr-bg-main);
+  border-radius: 1.2rem;
+  padding-top: 6rem;
+  padding-bottom: 2.5rem;
 }
 
 .faq details {
   width: 90%;
   padding: 0.5em 1em;
+  border-bottom: 2px solid var(--clr-dividers);
 }
 
 .faq details p {
@@ -74,6 +83,7 @@ main {
 }
 
 .faq details summary {
+  /* setup correct spacing of the text and arrow icon */
   display: flex;
   list-style: none;
   cursor: pointer;
@@ -105,4 +115,22 @@ main {
 }
 .attribution a {
   color: var(--clr-dividers);
+}
+
+@media (min-width: 375px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .faq {
+    padding-left: 8rem;
+    padding-top: 2rem;
+  }
 }

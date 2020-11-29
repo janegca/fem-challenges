@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* -- Custom Properties -- */
+:root {
+  --clr-bg-panel: white;
+  --clr-fg: hsl(237, 12%, 33%);
+  --clr-fg-light: hsl(240, 6%, 50%);
+  --clr-dividers: hsl(240, 5%, 91%);
+  --clr-accent-dark: hsl(238, 29%, 16%);
+  --clr-accent-light: hsl(14, 88%, 65%);
+  --clr-grad-1: hsl(273, 75%, 66%);
+  --clr-grad-2: hsl(240, 73%, 65%);
+
+  --fs-300: 0.75rem;
+  --fs-400: 1rem;
+  --fs-600: 1.5rem;
+  --fs-800: 2rem;
+
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --arrow-down: url("./images/icon-arrow-down.svg");
+
+  min-height: 100%; /* to stretch gradient across full page */
+}
+
+/* -- Resets -- */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+main,
+.panel {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* -- General Styling -- */
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: var(--fs-300);
+  line-height: 1.3rem;
+
+  background-image: linear-gradient(var(--clr-grad-1), var(--clr-grad-2));
+  color: var(--clr-fg);
+  margin: 0;
+}
+
+/* -- Main -- */
+main {
+  /* acts as wrapper to constrain contents */
+  display: flex;
+  align-items: center;
+  max-width: 80%;
+  height: 90vh;
+}
+
+/* -- Panel -- */
+.panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 80%;
+
+  background-color: var(--clr-bg-panel);
+  border-radius: 1.2rem;
+  padding: 4rem 0;
+}
+
+/* -- FAQ Graphics -- */
+#faq-graphic {
+  /* create a new box context */
+  position: relative;
+}
+
+#woman {
+  /* position relative to its own original position */
+  position: relative;
+  left: -70px;
+}
+
+#pattern {
+  /* position relative to its closest positioned ancestor */
+  position: absolute;
+  left: -70px;
+}
+
+/* animated box */
+#box {
+  position: absolute;
+  bottom: 40px;
+  left: -90px;
+  z-index: 10;
+
+  animation: bounce 2s ease-in-out 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  50%,
+  100% {
+    /* OR from, 50%, to */
+    bottom: 40px;
+  }
+  25%,
+  75% {
+    bottom: 80px;
+  }
+}
+
+/* -- FAQ -- */
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+/* articles expect a header */
+.faq header h1 {
+  font-size: var(--fs-600);
+}
+
+.faq details {
+  width: 90%;
+  padding: 0.5em 1em 1em 0;
+  border-bottom: 2px solid var(--clr-dividers);
+}
+
+.faq details p {
+  padding-top: 1em;
+  margin: 0;
+}
+
+.faq details summary {
+  /* setup correct spacing of the text and arrow icon */
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.faq details summary::after {
+  content: var(--arrow-down);
+}
+
+/* effects */
+.faq details summary:hover {
+  color: var(--clr-accent-light);
+}
+
+/* when the user has clicked on a question */
+.faq details[open] summary {
+  font-weight: var(--fw-700);
+  color: var(--clr-accent-dark);
+}
+
+.faq details[open] summary::after {
+  content: var(--arrow-down);
+  transform: rotate(180deg);
+}
+
+/* -- Footer -- */
+footer {
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  color: black;
+  text-align: center;
+}
+.attribution a {
+  color: var(--clr-dividers);
+}
+
+/* -- Media Queries -- */
+@media (max-width: 375px) {
+  main {
+    height: auto;
+  }
+
+  .panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    padding: 1em 0;
+    background-color: transparent;
+  }
+
+  #box {
+    visibility: hidden;
+  }
+
+  #faq-graphic {
+    position: relative;
+    width: 80%;
+  }
+
+  #woman {
+    /* position relative to its own original position */
+    position: relative;
+    left: 0px;
+    bottom: -70px;
+  }
+
+  #pattern {
+    /* position relative to its closest positioned ancestor */
+    position: absolute;
+    left: 0px;
+    bottom: -80px;
+  }
+
+  .faq {
+    background-color: var(--clr-bg-panel);
+    border-radius: 8px;
+    padding-top: 4rem;
+  }
+
+  .faq header {
+    text-align: center;
+  }
+
+  .faq details {
+    padding-left: 2em;
+  }
+}

@@ -11,64 +11,74 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="layout.css" />
     <title>Frontend Mentor | FAQ Accordion Card</title>
   </head>
   <body>
     <main>
-      <section class="faq-graphic">
-        <!-- SVG image to go here -->
-      </section>
-      <article class="faq">
-        <header>
-          <h1>FAQ</h1>
-        </header>
+      <div class="panel">
+        <div id="faq-graphic">
+          <!-- SVG images to go here -->
+          <img id="box" src="./images/illustration-box-desktop.svg" alt="" />
+          <img
+            id="woman"
+            src="./images/illustration-woman-online-desktop.svg"
+            alt=""
+          />
+          <img id="pattern" src="./images/bg-pattern-desktop.svg" alt="" />
+        </div>
+        <article class="faq">
+          <header>
+            <h1>FAQ</h1>
+          </header>
 
-        <details>
-          <summary>How many team members can I invite?</summary>
-          <p>
-            You can invite up to 2 additional users on the Free plan. There is
-            no limit on team members for the Premium plan.
-          </p>
-        </details>
+          <details>
+            <summary>How many team members can I invite?</summary>
+            <p>
+              You can invite up to 2 additional users on the Free plan. There is
+              no limit on team members for the Premium plan.
+            </p>
+          </details>
 
-        <details>
-          <summary>What is the maximum file upload size?</summary>
-          <p>
-            No more than 2GB. All files in your account must fit your allotted
-            storage space.
-          </p>
-        </details>
+          <details>
+            <summary>What is the maximum file upload size?</summary>
+            <p>
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </p>
+          </details>
 
-        <details>
-          <summary>How do I reset my password?</summary>
-          <p>
-            Click “Forgot password” from the login page or “Change password”
-            from
-          </p>
-        </details>
+          <details>
+            <summary>How do I reset my password?</summary>
+            <p>
+              Click “Forgot password” from the login page or “Change password”
+              from
+            </p>
+          </details>
 
-        <details>
-          <summary>Can I cancel my subscription?</summary>
-          Yes! Send us a message and we’ll process your request no questions
-          asked.
-        </details>
+          <details>
+            <summary>Can I cancel my subscription?</summary>
+            Yes! Send us a message and we’ll process your request no questions
+            asked.
+          </details>
 
-        <details>
-          <summary>Do you provide additional support?</summary>
-          <p>
-            Chat and email support is available 24/7. Phone lines are open
-            during normal business hours.
-          </p>
-        </details>
-      </article>
+          <details>
+            <summary>Do you provide additional support?</summary>
+            <p>
+              Chat and email support is available 24/7. Phone lines are open
+              during normal business hours.
+            </p>
+          </details>
+        </article>
+      </div>
     </main>
 
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">janegca</a>.
+      >. Coded by
+      <a href="https://github.com/janegca" target="_blank">janegca</a>.
     </footer>
   </body>
 </html>

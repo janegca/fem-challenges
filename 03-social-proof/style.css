@@ -26,6 +26,32 @@ body {
   font-family: "Spartan", sans-serif;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2em;
+  max-width: 70rem;
+}
+
+.ratings ul,
+.reviews ul {
+  list-style: none;
+}
+
+/* -- Section Styling -- */
+.intro {
+  text-align: center;
+}
+.intro h1 {
+  color: var(--clr-bg-card);
+}
+
+.intro p {
+  color: var(--clr-fg);
+}
+
 /* -- Footer -- */
 .attribution {
   font-size: 11px;

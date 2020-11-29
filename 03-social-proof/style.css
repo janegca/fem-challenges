@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+/* -- Custom Properties -- */
+
+:root {
+  --clr-bg-card: hsl(300, 43%, 22%);
+  --clr-bg-ratings: hsl(300, 24%, 96%);
+  --clr-accent: hsl(333, 80%, 67%);
+  --clr-fg: hsl(303, 10%, 53%);
+
+  --fs-400: 1rem;
+  --fs-700: 1.75rem;
+
+  --fw-bold: 700;
+}
+
+/* -- Resets -- */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* -- General Styling -- */
+body {
+  font-family: "Spartan", sans-serif;
+}
+
+/* -- Footer -- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--clr-bg-card);
+}

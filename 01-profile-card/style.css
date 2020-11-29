@@ -45,9 +45,19 @@ body {
   min-height: 100vh;
   overflow: hidden; /* turn off scrollbars */
 
-  background: url(./images/bg-pattern-top.svg) top 200% left -50% no-repeat,
-    url(./images/bg-pattern-bottom.svg) bottom 200% right -50% no-repeat;
+  /* background: url(./images/bg-pattern-top.svg) top 200% left -50% no-repeat,
+    url(./images/bg-pattern-bottom.svg) bottom 200% right -50% no-repeat; */
+
+  /* Revised to use positioning code from ApplePieGiraffe 
+      keeps the background images in place by re-calculating
+      position with respect to changing viewport
+  */
+  background: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
   background-color: var(--clr-bg);
+  background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw),
+    left calc(40vw + 25%) top calc(72vh - 10vw);
 }
 
 /* -- Profile Card -- */
@@ -125,11 +135,11 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
   body {
     background: url(./images/bg-pattern-top.svg) top 200% left 135% no-repeat,
       url(./images/bg-pattern-bottom.svg) bottom 200% right 135% no-repeat;
     background-color: var(--clr-bg);
     transition: background-image 0.2s ease-in-out;
   }
-}
+} */

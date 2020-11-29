@@ -5,6 +5,13 @@
 The background graphics move around as the window is resized, would be nicer if
 they scaled gracefully.
 
+### Fix
+
+[ApplePieGiraffe](https://github.com/ApplePieGiraffe/profile-card-component)
+posted a solution that places and sizes the background images with respect to
+the viewport, net result is that the background images appear relatively fixed
+as the viewport changes size.
+
 References:
 
 - [W3C background-image](https://drafts.csswg.org/css-backgrounds-3/#background-image)

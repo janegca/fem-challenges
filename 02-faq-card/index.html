@@ -11,7 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="layout.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | FAQ Accordion Card</title>
   </head>
   <body>
@@ -22,10 +22,24 @@
           <img id="box" src="./images/illustration-box-desktop.svg" alt="" />
           <img
             id="woman"
+            srcset="
+              ./images/illustration-woman-online-desktop.svg 472w,
+              ./images/illustration-woman-online-mobile.svg  266w
+            "
+            sizes="(max-width: 375px) 266w, 472w"
             src="./images/illustration-woman-online-desktop.svg"
             alt=""
           />
-          <img id="pattern" src="./images/bg-pattern-desktop.svg" alt="" />
+          <img
+            id="pattern"
+            srcset="
+              ./images/bg-pattern-desktop.svg 966w,
+              ./images/bg-pattern-mobile.svg  240w
+            "
+            sizes="(max-width: 375px) 240w, 966w"
+            src="./images/bg-pattern-desktop.svg"
+            alt=""
+          />
         </div>
         <article class="faq">
           <header>

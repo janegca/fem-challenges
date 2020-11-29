@@ -21,6 +21,7 @@ Your users should be able to:
 ## Issues
 
 - The graphics appear to scale correctly except for the box, why??
+- The srcset/size isn't working on the mobile side
 
 References:
 

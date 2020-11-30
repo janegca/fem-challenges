@@ -33,6 +33,7 @@
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 main,
@@ -87,6 +88,7 @@ main {
 #pattern {
   /* position relative to its closest positioned ancestor */
   position: absolute;
+  top: -50px;
   left: -70px;
 }
 
@@ -206,15 +208,15 @@ footer {
   #woman {
     /* position relative to its own original position */
     position: relative;
-    left: 0px;
-    bottom: -70px;
+    left: -15px;
+    bottom: -80px;
   }
 
   #pattern {
     /* position relative to its closest positioned ancestor */
     position: absolute;
-    left: 0px;
-    bottom: -80px;
+    left: -15px;
+    top: 150px;
   }
 
   .faq {

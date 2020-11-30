@@ -21,7 +21,17 @@ Your users should be able to:
 ## Issues
 
 - The graphics appear to scale correctly except for the box, why??
-- The srcset/size isn't working on the mobile side
+- ✔️ Mobile graphic not being loaded, instead the desktop one shrinks
+
+### Refactor
+
+Modified the HTML to load the images using the `picture`tag. The mobile graphics
+now loads correctly when the screen shrinks. (Thanks to the suggestion from
+@tediko on Frontend Mentors).
+
+NOTE: the`id`for the woman and pattern are set on the default`img` tag BUT they
+still apply when the desktop images are replaced by the mobile images, which is
+very cool, thought I would need different id's for the different images.
 
 References:
 
@@ -31,3 +41,4 @@ References:
 - [Dev ED: CSS Position Tutorial](https://www.youtube.com/watch?v=gD3G67oPg-w&list=PLDyQo7g0_nsUjf046cCHKJ16U1SoXrElZ&index=3)
 - [Codrop CSS Reference: animation, @keyframes](https://tympanus.net/codrops/css_reference/keyframes/)
 - [MDN: Responsive Images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
+- [MDN: picture tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture)

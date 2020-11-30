@@ -59,6 +59,7 @@ main {
   display: flex;
   align-items: center;
   max-width: 80%;
+  min-width: 375px;
   height: 90vh;
 }
 

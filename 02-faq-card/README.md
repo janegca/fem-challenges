@@ -21,6 +21,16 @@ Your users should be able to:
 ## Issues
 
 - The graphics appear to scale correctly except for the box, why??
+- Mobile graphic not being loaded, instead the desktop one shrinks
+
+### Refactor
+
+Modified the HTML to load the images using the `picture`tag. The mobile graphics
+now loads correctly when the screen shrinks.
+
+NOTE: the`id`for the woman and pattern are set on the default`img` tag BUT they
+still apply when the desktop images are replaced by the mobile images, which is
+very cool, thought I would need different id's for the different images.
 
 References:
 

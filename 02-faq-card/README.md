@@ -20,12 +20,14 @@ Your users should be able to:
 
 ## Issues
 
-Refactors have improved things, but not working correctly yet
-
-- in larger sizes, the FAQ Card resizes based on contents of selected item
-- ✔️ the graphics appear to scale correctly except for the box
-  - shadows and positioning now off slightly
-- ✔️ Mobile graphic not being loaded, instead the desktop one shrinks
+- ✔️ Details Resizing: in larger sizes, the panel resizes based on contents of
+  the opened details item
+- ✔️ Roving Box: the graphics appear to scale correctly except for the box
+- ✔️ Image Swap: Mobile graphic not being loaded, instead the desktop one
+  shrinks
+- Image Placement: the above fixes threw off the desktop image placement and
+  shadows in both desktop and smaller sizes; probably should have them grouped
+  with their related images
 
 ### Refactors
 
@@ -41,9 +43,13 @@ very cool, thought I would need different id's for the different images.
 
 #### Fixing the roving box
 
-Added another division to wrap the woman and box, and reset the @media break to
-1000px. Now when the window is resized the box stays with the woman and the new,
-smaller mobile image kicks in earlier.
+Added another division to wrap the woman and box images, and reset the @media
+break to 1000px. Now when the window is resized the box stays with the woman and
+the new, smaller mobile image kicks in earlier.
+
+#### Fixing the FAQ Details resizing issue
+
+Setting a width on the details element corrected this at all sizes.
 
 References:
 

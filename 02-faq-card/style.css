@@ -99,11 +99,11 @@ main {
   left: -70px;
 }
 
-/* animated box */
+/*  box */
 #box {
   position: absolute;
-  bottom: 40px;
-  left: -90px;
+  bottom: 10px;
+  left: -130px;
   z-index: 10;
   transform: scale(0.6);
   animation: bounce 2s ease-in-out 1s infinite;
@@ -114,7 +114,7 @@ main {
   50%,
   100% {
     /* OR from, 50%, to */
-    bottom: 40px;
+    bottom: 10px;
   }
   25%,
   75% {
@@ -135,7 +135,7 @@ main {
 }
 
 .faq details {
-  width: 90%;
+  width: 35em;
   padding: 0.5em 1em 1em 0;
   border-bottom: 2px solid var(--clr-dividers);
 }
@@ -188,6 +188,11 @@ footer {
 }
 
 /* -- Media Queries -- */
+/*  
+  this width needs to match media query
+  value used on faq-graphic img media attribute
+  in the HTML
+*/
 @media (max-width: 1000px) {
   main {
     height: auto;
@@ -198,8 +203,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90vw;
-    max-width: 90vw;
+
     padding: 1em 0;
     background-color: transparent;
   }
@@ -239,6 +243,7 @@ footer {
   }
 
   .faq details {
+    width: 90vw;
     padding-left: 2em;
   }
 }

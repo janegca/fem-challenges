@@ -36,12 +36,6 @@ img {
   height: auto;
 }
 
-main,
-.panel {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* -- General Styling -- */
 body {
   font-family: "Kumbh Sans", sans-serif;
@@ -51,6 +45,12 @@ body {
   background-image: linear-gradient(var(--clr-grad-1), var(--clr-grad-2));
   color: var(--clr-fg);
   margin: 0;
+}
+
+main,
+.panel {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* -- Main -- */
@@ -65,8 +65,9 @@ main {
 /* -- Panel -- */
 .panel {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 80%;
+  grid-template-columns: 1fr 2fr;
+  width: 60vw;
+  max-width: 60vw;
 
   background-color: var(--clr-bg-panel);
   border-radius: 1.2rem;
@@ -76,6 +77,12 @@ main {
 /* -- FAQ Graphics -- */
 #faq-graphic {
   /* create a new box context */
+  position: relative;
+  text-align: center;
+}
+
+#faq-graphic1 {
+  /* combine box and woman */
   position: relative;
 }
 
@@ -98,7 +105,7 @@ main {
   bottom: 40px;
   left: -90px;
   z-index: 10;
-
+  transform: scale(0.6);
   animation: bounce 2s ease-in-out 1s infinite;
 }
 
@@ -163,7 +170,7 @@ main {
 
 .faq details[open] summary::after {
   content: var(--arrow-down);
-  transform: rotate(180deg);
+  transform: scale(-1);
 }
 
 /* -- Footer -- */
@@ -181,7 +188,7 @@ footer {
 }
 
 /* -- Media Queries -- */
-@media (max-width: 375px) {
+@media (max-width: 1000px) {
   main {
     height: auto;
   }
@@ -191,7 +198,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 90%;
+    width: 90vw;
+    max-width: 90vw;
     padding: 1em 0;
     background-color: transparent;
   }
@@ -203,6 +211,7 @@ footer {
   #faq-graphic {
     position: relative;
     width: 80%;
+    text-align: center;
   }
 
   #woman {

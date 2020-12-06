@@ -7,9 +7,11 @@
   --clr-accent: hsl(333, 80%, 67%);
   --clr-fg: hsl(303, 10%, 53%);
 
+  --fs-300: 0.9rem;
   --fs-400: 1rem;
   --fs-700: 1.75rem;
 
+  --fw-500: 500;
   --fw-bold: 700;
 }
 
@@ -30,6 +32,9 @@ p {
 /* -- General Styling -- */
 body {
   font-family: "Spartan", sans-serif;
+  font-size: var(--fs-300);
+  font-weight: var(--fw-500);
+  line-height: 1.6;
 }
 
 main {
@@ -71,7 +76,7 @@ main {
 
 /* stars */
 .ratings div {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.3em;
 }
 
 /* rating source */
@@ -81,6 +86,36 @@ main {
 }
 
 /* -- Reviews -- */
+.user {
+  background-color: var(--clr-bg-card);
+  color: var(--clr-fg);
+  border-radius: 1em;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
+.user > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.user img {
+  border-radius: 50%;
+  padding-right: 1em;
+}
+
+.user div > p:first-of-type {
+  font-weight: var(--fw-bold);
+}
+
+.user .status {
+  color: var(--clr-accent);
+}
+
+.user blockquote {
+  margin: 0;
+}
 
 /* -- Footer -- */
 .attribution {
@@ -94,11 +129,17 @@ main {
 @media (min-width: 375px) {
   .hero {
     display: flex;
+    margin-top: 3rem;
   }
 
   .intro,
   .ratings {
     flex: 1;
+  }
+
+  .intro {
+    text-align: left;
+    padding: 0 3rem 3rem 0;
   }
 
   .reviews {
@@ -108,5 +149,6 @@ main {
 
   .user {
     flex: 1;
+    margin: 1em;
   }
 }

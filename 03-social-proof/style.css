@@ -35,6 +35,11 @@ body {
   font-size: var(--fs-300);
   font-weight: var(--fw-500);
   line-height: 1.6;
+
+  background-image: url(images/bg-pattern-top-mobile.svg),
+    url(images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
 }
 
 main {
@@ -130,15 +135,16 @@ main {
 
 @media (min-width: 375px) {
   body {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    background-image: url(images/bg-pattern-top-desktop.svg),
+      url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
   }
 
   /* intro */
   .hero {
     display: flex;
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 
   .intro,
@@ -188,6 +194,15 @@ main {
   /* only add a left margin if the element has a following sibling */
   .reviews > * + * {
     margin-left: 1em;
+  }
+
+  /* stagger the user cards */
+  .reviews div[class]:first-of-type {
+    transform: translateY(-1vw);
+  }
+
+  .reviews div[class]:last-of-type {
+    transform: translateY(1vw);
   }
 
   .user {

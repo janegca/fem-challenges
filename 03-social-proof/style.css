@@ -25,7 +25,8 @@ html {
   box-sizing: inherit;
 }
 
-p {
+p,
+blockquote {
   margin: 0;
 }
 
@@ -35,6 +36,7 @@ body {
   font-size: var(--fs-300);
   font-weight: var(--fw-500);
   line-height: 1.6;
+  color: var(--clr-fg);
 
   background-image: url(images/bg-pattern-top-mobile.svg),
     url(images/bg-pattern-bottom-mobile.svg);
@@ -61,10 +63,6 @@ main {
   font-size: var(--fs-700);
   line-height: 1.2;
   color: var(--clr-bg-card);
-}
-
-.intro > p {
-  color: var(--clr-fg);
 }
 
 /* -- Ratings -- */
@@ -99,7 +97,6 @@ main {
 /* -- Reviews -- */
 .user {
   background-color: var(--clr-bg-card);
-  color: var(--clr-fg);
   border-radius: 1em;
   padding: 2em;
   margin-bottom: 1em;
@@ -124,10 +121,6 @@ main {
   color: var(--clr-accent);
 }
 
-.user blockquote {
-  margin: 0;
-}
-
 /* -- Footer -- */
 .attribution {
   font-size: 11px;
@@ -137,6 +130,7 @@ main {
   color: var(--clr-bg-card);
 }
 
+/* -- Media Queries -- */
 @media (min-width: 375px) {
   body {
     background-image: url(images/bg-pattern-top-desktop.svg),
@@ -177,6 +171,7 @@ main {
     padding: 1em 1em 0.5em 1em;
   }
 
+  /* offset the rating elements */
   .ratings li:first-of-type {
     transform: translateX(-5vw);
   }

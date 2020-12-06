@@ -86,6 +86,10 @@ main {
   margin-bottom: 0.3em;
 }
 
+.ratings img {
+  padding-right: 0.5em;
+}
+
 /* rating source */
 .ratings p {
   font-weight: var(--fw-bold);
@@ -169,7 +173,8 @@ main {
 
   .ratings li {
     text-align: center;
-    padding: 1em 1em;
+    vertical-align: middle;
+    padding: 1em 1em 0.5em 1em;
   }
 
   .ratings li:first-of-type {

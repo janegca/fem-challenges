@@ -20,10 +20,18 @@ Your users should be able to:
 
 ## Issues
 
-- The graphics appear to scale correctly except for the box, why??
-- ✔️ Mobile graphic not being loaded, instead the desktop one shrinks
+- ✔️ Details Resizing: in larger sizes, the panel resizes based on contents of
+  the opened details item
+- ✔️ Roving Box: the graphics appear to scale correctly except for the box
+- ✔️ Image Swap: Mobile graphic not being loaded, instead the desktop one
+  shrinks
+- Image Placement: the above fixes threw off the desktop image placement and
+  shadows in both desktop and smaller sizes; probably should have them grouped
+  with their related images
 
-### Refactor
+### Refactors
+
+#### Fixing the mobile image swap
 
 Modified the HTML to load the images using the `picture`tag. The mobile graphics
 now loads correctly when the screen shrinks. (Thanks to the suggestion from
@@ -32,6 +40,16 @@ now loads correctly when the screen shrinks. (Thanks to the suggestion from
 NOTE: the`id`for the woman and pattern are set on the default`img` tag BUT they
 still apply when the desktop images are replaced by the mobile images, which is
 very cool, thought I would need different id's for the different images.
+
+#### Fixing the roving box
+
+Added another division to wrap the woman and box images, and reset the @media
+break to 1000px. Now when the window is resized the box stays with the woman and
+the new, smaller mobile image kicks in earlier.
+
+#### Fixing the FAQ Details resizing issue
+
+Setting a width on the details element corrected this at all sizes.
 
 References:
 

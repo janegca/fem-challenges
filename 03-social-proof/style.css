@@ -9,7 +9,7 @@
 
   --fs-300: 0.9rem;
   --fs-400: 1rem;
-  --fs-700: 1.75rem;
+  --fs-700: 2.8rem;
 
   --fw-500: 500;
   --fw-bold: 700;
@@ -53,6 +53,8 @@ main {
 }
 
 .intro > h1 {
+  font-size: var(--fs-700);
+  line-height: 1.2;
   color: var(--clr-bg-card);
 }
 
@@ -127,6 +129,13 @@ main {
 }
 
 @media (min-width: 375px) {
+  body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* intro */
   .hero {
     display: flex;
     margin-top: 3rem;
@@ -139,16 +148,49 @@ main {
 
   .intro {
     text-align: left;
-    padding: 0 3rem 3rem 0;
+    padding: 0 8rem 3rem 0;
   }
 
+  /* ratings */
+  .ratings ul {
+    text-align: right;
+  }
+
+  .ratings div,
+  .ratings p {
+    display: inline-block;
+  }
+
+  .ratings li {
+    text-align: center;
+    padding: 1em 1em;
+  }
+
+  .ratings li:first-of-type {
+    transform: translateX(-5vw);
+  }
+
+  .ratings li:nth-child(2) {
+    transform: translateX(-2.5vw);
+  }
+
+  .ratings li div {
+    padding-right: 2em;
+  }
+
+  /* reviews */
   .reviews {
     display: flex;
+    justify-content: space-evenly;
     flex: 2;
+  }
+
+  /* only add a left margin if the element has a following sibling */
+  .reviews > * + * {
+    margin-left: 1em;
   }
 
   .user {
     flex: 1;
-    margin: 1em;
   }
 }

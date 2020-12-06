@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+
+/* -- Custom Properties -- */
+:root {
+  --clr-bg-card: hsl(300, 43%, 22%);
+  --clr-bg-ratings: hsl(300, 24%, 96%);
+  --clr-accent: hsl(333, 80%, 67%);
+  --clr-fg: hsl(303, 10%, 53%);
+
+  --fs-300: 0.9rem;
+  --fs-400: 1rem;
+  --fs-700: 2.8rem;
+
+  --fw-500: 500;
+  --fw-bold: 700;
+}
+
+/* -- Resets -- */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+p,
+blockquote {
+  margin: 0;
+}
+
+/* -- General Styling -- */
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: var(--fs-300);
+  font-weight: var(--fw-500);
+  line-height: 1.6;
+  color: var(--clr-fg);
+
+  background-image: url(images/bg-pattern-top-mobile.svg),
+    url(images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2em;
+  max-width: 70rem;
+}
+
+/* -- Intro -- */
+
+.intro {
+  text-align: center;
+}
+
+.intro > h1 {
+  font-size: var(--fs-700);
+  line-height: 1.2;
+  color: var(--clr-bg-card);
+}
+
+/* -- Ratings -- */
+.ratings ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+.ratings li {
+  background-color: var(--clr-bg-ratings);
+  border-radius: 1em;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+/* stars */
+.ratings div {
+  margin-bottom: 0.3em;
+}
+
+.ratings img {
+  padding-right: 0.5em;
+}
+
+/* rating source */
+.ratings p {
+  font-weight: var(--fw-bold);
+  color: var(--clr-bg-card);
+}
+
+/* -- Reviews -- */
+.user {
+  background-color: var(--clr-bg-card);
+  border-radius: 1em;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
+.user > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.user img {
+  border-radius: 50%;
+  padding-right: 1em;
+}
+
+.user div > p:first-of-type {
+  font-weight: var(--fw-bold);
+}
+
+.user .status {
+  color: var(--clr-accent);
+}
+
+/* -- Footer -- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--clr-bg-card);
+}
+
+/* -- Media Queries -- */
+@media (min-width: 375px) {
+  body {
+    background-image: url(images/bg-pattern-top-desktop.svg),
+      url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+  }
+
+  /* intro */
+  .hero {
+    display: flex;
+    margin-top: 2rem;
+  }
+
+  .intro,
+  .ratings {
+    flex: 1;
+  }
+
+  .intro {
+    text-align: left;
+    padding: 0 8rem 3rem 0;
+  }
+
+  /* ratings */
+  .ratings ul {
+    text-align: right;
+  }
+
+  .ratings div,
+  .ratings p {
+    display: inline-block;
+  }
+
+  .ratings li {
+    text-align: center;
+    vertical-align: middle;
+    padding: 1em 1em 0.5em 1em;
+  }
+
+  /* offset the rating elements */
+  .ratings li:first-of-type {
+    transform: translateX(-5vw);
+  }
+
+  .ratings li:nth-child(2) {
+    transform: translateX(-2.5vw);
+  }
+
+  .ratings li div {
+    padding-right: 2em;
+  }
+
+  /* reviews */
+  .reviews {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 2;
+  }
+
+  /* only add a left margin if the element has a following sibling */
+  .reviews > * + * {
+    margin-left: 1em;
+  }
+
+  /* stagger the user cards */
+  .reviews div[class]:first-of-type {
+    transform: translateY(-1vw);
+  }
+
+  .reviews div[class]:last-of-type {
+    transform: translateY(1vw);
+  }
+
+  .user {
+    flex: 1;
+  }
+}

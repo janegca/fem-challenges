@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+
+/* -- Custom Properties -- */
+:root {
+  --clr-bg: #ecf2f8;
+  --clr--fg: hsl(214, 17%, 51%);
+  --clr--accent: hsl(217, 19%, 35%);
+  --clr-shadow: hsla(210, 29%, 84%, 0.5);
+  --clr-bg-icon: hsl(210, 46%, 95%);
+
+  --fs-300: 0.8rem;
+  --fs-400: 1rem;
+  --fs-500: 1.25rem;
+
+  --fw-500: 500;
+  --fw-700: 700;
+
+  --border-radius: 10px;
+}
+
+/* -- Resets -- */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* -- General Styling -- */
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: var(--fs-300);
+  font-weight: var(--fw-500);
+
+  background-color: var(--clr-bg);
+  margin: 0 auto;
+}
+
+/* -- Preview Card -- */
+.preview {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0px 40px 40px -10px var(--clr-shadow);
+  width: 20rem;
+  margin: 4rem auto;
+  overflow: hidden;
+}
+
+/* -- Footer -- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

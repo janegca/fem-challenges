@@ -3,8 +3,8 @@
 /* -- Custom Properties -- */
 :root {
   --clr-bg: #ecf2f8;
-  --clr--fg: hsl(214, 17%, 51%);
-  --clr--accent: hsl(217, 19%, 35%);
+  --clr-fg: hsl(214, 17%, 51%);
+  --clr-accent: hsl(217, 19%, 35%);
   --clr-shadow: hsla(210, 29%, 84%, 0.5);
   --clr-bg-icon: hsl(210, 46%, 95%);
 
@@ -12,6 +12,7 @@
   --fs-400: 1rem;
   --fs-500: 1.25rem;
 
+  --fw-200: 200;
   --fw-500: 500;
   --fw-700: 700;
 
@@ -41,10 +42,11 @@ body {
   font-weight: var(--fw-500);
 
   background-color: var(--clr-bg);
+  color: var(--clr-fg);
   margin: 0 auto;
 }
 
-/* -- Preview Card -- */
+/* -- Article Preview Card -- */
 .preview {
   background-color: white;
   border-radius: var(--border-radius);
@@ -52,6 +54,24 @@ body {
   width: 20rem;
   margin: 4rem auto;
   overflow: hidden;
+}
+
+.preview .content,
+.preview .author {
+  padding: 2em;
+}
+
+.preview .content h1 {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-700);
+  color: var(--clr--accent);
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.preview .content p {
+  font-weight: var(--fw-200);
+  line-height: 1.25;
 }
 
 /* -- Footer -- */

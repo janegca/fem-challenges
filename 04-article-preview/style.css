@@ -35,6 +35,22 @@ img {
   max-width: 100%;
 }
 
+p {
+  margin: 0;
+}
+
+/* -- Utilities -- */
+.icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--clr-bg-icon);
+}
+
+.icon > img {
+  transform: translate(0.5rem, 0.5rem);
+}
+
 /* -- General Styling -- */
 body {
   font-family: "Manrope", sans-serif;
@@ -56,8 +72,7 @@ body {
   overflow: hidden;
 }
 
-.preview .content,
-.preview .author {
+.preview .content {
   padding: 2em;
 }
 
@@ -69,9 +84,44 @@ body {
   margin-bottom: 1em;
 }
 
-.preview .content p {
+.preview .content > p {
   font-weight: var(--fw-200);
   line-height: 1.25;
+  margin-bottom: 2rem;
+}
+
+.preview .author {
+  position: relative;
+  display: grid;
+  grid-template-areas: "avatar name share";
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.preview .author .avatar {
+  /* the avatar should be smaller but the
+     transform sets up a new containing context
+     and the justify-self doesn't work, prefer
+     proper alignment to proper size */
+  grid-area: avatar;
+  border-radius: 50%;
+  justify-self: start;
+  /* transform: scale(0.6); */
+}
+
+.preview .author > p {
+  grid-area: name;
+}
+
+.preview .author .name {
+  font-weight: var(--fw-700);
+  color: var(--clr-accent);
+}
+
+.preview .author .icon {
+  grid-area: share;
+  justify-self: end;
 }
 
 /* -- Footer -- */

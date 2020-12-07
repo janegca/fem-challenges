@@ -51,6 +51,9 @@ p {
   transform: translate(0.5rem, 0.5rem);
 }
 
+.avatar {
+}
+
 /* -- General Styling -- */
 body {
   font-family: "Manrope", sans-serif;
@@ -91,27 +94,24 @@ body {
 }
 
 .preview .author {
-  position: relative;
   display: grid;
   grid-template-areas: "avatar name share";
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 0.5fr 2fr 0.5fr;
   justify-items: center;
   align-items: center;
 }
 
 .preview .author .avatar {
-  /* the avatar should be smaller but the
-     transform sets up a new containing context
-     and the justify-self doesn't work, prefer
-     proper alignment to proper size */
   grid-area: avatar;
-  border-radius: 50%;
   justify-self: start;
-  /* transform: scale(0.6); */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .preview .author > p {
   grid-area: name;
+  justify-self: start;
 }
 
 .preview .author .name {
@@ -131,4 +131,46 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 700px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .preview {
+    display: grid;
+    grid-template-columns: 285px 445px;
+    box-shadow: 0px 4px 4px 0 var(--clr-shadow);
+    width: 730px;
+    height: 280px;
+  }
+
+  .preview > img {
+    width: 285px;
+    height: 280px;
+  }
+
+  .preview .content {
+    width: 365px;
+    height: 216px;
+    padding: 0;
+    margin: 32px 40px;
+  }
+
+  .preview .content > h1 {
+    font-size: 20px;
+    margin: 0 0 12px 0;
+  }
+
+  .preview .content > p {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
 }

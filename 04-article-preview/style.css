@@ -74,6 +74,7 @@ body {
   overflow: hidden;
 }
 
+/* content */
 .preview .content {
   padding: 2em;
 }
@@ -92,36 +93,31 @@ body {
   margin-bottom: 2rem;
 }
 
+/* author */
 .preview .author {
-  display: grid;
-  grid-template-areas: "avatar name share";
-  grid-template-columns: 0.5fr 2fr 0.5fr;
-  justify-items: center;
+  display: flex;
   align-items: center;
 }
 
 .preview .author .avatar {
-  /* don't want the avatar to be responsive, stick with pixels */
-  grid-area: avatar;
-  justify-self: start;
+  flex: 0 1 auto;
   width: 40px;
   height: 40px;
   border-radius: 50%;
 }
 
 .preview .author > p {
-  grid-area: name;
-  justify-self: start;
+  padding-left: 1em;
 }
 
 .preview .author .name {
+  flex: 0 5 auto;
   font-weight: var(--fw-700);
   color: var(--clr-accent);
 }
 
 .preview .author .icon {
-  grid-area: share;
-  justify-self: end;
+  margin-left: auto;
 }
 
 /* -- Footer -- */

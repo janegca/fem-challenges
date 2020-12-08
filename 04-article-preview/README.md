@@ -62,6 +62,7 @@ Your users should be able to:
 
 References:
 
+- [MDN: Aligning items in a flex container](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container)
 - [MDN: visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/visibility)
 - [W3 Schools: CSS Tooltip](https://www.w3schools.com/css/css_tooltip.asp)
 - [Stackoverflow: Show div on hover of other div](https://stackoverflow.com/questions/26072773/show-div-on-hover-of-other-div-that-is-not-parent-with-css-or-js?noredirect=1&lq=1)

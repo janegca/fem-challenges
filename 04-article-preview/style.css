@@ -120,6 +120,18 @@ body {
   margin-left: auto;
 }
 
+/* Hover effects */
+.preview .author .social {
+  background-color: var(--clr-accent);
+
+  /* hide and collapse the space it takes */
+  visibility: collapse;
+}
+
+.preview .author:hover .social {
+  visibility: visible;
+}
+
 /* -- Footer -- */
 .attribution {
   font-size: 11px;

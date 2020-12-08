@@ -6,7 +6,9 @@
   --clr-fg: hsl(214, 17%, 51%);
   --clr-accent: hsl(217, 19%, 35%);
   --clr-shadow: hsla(210, 29%, 84%, 0.5);
+  --clr-preview-bg: white;
 
+  /* assumes browser default font size is 16px */
   --fs-13px: 0.8125rem;
   --fs-16px: 1rem;
   --fs-20px: 1.25rem;
@@ -62,7 +64,7 @@ body {
 
 /* -- Article Preview Card -- */
 .preview {
-  background-color: white;
+  background-color: var(--clr-preview-bg);
   border-radius: var(--border-radius);
   box-shadow: 0px 40px 40px -10px var(--clr-shadow);
   width: 20rem;
@@ -97,6 +99,7 @@ body {
 }
 
 .preview .author .avatar {
+  /* don't want the avatar image to be resizeable */
   flex: 0 1 auto;
   width: 40px;
   height: 40px;
@@ -125,10 +128,10 @@ body {
   flex-grow: 0;
   justify-content: space-around;
   align-items: center;
-  width: 327px;
-  height: 66px;
+  width: 20rem;
+  height: 4rem;
   top: 0;
-  left: -26px;
+  left: -1.625rem;
   background-color: var(--clr-accent);
   color: var(--clr-bg);
   padding: 0 1em;
@@ -149,7 +152,7 @@ body {
 }
 
 .preview .author .icon .social div:last-of-type {
-  background-color: white;
+  background-color: var(--clr-preview-bg);
   margin-left: auto;
   margin-right: 2em;
 }
@@ -220,7 +223,7 @@ body {
   }
 
   .preview .author .icon .social {
-    width: 248px;
+    width: 15rem;
     top: -200%;
     left: 62%;
     border-radius: var(--border-radius);
@@ -232,8 +235,8 @@ body {
     position: absolute;
     top: 100%;
     left: 50%;
-    margin-left: -10px;
-    border-width: 10px;
+    margin-left: -0.625rem;
+    border-width: 0.625rem;
     border-style: solid;
     border-color: var(--clr-accent) transparent transparent transparent;
   }

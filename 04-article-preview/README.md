@@ -44,6 +44,9 @@ Your users should be able to:
   `visibility: collapse` does not work in `grid` layouts, the div will be hidden
   but the empty space will not collapse; it will in a `flex` layout so need to
   try a refactor of the author section
+  - ✔️ refactored 'author' section to use flex layout
+  - ✔️ styled hover for the mobile design
+- **icon colour** colour the last icon on the mobile hover doesn't match design
 
 ## Fonts and Colours from the Style Guide
 

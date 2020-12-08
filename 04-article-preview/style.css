@@ -43,7 +43,6 @@ p {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  background-color: var(--clr-bg);
 }
 
 .icon > img {
@@ -97,6 +96,7 @@ body {
 .preview .author {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .preview .author .avatar {
@@ -116,19 +116,43 @@ body {
   color: var(--clr-accent);
 }
 
-.preview .author .icon {
+.preview .author > .icon {
+  background-color: var(--clr-bg);
   margin-left: auto;
 }
 
 /* Hover effects */
 .preview .author .social {
+  position: absolute;
+  display: flex;
+  flex-grow: 0;
+  justify-content: space-around;
+  align-items: center;
+  width: 327px;
+  height: 66px;
+  top: 0;
+  left: -26px;
   background-color: var(--clr-accent);
+  color: var(--clr-bg);
+  padding: 0 1em;
 
   /* hide and collapse the space it takes */
   visibility: collapse;
 }
 
-.preview .author:hover .social {
+.preview .author .social > span {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-left: 2em;
+}
+
+.preview .author .icon .social div:last-of-type {
+  background-color: white;
+  margin-left: auto;
+  margin-right: 2em;
+}
+
+.preview .author .icon:hover .social {
   visibility: visible;
 }
 

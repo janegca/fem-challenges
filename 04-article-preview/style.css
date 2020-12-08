@@ -2,15 +2,14 @@
 
 /* -- Custom Properties -- */
 :root {
-  --clr-bg: #ecf2f8;
+  --clr-bg: hsl(210, 46%, 95%);
   --clr-fg: hsl(214, 17%, 51%);
   --clr-accent: hsl(217, 19%, 35%);
   --clr-shadow: hsla(210, 29%, 84%, 0.5);
-  --clr-bg-icon: hsl(210, 46%, 95%);
 
-  --fs-300: 0.8rem;
-  --fs-400: 1rem;
-  --fs-500: 1.25rem;
+  --fs-13px: 0.8125rem;
+  --fs-16px: 1rem;
+  --fs-20px: 1.25rem;
 
   --fw-200: 200;
   --fw-500: 500;
@@ -44,7 +43,7 @@ p {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  background-color: var(--clr-bg-icon);
+  background-color: var(--clr-bg);
 }
 
 .icon > img {
@@ -57,7 +56,7 @@ p {
 /* -- General Styling -- */
 body {
   font-family: "Manrope", sans-serif;
-  font-size: var(--fs-300);
+  font-size: var(--fs-13px);
   font-weight: var(--fw-500);
 
   background-color: var(--clr-bg);
@@ -80,7 +79,7 @@ body {
 }
 
 .preview .content h1 {
-  font-size: var(--fs-400);
+  font-size: var(--fs-16px);
   font-weight: var(--fw-700);
   color: var(--clr--accent);
   line-height: 1.5;
@@ -102,6 +101,7 @@ body {
 }
 
 .preview .author .avatar {
+  /* don't want the avatar to be responsive, stick with pixels */
   grid-area: avatar;
   justify-self: start;
   width: 40px;
@@ -133,7 +133,11 @@ body {
   color: hsl(228, 45%, 44%);
 }
 
+/* -- Media Queries -- */
 @media (min-width: 700px) {
+  /* using 'magic numbers' here, ideally they would
+     be set up as 'constants' (css custom properties) */
+
   body {
     display: flex;
     flex-direction: column;
@@ -145,32 +149,32 @@ body {
 
   .preview {
     display: grid;
-    grid-template-columns: 285px 445px;
+    grid-template-columns: 17.8125rem 27.8125rem;
     box-shadow: 0px 4px 4px 0 var(--clr-shadow);
-    width: 730px;
-    height: 280px;
+    width: 45.625rem;
+    height: 17.5rem;
   }
 
   .preview > img {
-    width: 285px;
-    height: 280px;
+    width: 17.8125rem;
+    height: 17.5rem;
   }
 
   .preview .content {
-    width: 365px;
-    height: 216px;
+    width: 22.8125rem;
+    height: 13.5rem;
     padding: 0;
-    margin: 32px 40px;
+    margin: 2rem 2.5rem;
   }
 
   .preview .content > h1 {
-    font-size: 20px;
-    margin: 0 0 12px 0;
+    font-size: var(--fs-20px);
+    margin: 0 0 0.75rem 0;
   }
 
   .preview .content > p {
-    font-size: 13px;
-    line-height: 20px;
-    margin-bottom: 20px;
+    font-size: var(--fs-13px);
+    line-height: 1.25;
+    margin-bottom: 1.25rem;
   }
 }

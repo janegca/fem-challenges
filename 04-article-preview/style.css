@@ -143,7 +143,12 @@ body {
 .preview .author .social > span {
   text-transform: uppercase;
   letter-spacing: 5px;
-  margin-left: 2em;
+  margin-left: 1em;
+  margin-right: 2em;
+}
+
+.preview .author .icon .social > a {
+  margin-right: 1em;
 }
 
 .preview .author .icon .social div:last-of-type {

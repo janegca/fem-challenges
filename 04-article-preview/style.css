@@ -49,9 +49,6 @@ p {
   transform: translate(0.5rem, 0.5rem);
 }
 
-.avatar {
-}
-
 /* -- General Styling -- */
 body {
   font-family: "Manrope", sans-serif;
@@ -171,7 +168,7 @@ body {
 }
 
 /* -- Media Queries -- */
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   /* using 'magic numbers' here, ideally they would
      be set up as 'constants' (css custom properties) */
 
@@ -190,6 +187,7 @@ body {
     box-shadow: 0px 4px 4px 0 var(--clr-shadow);
     width: 45.625rem;
     height: 17.5rem;
+    overflow: visible;
   }
 
   .preview > img {
@@ -213,5 +211,34 @@ body {
     font-size: var(--fs-13px);
     line-height: 1.25;
     margin-bottom: 1.25rem;
+  }
+
+  /* hover effect */
+  .preview .author .icon:hover {
+    background-color: var(--clr-accent);
+    color: var(--clr-fg);
+  }
+
+  .preview .author .icon .social {
+    width: 248px;
+    top: -200%;
+    left: 62%;
+    border-radius: var(--border-radius);
+  }
+
+  .preview .author .icon .social::after {
+    /* down arrow for tooltip box */
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--clr-accent) transparent transparent transparent;
+  }
+
+  .preview .author .icon .social div:last-of-type {
+    visibility: collapse;
   }
 }

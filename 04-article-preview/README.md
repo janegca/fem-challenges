@@ -46,7 +46,11 @@ Your users should be able to:
   try a refactor of the author section
   - ✔️ refactored 'author' section to use flex layout
   - ✔️ styled hover for the mobile design
-- **icon colour** colour the last icon on the mobile hover doesn't match design
+  - ✔️ styled hover for the desktop design
+- **social icons** social icons should be links, not divs
+  - ✔️ refactored the social icons, made them links
+- **icon colour** colour of the last icon on the mobile hover doesn't match
+  design, nor does the author icon when hovering
 
 ## Fonts and Colours from the Style Guide
 

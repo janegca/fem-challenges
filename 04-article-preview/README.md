@@ -27,6 +27,24 @@ Your users should be able to:
   - desktop: tooltip appears centered over the link icon, bubble with down
     arrow, contains social icons
 
+### New Techniques for hover
+
+- there are 2 hover effects:
+  1. mobile: the author area is overlaid with a styled text plus icon list
+  1. desktop: the mobile overlay, minus the 'share' icon, is displayed in a
+     tooltip box above the share icon
+
+## Issues
+
+- **avatar** - size, pixels or rems?? should it resize?
+  - ✔️ checked this out by increasing and decreasing the default font size in
+    the browser the image appears ok at various sizes
+- **hover effects** - need a separate div for hover effect that will have 2
+  variations, the div needs to come directly after the author icon; trouble is,
+  `visibility: collapse` does not work in `grid` layouts, the div will be hidden
+  but the empty space will not collapse; it will in a `flex` layout so need to
+  try a refactor of the author section
+
 ## Fonts and Colours from the Style Guide
 
 ### Fonts
@@ -41,3 +59,9 @@ Your users should be able to:
 - Desaturated Dark Blue: hsl(214, 17%, 51%) (body text)
 - Grayish Blue: hsl(212, 23%, 69%) (shadow?)
 - Light Grayish Blue: hsl(210, 46%, 95%) (page bg?)
+
+References:
+
+- [MDN: visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/visibility)
+- [W3 Schools: CSS Tooltip](https://www.w3schools.com/css/css_tooltip.asp)
+- [Stackoverflow: Show div on hover of other div](https://stackoverflow.com/questions/26072773/show-div-on-hover-of-other-div-that-is-not-parent-with-css-or-js?noredirect=1&lq=1)

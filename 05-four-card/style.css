@@ -1,0 +1,78 @@
+/* -- Custom Properties -- */
+:root {
+  --clr-red: hsl(0, 78%, 62%);
+  --clr-cyan: hsl(180, 62%, 55%);
+  --clr-orange: hsl(34, 97%, 64%);
+  --clr-blue: hsl(212, 86%, 64%);
+
+  --clr-neutral-dark: hsl(234, 12%, 34%);
+  --clr-neutral-med: hsl(229, 6%, 66%);
+  --clr-neutral-light: hsl(0, 0%, 98%);
+
+  --fs-13px: 0.8125rem;
+  --fs-16px: 1rem;
+  --fs-20px: 1.25rem;
+  --fs-24px: 1.5rem;
+
+  --fw-light: 200;
+  --fw-normal: 400;
+  --fw-bold: 600;
+}
+
+/* -- Resets -- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: var(--fs-24px);
+  font-weight: var(--fw-bold);
+}
+
+h2 {
+  font-size: var(--fs-20px);
+  font-weight: var(--fw-bold);
+}
+
+/* -- General Styling -- */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: var(--fs-16px);
+  font-weight: var(--fw-normal);
+  line-height: 1.6;
+}
+
+/* -- Containers -- */
+.container {
+  width: 80%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+/* -- Card -- */
+.card {
+  font-size: var(--fs-13px);
+  font-weight: var(--fw-normal);
+  line-height: 1.4;
+}
+
+/* -- Footer -- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

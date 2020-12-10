@@ -37,3 +37,4 @@ Design and coding challenges from
 1. [FAQ Accordion Card](https://janegca.github.io/fem-challenges/02-faq-card/index.html)
 1. [Social Proof](https://janegca.github.io/fem-challenges/03-social-proof/index.html)
 1. [Article Preview](https://janegca.github.io/fem-challenges/04-article-preview/index.html)
+1. [Four Card Feature Section](https://janegca.github.io/fem-challenges/05-four-card/index.html)

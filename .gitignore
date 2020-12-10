@@ -19,3 +19,4 @@
 # Ignore instruction and files
 instructions
 challenge-files
+*.code-workspace

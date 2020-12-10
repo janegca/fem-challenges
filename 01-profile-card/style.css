@@ -52,13 +52,44 @@ body {
       keeps the background images in place by re-calculating
       position with respect to changing viewport
   */
-  background: url(./images/bg-pattern-top.svg),
+  /* background: url(./images/bg-pattern-top.svg),
     url(./images/bg-pattern-bottom.svg);
   background-repeat: no-repeat;
   background-color: var(--clr-bg);
   background-position: right calc(47vw + 15%) bottom calc(65vh - 15vw),
-    left calc(40vw + 25%) top calc(72vh - 10vw);
+    left calc(40vw + 25%) top calc(72vh - 10vw); */
+
+  /* START REFACTOR: 
+      This solution keeps the background images in place as the 
+      screen resizes.
+
+      Solution blatantly swiped from:
+      https://github.com/MasterDev333/html-projects/blob/master/styles/style.css
+  */
+  position: relative;
+  background-color: var(--clr-bg);
 }
+
+body::before,
+body::after {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  background-size: auto;
+  transform: translate(-50%, -50%);
+}
+body::before {
+  top: 0;
+  left: 0;
+  background: url("./images/bg-pattern-top.svg") no-repeat bottom right;
+}
+body::after {
+  top: 100%;
+  left: 100%;
+  background: url("./images/bg-pattern-bottom.svg") no-repeat top left;
+}
+/* END REFACTOR */
 
 /* -- Profile Card -- */
 .profile-card {

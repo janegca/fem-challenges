@@ -37,3 +37,7 @@ For text and drop shadow:
 - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
 - Weights: 200, 400, 600
 - body font size: 15px
+
+References:
+
+- [Kevin Powell Tutorial - Flexbox Basics](https://www.youtube.com/playlist?list=PL4-IK0AVhVjMSb9c06AjRlTpvxL3otpUd)

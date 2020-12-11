@@ -28,12 +28,27 @@ img {
 }
 
 /* -- Containers -- */
+.container {
+  max-width: 70rem;
+  margin: 20vw auto 2vw auto;
+}
 
 /* -- General Styling -- */
 body {
   font-family: "Josefin Sans", sans-serif;
   font-size: var(--fs-16px);
   line-height: 1.6;
+
+  background-image: url(./images/logo.svg), var(--gradient-bg);
+  background-repeat: no-repeat;
+  background-position: top 5vw left 10vw;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* -- Footer -- */

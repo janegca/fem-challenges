@@ -7,8 +7,12 @@
   --gradient-bg: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
   --gradient-btn: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 
+  --fs-11px: 0.6875;
   --fs-16px: 1rem;
   --fs-40px: 2.5rem;
+
+  --fw-light: 300;
+  --fw-bold: 600;
 }
 
 /* -- Resets -- */
@@ -29,19 +33,42 @@ img {
 
 /* -- Containers -- */
 .container {
+  position: relative;
   max-width: 70rem;
-  margin: 20vw auto 2vw auto;
+}
+
+.container::before {
+  display: block;
+  content: "";
+
+  /* set up as a positioned element 
+     top, left are relative to the container top, left
+  */
+  position: relative;
+  top: 0;
+  left: 0;
+
+  /* image is invisible if not given a width and height */
+  width: 115px;
+  height: 32px;
+
+  background-image: url(./images/logo.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  margin: 2rem 0;
+
+  transform: translate(-90%, 0%);
 }
 
 /* -- General Styling -- */
 body {
+  position: relative;
   font-family: "Josefin Sans", sans-serif;
   font-size: var(--fs-16px);
   line-height: 1.6;
 
-  background-image: url(./images/logo.svg), var(--gradient-bg);
-  background-repeat: no-repeat;
-  background-position: top 5vw left 10vw;
+  background-image: var(--gradient-bg);
 }
 
 main {
@@ -49,6 +76,23 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.cta > h1 {
+  font-size: var(--fs-40px);
+  font-weight: var(--fw-bold);
+
+  text-transform: uppercase;
+  letter-spacing: 11px;
+  line-height: 42px;
+
+  color: var(--clr-accent);
+}
+
+.cta > h1 > span {
+  font-weight: var(--fw-light);
+  color: var(--clr-fg);
 }
 
 /* -- Footer -- */

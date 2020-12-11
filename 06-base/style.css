@@ -48,17 +48,18 @@ img {
   top: 0;
   left: 0;
 
-  /* image is invisible if not given a width and height */
-  width: 115px;
-  height: 32px;
+  /*  size and position the logo in the 'before' element background
+      image is invisible if not given a width and height in hard units */
+  width: 7rem;
+  height: 2rem;
 
   background-image: url(./images/logo.svg);
   background-repeat: no-repeat;
   background-size: 100% auto;
 
-  margin: 2rem 0;
-
-  transform: translate(-90%, 0%);
+  /* position the 'before' element relative to the container */
+  transform: translate(-80%, 0%);
+  margin: 2rem;
 }
 
 /* -- General Styling -- */
@@ -66,7 +67,8 @@ body {
   position: relative;
   font-family: "Josefin Sans", sans-serif;
   font-size: var(--fs-16px);
-  line-height: 1.6;
+  line-height: 1.4;
+  color: var(--clr-fg);
 
   background-image: var(--gradient-bg);
 }
@@ -77,6 +79,7 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 1em;
 }
 
 .cta > h1 {

@@ -52,8 +52,8 @@ main {
   padding: 1em;
 
   position: relative;
-  max-width: 70rem;
-  margin: 0 auto 1em;
+  max-width: 60rem;
+  margin: 5em auto 1em;
 }
 
 main::before {
@@ -64,9 +64,9 @@ main::before {
   /* set up as a positioned element 
      top, left are relative to main's top, left
   */
-  position: relative;
-  top: 0;
-  left: 0;
+  position: absolute;
+  top: -4em;
+  left: 6em;
 
   /*  size and position the logo in the 'before' element background
       image is invisible if not given a width and height in hard units */
@@ -137,7 +137,7 @@ main::before {
 }
 
 /* Email Validation */
-#email {
+form {
   position: relative;
 }
 
@@ -147,7 +147,6 @@ input[type="email"]:invalid {
   background-size: 1.5em;
   background-repeat: no-repeat;
   background-position: top 0.8em right 2.5em;
-  /* transform: translate(50%, 50%); */
 }
 
 input:invalid + .err-msg::before {
@@ -155,8 +154,8 @@ input:invalid + .err-msg::before {
   position: absolute;
   display: inline-block;
   color: var(--clr-error);
-  left: 4em;
-  top: 98%;
+  left: 3em;
+  top: 4em;
 }
 
 /* -- Footer -- */
@@ -166,4 +165,24 @@ input:invalid + .err-msg::before {
 }
 .attribution a {
   color: var(--clr-accent);
+}
+
+/* -- Media Query -- */
+@media (min-width: 900px) {
+  main {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-top: 5rem;
+  }
+
+  main::before {
+    left: 4.5rem;
+  }
+
+  .cta {
+    order: -1;
+    margin-right: 5rem;
+  }
 }

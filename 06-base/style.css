@@ -52,7 +52,7 @@ main {
   padding: 1em;
 
   position: relative;
-  max-width: 60rem;
+  max-width: 1440px;
   margin: 5em auto 1em;
 }
 
@@ -172,6 +172,11 @@ input:invalid + .err-msg::before {
 
 /* -- Media Query -- */
 @media (min-width: 900px) {
+  body {
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-size: cover;
+  }
+
   main {
     flex-direction: row;
     justify-content: center;

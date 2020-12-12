@@ -43,3 +43,7 @@ Your users should be able to:
 - Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
 - Weights: 300, 400, 600
 - font-size for the body: 16px
+
+References:
+
+- [Advanced CSS Only Form Styling](https://www.jonathan-harrell.com/blog/advanced-css-only-form-styling/)

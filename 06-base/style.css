@@ -53,7 +53,7 @@ main {
 
   position: relative;
   max-width: 70rem;
-  margin: 0 auto;
+  margin: 0 auto 1em;
 }
 
 .main::before {
@@ -102,7 +102,6 @@ main {
 /* email */
 .cta .email {
   display: flex;
-  justify-content: space-around;
 }
 
 .cta #email {
@@ -111,11 +110,11 @@ main {
   border: 1px solid;
   border-color: var(--clr-btn-border);
   border-radius: 100px;
-  background: transparent;
   padding-left: 2em;
   font-family: inherit;
   font-size: inherit;
   margin-left: 1em;
+  outline: none;
 }
 
 .cta #email::placeholder {
@@ -132,9 +131,32 @@ main {
   border: 0 none;
   cursor: pointer;
   padding-bottom: 1em;
-
   box-shadow: 0 10px 20px var(--clr-fg), 0 6px 6px var(--clr-fg);
   transform: translate(-50%, 0%);
+  outline: none;
+}
+
+/* Email Validation */
+#email {
+  position: relative;
+}
+
+input[type="email"]:invalid {
+  border-color: var(--clr-error);
+  background-image: url(./images/icon-error.svg);
+  background-size: 1.5em;
+  background-repeat: no-repeat;
+  background-position: top 0.8em right 2.5em;
+  /* transform: translate(50%, 50%); */
+}
+
+input:invalid + .err-msg::before {
+  content: "Please provide a valid email";
+  position: absolute;
+  display: inline-block;
+  color: var(--clr-error);
+  left: 4em;
+  top: 98%;
 }
 
 /* -- Footer -- */

@@ -175,6 +175,10 @@ input:invalid + .err-msg::before {
   body {
     background-image: url(./images/bg-pattern-desktop.svg);
     background-size: cover;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
   }
 
   main {
@@ -182,15 +186,21 @@ input:invalid + .err-msg::before {
     justify-content: center;
     align-items: center;
     text-align: left;
-    margin-top: 5rem;
+    margin: 0;
   }
 
   main::before {
+    top: 0;
     left: 4.5rem;
   }
 
   .cta {
     order: -1;
-    margin-right: 5rem;
+    margin-right: 12rem;
+    width: 60%;
+  }
+
+  .cta > h1 {
+    width: 50%;
   }
 }

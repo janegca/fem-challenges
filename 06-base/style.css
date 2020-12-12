@@ -122,22 +122,25 @@ main::before {
 }
 
 .cta .email .btn {
-  width: 5em;
+  width: 6em;
   height: 4em;
   background-image: url(./images/icon-arrow.svg), var(--gradient-btn);
   background-repeat: no-repeat;
   background-position: center;
+
   border-radius: 50px;
   border: 0 none;
   cursor: pointer;
   padding-bottom: 1em;
   box-shadow: 0 10px 20px var(--clr-fg), 0 6px 6px var(--clr-fg);
+
   transform: translate(-50%, 0%);
   outline: none;
 }
 
 /* Email Validation */
 form {
+  /* ensure error message positioning is relative to the form */
   position: relative;
 }
 

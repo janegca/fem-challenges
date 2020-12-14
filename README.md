@@ -3,6 +3,17 @@
 Design and coding challenges from
 [Frontend Mentor](https://www.frontendmentor.io/challenges)
 
+## Completed Challenges
+
+### Newbie Challenges
+
+1. [Profile Card](https://janegca.github.io/fem-challenges/01-profile-card/index.html)
+1. [FAQ Accordion Card](https://janegca.github.io/fem-challenges/02-faq-card/index.html)
+1. [Social Proof](https://janegca.github.io/fem-challenges/03-social-proof/index.html)
+1. [Article Preview](https://janegca.github.io/fem-challenges/04-article-preview/index.html)
+1. [Four Card Feature Section](https://janegca.github.io/fem-challenges/05-four-card/index.html)
+1. [Base Apparel](https://janegca.github.io/fem-challenges/06-base/index.html)
+
 ## Basic Approach to the Challenges
 
 1. Create a single git repo for all Frontend Mentor challenges and a separate
@@ -28,6 +39,7 @@ Design and coding challenges from
 1. Run the HTML and CSS through the W3 Validators, make any necessary
    corrections
 1. Submit solution on Frontend Mentor
+1. Correct any Accessibility problems identified by Frontend Mentor
 
 ## Completed Challenges
 

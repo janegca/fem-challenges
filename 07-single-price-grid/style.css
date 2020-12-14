@@ -2,27 +2,35 @@
 :root {
   --clr-bg-body: hsl(206, 47%, 93%);
   --clr-bg-card: white;
-  --clr-bg-cta: hsl(179, 47%, 52%);
+  --clr-bg-cta: #4bbebc;
   --clr-bg-join: hsl(0, 0%, 95%);
   --clr-fg: hsl(218, 22%, 67%);
 
   --clr-accent: hsl(71, 73%, 54%);
-  --clr-hover: hsl(179, 62%, 43%);
+  --clr-hover: #2bb3b1;
 
   --clr-shadow-1: hsla(234, 12%, 34%, 0.19);
   --clr-shadow-2: hsla(234, 12%, 34%, 0.23);
 
-  /* Responsive Design Units in REM (rdur) 
-        Scale fonts using browser default (1rem) as base
-        Browser default is usually 16px unless user has changed it
+  /* Set document font equal to browser default font-size 
+     and scale everything accordingly
+     Default is usually 16px so 4px = 0.25rem, 8px = 0.5rem, 32px = 2rem, etc;
+     If default is 20px then 0.25rem = 5px, 0.5rem = 10px, 2rem = 40px, etc.
   */
-  --rdur-087: 0.875rem;
-  --rdur-100: 1rem;
-  --rdur-112: 1.125rem;
-  --rdur-125: 1.25rem;
-  --rdur-150: 1.5rem;
-  --rdur-162: 1.625rem;
-  --rdur-200: 2rem;
+
+  font-size: 1rem;
+
+  --fs-025: 0.25rem;
+  --fs-050: 0.5rem;
+  --fs-069: 0.6875rem;
+  --fs-087: 0.875rem;
+  --fs-100: 1rem;
+  --fs-112: 1.125rem;
+  --fs-125: 1.25rem;
+  --fs-150: 1.5rem;
+  --fs-162: 1.625rem;
+  --fs-200: 2rem;
+  --fs-300: 3rem;
 
   --fw-normal: 400;
   --fw-bold: 700;
@@ -39,7 +47,6 @@ body {
   place-content: center;
 
   font-family: "Karla", sans-serif;
-  font-size: var(--rdur-100);
   background-color: var(--clr-bg-body);
 
   width: 100vw;
@@ -60,7 +67,7 @@ main {
 
   background-color: var(--clr-bg-card);
   color: var(--clr-fg);
-  line-height: var(--rdur-162);
+  line-height: var(--fs-162);
 
   box-shadow: 0 10px 20px var(--clr-shadow-1), 0 6px 6px var(--clr-shadow-2);
   border: 1px solid var(--clr-join);
@@ -68,7 +75,7 @@ main {
 }
 
 .spg-card > section {
-  padding: var(--rdur-150, --padding);
+  padding: var(--fs-150, --padding);
 }
 
 .spg-card,
@@ -81,13 +88,15 @@ main {
 }
 
 .spg-card h1 {
-  font-size: var(--rdur-125);
+  font-size: var(--fs-125);
   color: var(--clr-bg-cta);
-  margin-bottom: var(--rdur-150);
+  margin-bottom: var(--fs-150);
 }
+
 .spg-card h2 {
-  font-size: var(--rdur-112);
-  margin-bottom: var(--rdur-112);
+  font-size: var(--fs-112);
+  margin-bottom: var(--fs-112);
+  color: var(--clr-bg-card);
 }
 
 .spg-card .cta,
@@ -99,13 +108,54 @@ main {
 .spg-card .join .detail {
   font-weight: var(--fw-bold);
   color: var(--clr-accent);
-  margin-bottom: var(--rdur-100, 1rem);
+  margin-bottom: var(--fs-100, 1rem);
+}
+
+.spg-card .cta:hover {
+  background-color: var(--clr-hover);
+}
+
+.spg-card .cta .cost {
+  display: flex;
+  justify-items: middle;
+  margin-bottom: 4px;
+  color: var(--clr-bg-body);
+}
+
+.spg-card .cta p span {
+  font-size: var(--fs-200);
+  font-weight: var(--fw-bold);
+  color: var(--clr-bg-card);
+  margin-right: var(--fs-069);
+}
+
+.spg-card .cta p:last-of-type {
+  color: var(--clr-bg-card);
+}
+
+.spg-card .btn {
+  display: inline-block;
+  font-size: var(--fs-100);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  vertical-align: middle;
+  line-height: var(--fs-300);
+  text-decoration: none;
+
+  background-color: var(--clr-accent);
+  color: var(--clr-bg-card);
+  border-radius: var(--border-radius);
+  box-shadow: 0 6px 6px var(--clr-shadow-2);
+
+  width: 100%;
+  margin-top: var(--fs-162);
 }
 
 .spg-card .why ul {
   list-style: none;
-  font-size: var(--rdur-087, 0.875rem);
-  line-height: var(--rdur-112, 1.125);
+  font-size: var(--fs-087, 0.875rem);
+  line-height: var(--fs-112, 1.125);
+  color: var(--clr-bg-body);
 }
 
 /* -- Footer -- */

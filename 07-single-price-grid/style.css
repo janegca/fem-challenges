@@ -21,6 +21,7 @@
   --rdur-112: 1.125rem;
   --rdur-125: 1.25rem;
   --rdur-150: 1.5rem;
+  --rdur-162: 1.625rem;
   --rdur-200: 2rem;
 
   --fw-normal: 400;
@@ -58,12 +59,16 @@ main {
   --border-radius: 8px;
 
   background-color: var(--clr-bg-card);
+  color: var(--clr-fg);
+  line-height: var(--rdur-162);
+
   box-shadow: 0 10px 20px var(--clr-shadow-1), 0 6px 6px var(--clr-shadow-2);
   border: 1px solid var(--clr-join);
   border-radius: var(--border-radius);
 }
 
 .spg-card > section {
+  text-align: inline-start;
   padding: var(--rdur-150, --padding);
 }
 
@@ -88,6 +93,11 @@ main {
 .spg-card .cta,
 .spg-card .why {
   background-color: var(--clr-bg-cta);
+}
+
+.spg-card .join .detail {
+  color: var(--clr-accent);
+  margin-bottom: var(--rdur-100, 1rem);
 }
 
 /* -- Footer -- */

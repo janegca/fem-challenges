@@ -1,0 +1,199 @@
+/* -- Custom Properties -- */
+:root {
+  --clr-bg-body: hsl(206, 47%, 93%);
+  --clr-bg-card: white;
+  --clr-bg-cta: #4bbebc;
+  --clr-bg-join: hsl(0, 0%, 95%);
+  --clr-fg: hsl(218, 22%, 67%);
+
+  --clr-accent: hsl(71, 73%, 54%);
+  --clr-hover: #2bb3b1;
+
+  --clr-shadow-1: hsla(234, 12%, 34%, 0.19);
+  --clr-shadow-2: hsla(234, 12%, 34%, 0.23);
+
+  --padding: 1.5rem;
+  --border-radius: 8px;
+
+  /* Set document font equal to browser default font-size 
+     and scale everything accordingly
+     Default is usually 16px so 4px = 0.25rem, 8px = 0.5rem, 32px = 2rem, etc;
+     If default is 20px then 0.25rem = 5px, 0.5rem = 10px, 2rem = 40px, etc.
+  */
+
+  font-size: 1rem;
+
+  --fs-025: 0.25rem;
+  --fs-050: 0.5rem;
+  --fs-069: 0.6875rem;
+  --fs-087: 0.875rem;
+  --fs-100: 1rem;
+  --fs-112: 1.125rem;
+  --fs-125: 1.25rem;
+  --fs-150: 1.5rem;
+  --fs-162: 1.625rem;
+  --fs-200: 2rem;
+  --fs-250: 2.5rem;
+  --fs-300: 3rem;
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
+/* -- Resets -- */
+* {
+  box-sizing: border-box;
+}
+
+/* -- General Styling -- */
+body {
+  display: grid;
+  place-content: center;
+
+  font-family: "Karla", sans-serif;
+  background-color: var(--clr-bg-body);
+
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* -- Special Price Grid Card -- */
+.spg-card {
+  background-color: var(--clr-bg-card);
+  color: var(--clr-fg);
+  line-height: var(--fs-162);
+
+  box-shadow: 0 10px 20px var(--clr-shadow-1), 0 6px 6px var(--clr-shadow-2);
+  border: 1px solid var(--clr-join);
+  border-radius: var(--border-radius);
+}
+
+.spg-card > section {
+  padding: var(--fs-150);
+}
+
+.spg-card,
+.spg-card h1,
+.spg-card h2,
+.spg-card p,
+.spg-card ul {
+  margin: 0;
+  padding: 0;
+}
+
+.spg-card h1 {
+  font-size: var(--fs-125);
+  color: var(--clr-bg-cta);
+  margin-bottom: var(--fs-150);
+}
+
+.spg-card h2 {
+  font-size: var(--fs-112);
+  margin-bottom: var(--fs-112);
+  color: var(--clr-bg-card);
+}
+
+.spg-card .cta,
+.spg-card .why {
+  background-color: var(--clr-bg-cta);
+  color: var(--clr-bg-join);
+}
+
+.spg-card .join .detail {
+  font-weight: var(--fw-bold);
+  color: var(--clr-accent);
+  margin-bottom: var(--fs-100);
+}
+
+.spg-card .cta:hover {
+  background-color: var(--clr-hover);
+}
+
+.spg-card .cta .cost {
+  display: flex;
+  margin-bottom: var(--fs-025);
+  color: var(--clr-bg-body);
+}
+
+.spg-card .cta p span {
+  font-size: var(--fs-200);
+  font-weight: var(--fw-bold);
+  color: var(--clr-bg-card);
+  margin-right: var(--fs-069);
+}
+
+.spg-card .cta p:last-of-type {
+  color: var(--clr-bg-card);
+}
+
+.spg-card .btn {
+  display: inline-block;
+  font-size: var(--fs-100);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  vertical-align: middle;
+  line-height: var(--fs-300);
+  text-decoration: none;
+
+  background-color: var(--clr-accent);
+  color: var(--clr-bg-card);
+
+  border-radius: var(--border-radius);
+  box-shadow: 0 6px 6px var(--clr-shadow-2);
+
+  width: 100%;
+  margin-top: var(--fs-162);
+}
+
+.spg-card .why ul {
+  list-style: none;
+  font-size: var(--fs-087, 0.875rem);
+  line-height: var(--fs-112, 1.125);
+  color: var(--clr-bg-body);
+}
+
+/* -- Footer -- */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* -- Media Queries -- */
+
+@media (min-width: 600px) {
+  .spg-card {
+    --padding: var(--fs-250);
+
+    display: grid;
+    grid-template-areas:
+      "join join"
+      "cta why";
+    max-width: 715px;
+  }
+
+  .spg-card > section {
+    padding: var(--padding);
+  }
+
+  .spg-card .join {
+    grid-area: join;
+  }
+
+  .spg-card .cta {
+    grid-area: cta;
+  }
+
+  .spg-card .why {
+    grid-area: why;
+  }
+}

@@ -46,8 +46,7 @@ assumed that the darker background on the 'Join' (call to action area) was due
 to a hover as well the criteria mentioned a hover effect the design images
 didn't include an 'active' state.
 
-Used both `grid` and `flex` layouts in this one. Mainly because centering a
-single element on the screen with `grid` is easy-peasy and because the bottom
-row of elements in the larger screen sizes are easier to line up using `grid`
-while `flex` is great for one column on small screens. In all, designed mobile
-first and need very little tweaking for the larger screen sizes.
+Used `grid` layouts in this one. Mainly because centering a single element on
+the screen with `grid` is easy-peasy and because the bottom row of elements in
+the larger screen sizes are easier to line up using `grid`. In all, designed
+mobile first and need very little tweaking for the larger screen sizes.

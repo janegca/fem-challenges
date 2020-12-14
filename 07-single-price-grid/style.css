@@ -56,7 +56,7 @@ body {
 }
 
 main {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -169,13 +169,17 @@ main {
 
 /* -- Media Queries -- */
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .spg-card {
     display: grid;
     grid-template-areas:
       "join join"
       "cta why";
-    max-width: 635px;
+    max-width: 715px;
+  }
+
+  .spg-card > section {
+    padding: 40px;
   }
 
   .spg-card .join {

@@ -1,13 +1,6 @@
 /* -- Custom Properties -- */
 :root {
   --clr-bg-body: hsl(206, 47%, 93%);
-  --clr-bg-card: white;
-  --clr-bg-cta: hsl(179, 47%, 52%);
-  --clr-bg-join: hsl(0, 0%, 95%);
-  --clr-fg: hsl(218, 22%, 67%);
-
-  --clr-accent: hsl(71, 73%, 54%);
-  --clr-hover: hsl(179, 62%, 43%);
 
   /* Responsive Design Units in REM (rdur) 
         Scale fonts using browser default (1rem) as base
@@ -49,7 +42,26 @@ main {
 
 /* -- Special Price Grid Card -- */
 .spg-card {
+  /* colours are unique to the card */
+  --clr-bg-card: white;
+  --clr-bg-cta: hsl(179, 47%, 52%);
+  --clr-bg-join: hsl(0, 0%, 95%);
+  --clr-fg: hsl(218, 22%, 67%);
+
+  --clr-accent: hsl(71, 73%, 54%);
+  --clr-hover: hsl(179, 62%, 43%);
+
+  --clr-shadow-1: hsla(234, 12%, 34%, 0.19);
+  --clr-shadow-2: hsla(234, 12%, 34%, 0.23);
+
   background-color: var(--clr-bg-card);
+  box-shadow: 0 10px 20px var(--clr-shadow-1), 0 6px 6px var(--clr-shadow-2);
+  border: 1px solid var(--clr-join);
+  border-radius: 8px;
+}
+
+.spg-card > section {
+  padding: 24px;
 }
 
 /* -- Footer -- */
@@ -59,4 +71,29 @@ main {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  .spg-card {
+    display: grid;
+    grid-template-areas:
+      "join join"
+      "cta why";
+    max-width: 635px;
+  }
+  .spg-card > section {
+    padding: 0;
+  }
+
+  .spg-card .join {
+    grid-area: join;
+  }
+
+  .spg-card .cta {
+    grid-area: cta;
+  }
+
+  .spg-card .why {
+    grid-area: why;
+  }
 }

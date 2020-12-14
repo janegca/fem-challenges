@@ -1,6 +1,16 @@
 /* -- Custom Properties -- */
 :root {
   --clr-bg-body: hsl(206, 47%, 93%);
+  --clr-bg-card: white;
+  --clr-bg-cta: hsl(179, 47%, 52%);
+  --clr-bg-join: hsl(0, 0%, 95%);
+  --clr-fg: hsl(218, 22%, 67%);
+
+  --clr-accent: hsl(71, 73%, 54%);
+  --clr-hover: hsl(179, 62%, 43%);
+
+  --clr-shadow-1: hsla(234, 12%, 34%, 0.19);
+  --clr-shadow-2: hsla(234, 12%, 34%, 0.23);
 
   /* Responsive Design Units in REM (rdur) 
         Scale fonts using browser default (1rem) as base
@@ -8,7 +18,9 @@
   */
   --rdur-087: 0.875rem;
   --rdur-100: 1rem;
+  --rdur-112: 1.125rem;
   --rdur-125: 1.25rem;
+  --rdur-150: 1.5rem;
   --rdur-200: 2rem;
 
   --fw-normal: 400;
@@ -42,26 +54,40 @@ main {
 
 /* -- Special Price Grid Card -- */
 .spg-card {
-  /* colours are unique to the card */
-  --clr-bg-card: white;
-  --clr-bg-cta: hsl(179, 47%, 52%);
-  --clr-bg-join: hsl(0, 0%, 95%);
-  --clr-fg: hsl(218, 22%, 67%);
-
-  --clr-accent: hsl(71, 73%, 54%);
-  --clr-hover: hsl(179, 62%, 43%);
-
-  --clr-shadow-1: hsla(234, 12%, 34%, 0.19);
-  --clr-shadow-2: hsla(234, 12%, 34%, 0.23);
+  --padding: 1.5rem;
+  --border-radius: 8px;
 
   background-color: var(--clr-bg-card);
   box-shadow: 0 10px 20px var(--clr-shadow-1), 0 6px 6px var(--clr-shadow-2);
   border: 1px solid var(--clr-join);
-  border-radius: 8px;
+  border-radius: var(--border-radius);
 }
 
 .spg-card > section {
-  padding: 24px;
+  padding: var(--rdur-150, --padding);
+}
+
+.spg-card,
+.spg-card h1,
+.spg-card h2,
+.spg-card p,
+.spg-card ul {
+  margin: 0;
+  padding: 0;
+}
+
+.spg-card h1 {
+  color: var(--clr-bg-cta);
+  margin-bottom: var(--rdur-150, 1.5rem);
+}
+.spg-card h2 {
+  color: var(--clr-bg-join);
+  margin-bottom: var(--rdur-112, 1.125rem);
+}
+
+.spg-card .cta,
+.spg-card .why {
+  background-color: var(--clr-bg-cta);
 }
 
 /* -- Footer -- */
@@ -73,6 +99,8 @@ main {
   color: hsl(228, 45%, 44%);
 }
 
+/* -- Media Queries -- */
+
 @media (min-width: 768px) {
   .spg-card {
     display: grid;
@@ -80,9 +108,6 @@ main {
       "join join"
       "cta why";
     max-width: 635px;
-  }
-  .spg-card > section {
-    padding: 0;
   }
 
   .spg-card .join {

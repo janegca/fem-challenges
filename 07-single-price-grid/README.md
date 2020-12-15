@@ -50,3 +50,10 @@ Used `grid` layouts in this one. Mainly because centering a single element on
 the screen with `grid` is easy-peasy and because the bottom row of elements in
 the larger screen sizes are easier to line up using `grid`. In all, designed
 mobile first and need very little tweaking for the larger screen sizes.
+
+## Issues
+
+- ✔️ screen not scrolling on mobile device
+  - removed `height` from body element
+  - in the `@media` query for larger screens, added `height`, `overflow`
+    settings in `body` and set `margin: 0` in `main`

@@ -124,6 +124,8 @@ main::before {
 .cta .email .btn {
   width: 6em;
   height: 4em;
+  min-width: 6em;
+
   background-image: url(./images/icon-arrow.svg), var(--gradient-btn);
   background-repeat: no-repeat;
   background-position: center;
@@ -132,9 +134,9 @@ main::before {
   border: 0 none;
   cursor: pointer;
   padding-bottom: 1em;
+  padding-right: 1em;
   box-shadow: 0 10px 20px var(--clr-fg), 0 6px 6px var(--clr-fg);
 
-  min-width: 6em;
   transform: translate(-50%, 0%);
   outline: none;
 }

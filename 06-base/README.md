@@ -44,6 +44,11 @@ Your users should be able to:
 - Weights: 300, 400, 600
 - font-size for the body: 16px
 
+## Issue
+
+- ✔️button shrinking too small on mobile phone
+  - modified border-radius, set a min-width
+
 References:
 
 - [Advanced CSS Only Form Styling](https://www.jonathan-harrell.com/blog/advanced-css-only-form-styling/)

@@ -128,12 +128,13 @@ main::before {
   background-repeat: no-repeat;
   background-position: center;
 
-  border-radius: 50px;
+  border-radius: 10em;
   border: 0 none;
   cursor: pointer;
   padding-bottom: 1em;
   box-shadow: 0 10px 20px var(--clr-fg), 0 6px 6px var(--clr-fg);
 
+  min-width: 6em;
   transform: translate(-50%, 0%);
   outline: none;
 }

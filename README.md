@@ -39,5 +39,6 @@ Design and coding challenges from
 1. Review code, cleanup where necessary
 1. Run the HTML and CSS through the W3 Validators, make any necessary
    corrections
+1. Test on mobile phone and desktop, cleanup where necessary
 1. Submit solution on Frontend Mentor
 1. Correct any Accessibility problems identified by Frontend Mentor

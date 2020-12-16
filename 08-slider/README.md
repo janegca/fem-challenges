@@ -12,6 +12,11 @@ Your users should be able to:
 
 - layouts: Mobile: 375px, Desktop: 1440px
 - full page layouts with 3 background graphics
+  - pattern-curve.svg for page - fixed bottom, left for all screen sizes
+  - pattern-bg.svg for the image bg - covers for all screen sizes
+  - pattern-quotes.svg for the blockquote (use ::before ?)
+    - centered top for mobile
+    - offset from top, left edge on desktop
 - each layout has 3 sections:
   - image
   - slider that sits on the images bottom border

@@ -39,3 +39,8 @@ Your users should be able to:
 - Family: [Inter](https://fonts.google.com/specimen/Inter)
 - Weights: 300, 500, 700
 - body font: 32px
+
+## Notes/Issues
+
+1. How to initially size a `div` to its background graphic and remain
+   responsive?

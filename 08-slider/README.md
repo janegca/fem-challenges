@@ -41,6 +41,3 @@ Your users should be able to:
 - body font: 32px
 
 ## Notes/Issues
-
-1. How to initially size a `div` to its background graphic and remain
-   responsive?

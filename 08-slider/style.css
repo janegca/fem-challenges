@@ -29,8 +29,12 @@ body {
   font-weight: 300;
   color: var(--clr-fg);
 
+  background-image: url(./images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-position: bottom -15% left 40%;
+
   width: 100vw;
-  height: 100vh;
+
   max-width: 100vw;
   overflow-x: hidden;
 }
@@ -48,7 +52,7 @@ body {
   justify-content: center;
   align-items: center;
 
-  margin: 0 auto 2rem auto;
+  margin: 0 auto;
 }
 
 .slide .photo {
@@ -83,7 +87,15 @@ body {
   color: var(--clr-accent);
 }
 
+#two {
+  display: none;
+}
+
 /* -- Footer -- */
+footer {
+  text-align: center;
+  margin: 0 auto;
+}
 .attribution {
   font-size: 11px;
   text-align: center;

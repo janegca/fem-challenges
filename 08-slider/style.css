@@ -61,8 +61,6 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-
-  border: 1px solid red;
 }
 
 .slide .photo img {
@@ -74,6 +72,13 @@ body {
 
 .slide .content {
   text-align: center;
+}
+
+.slide .content blockquote {
+  background-image: url(./images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-position: top -50% left 50%;
+  padding-top: 2rem;
 }
 
 .slide .content p {

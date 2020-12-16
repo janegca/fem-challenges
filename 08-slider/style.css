@@ -34,8 +34,6 @@ body {
   background-position: bottom -15% left 40%;
 
   width: 100vw;
-
-  max-width: 100vw;
   overflow-x: hidden;
 }
 
@@ -107,4 +105,46 @@ footer {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 600px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+    font-size: 2rem;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-position: bottom left;
+
+    overflow: hidden;
+  }
+
+  .slide {
+    width: 80%;
+    flex-direction: row;
+  }
+
+  .slide .photo {
+    transform: translateX(-30%);
+  }
+
+  .slide .content {
+    text-align: left;
+    z-index: 2;
+    order: -1;
+  }
+
+  .slide .content p {
+    font-size: 1.25rem;
+  }
+
+  .slide .content blockquote {
+    background-position: top left;
+  }
 }

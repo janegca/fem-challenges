@@ -10,17 +10,15 @@
   box-sizing: border-box;
 }
 
-/* img {
-  display: block;
-  max-width: 100%;
-  margin: 0 auto;
-} */
-
 body,
 p {
   padding: 0;
   margin: 0;
 }
+
+/* img {
+  max-width: 100%;
+} */
 
 /* -- General Styling -- */
 body {
@@ -31,7 +29,8 @@ body {
 
   background-image: url(./images/pattern-curve.svg);
   background-repeat: no-repeat;
-  background-position: bottom -15% left 40%;
+  background-position: left bottom;
+  background-size: 90%;
 
   width: 100vw;
   overflow-x: hidden;
@@ -54,18 +53,19 @@ body {
 }
 
 .slide .photo {
-  width: 100%;
   background-image: url(./images/pattern-bg.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  width: 75%;
 }
 
 .slide .photo img {
-  width: 80%;
-  height: 80%;
-
-  transform: translate(13%, 11%);
+  display: block;
+  position: relative;
+  padding: 1.5em;
+  /* NOTE: add a box shadow on the bottom only */
+  width: 100%;
 }
 
 .slide .content {
@@ -75,8 +75,9 @@ body {
 .slide .content blockquote {
   background-image: url(./images/pattern-quotes.svg);
   background-repeat: no-repeat;
-  background-position: top -50% left 50%;
-  padding-top: 2rem;
+  background-position: top -40% left 50%;
+  background-size: 40%;
+  padding-top: 1rem;
 }
 
 .slide .content p {

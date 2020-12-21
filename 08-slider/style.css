@@ -16,9 +16,9 @@ p {
   margin: 0;
 }
 
-/* img {
+img {
   max-width: 100%;
-} */
+}
 
 /* -- General Styling -- */
 body {
@@ -64,8 +64,12 @@ body {
   display: block;
   position: relative;
   padding: 1.5em;
+}
 
-  width: 100%;
+.slide .photo .btns {
+  position: absolute;
+  top: 30%;
+  left: 40%;
 }
 
 .slide .photo button {

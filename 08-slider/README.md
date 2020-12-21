@@ -13,7 +13,7 @@ Your users should be able to:
 - layouts: Mobile: 375px, Desktop: 1440px
 - full page layouts with 3 background graphics
   - pattern-curve.svg for page - fixed bottom, left for all screen sizes
-  - pattern-bg.svg for the image bg - covers for all screen sizes
+  - pattern-bg.svg for the image bg - cover for all screen sizes
   - pattern-quotes.svg for the blockquote (use ::before ?)
     - centered top for mobile
     - offset from top, left edge on desktop
@@ -39,5 +39,10 @@ Your users should be able to:
 - Family: [Inter](https://fonts.google.com/specimen/Inter)
 - Weights: 300, 500, 700
 - body font: 32px
+
+## References:
+
+- [Ahmad Shadeed: Image Techniques on the Web](https://ishadeed.com/article/image-techniques/#css-background-image)
+- [W3 Schools: CSS Styling Images](https://www.w3schools.com/css/css3_images.asp)
 
 ## Notes/Issues

@@ -60,12 +60,34 @@ body {
   width: 75%;
 }
 
-.slide .photo img {
+.slide .photo > img {
   display: block;
   position: relative;
   padding: 1.5em;
-  /* NOTE: add a box shadow on the bottom only */
+
   width: 100%;
+}
+
+.slide .photo button {
+  display: inline-block;
+  font-size: 0.5rem;
+  padding: 0.5em 2em;
+  border: none;
+}
+
+.slide .photo button:hover {
+  background-color: hsl(240, 18%, 70%);
+}
+
+.slide .photo button:first-of-type {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.slide .photo button:last-of-type {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  margin-left: -1em;
 }
 
 .slide .content {

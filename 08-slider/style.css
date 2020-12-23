@@ -3,84 +3,138 @@
   --clr-fg: hsl(240, 38%, 20%);
   --clr-accent: hsl(240, 18%, 77%);
 }
+
 /* -- Resets -- */
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 
-body,
-p {
-  padding: 0;
-  margin: 0;
+img {
+  display: block;
+  max-width: 100%;
 }
 
-img {
-  max-width: 100%;
+body,
+blockquote,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 /* -- General Styling -- */
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-family: "Inter", sans-serif;
   font-size: 1.125rem;
   font-weight: 300;
-  color: var(--clr-fg);
+
+  width: min(100vw, 1440px);
+  height: 100vh;
+  overflow: hidden;
 
   background-image: url(./images/pattern-curve.svg);
   background-repeat: no-repeat;
   background-position: left bottom;
-  background-size: 90%;
-
-  width: 100vw;
-  overflow-x: hidden;
+  background-size: 60%;
 }
 
-/* -- Containers -- */
-.slides {
-  width: 90%;
-
-  margin: 2rem auto 4.5rem auto;
-}
-
+/* -- Slide -- */
 .slide {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+
+  margin-left: 10rem;
+  margin-right: 5rem;
 }
 
-.slide .photo {
-  background-image: url(./images/pattern-bg.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 75%;
-}
-
-.slide .photo > img {
-  display: block;
+/* testimony styling */
+.slide .testimony {
   position: relative;
-  padding: 1.5em;
+  top: 25%;
+  left: 20%;
+  width: 43%;
+  height: 100%;
+  z-index: 2;
+
+  background-image: url(./images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-position: top -5% left 20%;
+  background-size: 30%;
+  padding-top: 5rem;
+
+  text-align: left;
 }
 
-.slide .photo .btns {
+.slide .testimony blockquote {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  justify-content: center;
+  width: 80%;
+}
+
+.slide .testimony .testifier {
+  display: flex;
+  padding-top: 2rem;
+}
+
+.slide .testimony p {
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
+.slide .testimony p:last-of-type {
+  font-weight: 500;
+  color: var(--clr-accent);
+  padding-left: 1rem;
+}
+
+/* photo styling */
+.slide .photo {
+  position: relative;
+  width: 57%;
+  height: 100%;
+  margin: 1vw;
+}
+
+.slide #photo-bg {
   position: absolute;
-  top: 30%;
-  left: 40%;
+  width: 100%;
+  height: 94%;
+  z-index: -1;
+}
+
+.slide #photo-image {
+  position: absolute;
+  width: calc(100% - 20%);
+  height: calc((100% - 20%) * 0.95);
+  top: 10%;
+  left: 10%;
+  bottom: 10%;
+}
+
+.slide .photo .buttons {
+  position: absolute;
+  display: flex;
+
+  left: 45%;
+  bottom: 12%;
 }
 
 .slide .photo button {
   display: inline-block;
-  font-size: 0.5rem;
-  padding: 0.5em 2em;
+  padding: 0.5em 1em;
   border: none;
 }
 
 .slide .photo button:hover {
-  background-color: hsl(240, 18%, 70%);
+  background-color: hsl(240, 18%, 72%);
 }
 
 .slide .photo button:first-of-type {
@@ -91,87 +145,50 @@ body {
 .slide .photo button:last-of-type {
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
-  margin-left: -1em;
 }
 
-.slide .content {
-  text-align: center;
-}
+/* -- Media Query (mobile) -- */
 
-.slide .content blockquote {
-  background-image: url(./images/pattern-quotes.svg);
-  background-repeat: no-repeat;
-  background-position: top -40% left 50%;
-  background-size: 40%;
-  padding-top: 1rem;
-}
-
-.slide .content p {
-  font-size: 0.94rem;
-  font-weight: 700;
-}
-
-.slide .content span {
-  font-size: 0.94rem;
-  font-weight: 500;
-  color: var(--clr-accent);
-}
-
-#two {
-  display: none;
-}
-
-/* -- Footer -- */
-footer {
-  text-align: center;
-  margin: 0 auto;
-}
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
-@media (min-width: 600px) {
-  body {
-    display: flex;
+@media (max-width: 800px) {
+  body,
+  .slide,
+  .slide .testimony .testifier {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  }
 
-    margin: 0 auto;
-    font-size: 2rem;
+  body {
+    background-size: 70%;
+    width: 95%;
+  }
 
-    width: 100vw;
-    height: 100vh;
-
-    background-position: bottom left;
-
-    overflow: hidden;
+  .slide,
+  .slide .testimony,
+  .slide .photo {
+    width: 100%;
   }
 
   .slide {
-    width: 80%;
-    flex-direction: row;
+    justify-content: center;
+    margin: 1vw;
+  }
+
+  .slide .testimony {
+    background-position: top 7% left 50%;
+    top: 0;
+    left: 0;
+    text-align: center;
+  }
+
+  .slide .testimony blockquote {
+    margin: 0 auto;
   }
 
   .slide .photo {
-    transform: translateX(-30%);
-  }
-
-  .slide .content {
-    text-align: left;
-    z-index: 2;
+    align-items: flex-start;
     order: -1;
   }
 
-  .slide .content p {
-    font-size: 1.25rem;
-  }
-
-  .slide .content blockquote {
-    background-position: top left;
+  .slide .photo .buttons {
+    bottom: 9%;
   }
 }

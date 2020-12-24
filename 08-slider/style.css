@@ -198,6 +198,7 @@ footer {
   .slide {
     justify-content: center;
     margin: 1vw;
+    min-height: 667px;
   }
 
   .slide .testimony {

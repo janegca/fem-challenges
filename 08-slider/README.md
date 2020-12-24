@@ -44,6 +44,7 @@ Your users should be able to:
 
 - ✔️ FIX: the attribution links in the footer are not recognized as links when
   `text-align: center` is applied to `footer`
+
   - this had me totally puzzled, and then I ran into the same problem when I
     shifted the buttons to the left, all of a sudden the hover stopped working
     and the buttons stopped being clickable...the problem turned out to be the
@@ -53,6 +54,10 @@ Your users should be able to:
     they were visible they could not be interacted with; increasing their
     `z-index` to 5 fixed the problem _after_ I positioned the `footer` (z-index
     has no effect on elements that still have the default `static` position)
+
+- ISSUE: while the mobile size looks ok in the browser, an actual test on my
+  Android phone had the image squished; set the min-height to 700px to see if it
+  will improve things
 
 ## Notes
 

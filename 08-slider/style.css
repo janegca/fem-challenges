@@ -28,13 +28,15 @@ body {
 }
 
 footer {
+  position: relative;
+  z-index: 5;
   font-size: 11px;
   margin-left: 1vw;
 
   /* FIXME: for some odd reason using text-align results in the links not 
             being seen as links
   */
-  /* text-align: center; */
+  text-align: center;
 }
 
 .wrapper {
@@ -153,6 +155,7 @@ footer {
 
   left: 20%;
   bottom: 12%;
+  z-index: 5;
 }
 
 .slide .photo .buttons button {

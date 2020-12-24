@@ -49,5 +49,14 @@ Your users should be able to:
 
 ## Notes/Issues
 
-- FIX: the attribution links in the footer are not recognized as links when
+- ✔️ FIX: the attribution links in the footer are not recognized as links when
   `text-align: center` is applied to `footer`
+  - this had me totally puzzled, and then I ran into the same problem when I
+    shifted the buttons to the left, all of a sudden the hover stopped working
+    and the buttons stopped being clickable...the problem turned out to be the
+    `z-index`. The `testimony` section has a z-order of 2 so the blockquote text
+    can overlay the photo. When the footer was centered and the buttons were
+    moved they ended up being **underneath** the `testimony` element so while
+    they were visible they could not be interacted with; increasing their
+    `z-index` to 5 fixed the problem _after_ I positioned the `footer` (z-index
+    has no effect on elements that still have the default `static` position)

@@ -40,7 +40,7 @@ Your users should be able to:
 - Weights: 300, 500, 700
 - body font: 32px
 
-## References:
+## References
 
 - [Ahmad Shadeed: Image Techniques on the Web](https://ishadeed.com/article/image-techniques/#css-background-image)
 - [W3 Schools: CSS Styling Images](https://www.w3schools.com/css/css3_images.asp)

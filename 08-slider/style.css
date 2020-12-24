@@ -64,6 +64,10 @@ footer {
   margin-right: 5rem;
 }
 
+.slide:not(:first-of-type) {
+  display: none;
+}
+
 /* testimony styling */
 .slide .testimony {
   position: relative;
@@ -158,18 +162,18 @@ footer {
   cursor: pointer;
 }
 
-.slide .photo .buttons button:hover {
-  background-color: hsl(240, 18%, 72%);
-}
-
-.slide .photo .buttons button:first-of-type {
+.slide .photo .buttons .btn-prev {
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
 }
 
-.slide .photo .buttons button:last-of-type {
+.slide .photo .buttons .btn-next {
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
+}
+
+.slide .photo .buttons button:hover {
+  background-color: hsl(240, 18%, 72%);
 }
 
 /* -- Media Query (mobile) -- */

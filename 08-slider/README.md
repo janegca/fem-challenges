@@ -40,14 +40,7 @@ Your users should be able to:
 - Weights: 300, 500, 700
 - body font: 32px
 
-## References
-
-- [Ahmad Shadeed: Image Techniques on the Web](https://ishadeed.com/article/image-techniques/#css-background-image)
-- [W3 Schools: CSS Styling Images](https://www.w3schools.com/css/css3_images.asp)
-- [Positioning in CSS by Eric A Meyer](https://www.oreilly.com/library/view/positioning-in-css/9781491930366/)
-- [CSS Tricks: box-shadow](https://css-tricks.com/almanac/properties/b/box-shadow/)
-
-## Notes/Issues
+## Issues
 
 - ✔️ FIX: the attribution links in the footer are not recognized as links when
   `text-align: center` is applied to `footer`
@@ -60,3 +53,20 @@ Your users should be able to:
     they were visible they could not be interacted with; increasing their
     `z-index` to 5 fixed the problem _after_ I positioned the `footer` (z-index
     has no effect on elements that still have the default `static` position)
+
+## Notes
+
+- had all kinds of difficulties with positioning the graphics and buttons
+  correctly, had to do a deep dive into positioning and image handling to get a
+  handle on what was happening, the references below were a great help
+- ended up creating a number of
+  [notes and examples](https://janegca.github.io/examples/css/positioning/) to
+  help me understand the concepts
+
+## References
+
+- [Ahmad Shadeed: Image Techniques on the Web](https://ishadeed.com/article/image-techniques/#css-background-image)
+- [W3 Schools: CSS Styling Images](https://www.w3schools.com/css/css3_images.asp)
+- [Positioning in CSS by Eric A Meyer](https://www.oreilly.com/library/view/positioning-in-css/9781491930366/)
+- [CSS Tricks: box-shadow](https://css-tricks.com/almanac/properties/b/box-shadow/)
+- [Set and get CSS styles of elements](https://plainjs.com/javascript/styles/set-and-get-css-styles-of-elements-53/)

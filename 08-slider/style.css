@@ -48,7 +48,7 @@ footer {
 
 /* -- Slide -- */
 .slide {
-  --clr-fg: hsl(240, 38%, 20%);
+  --clr-fg: hsl(240, 37%, 20%);
   --clr-accent: hsl(240, 18%, 77%);
 
   display: flex;
@@ -132,13 +132,22 @@ footer {
   top: 10%;
   left: 10%;
   bottom: 10%;
+
+  /* super smooth shadow from from CSS Tricks box-shadow article
+          https://css-tricks.com/almanac/properties/b/box-shadow/
+
+  */
+  box-shadow: 0 2.8px 2.2px rgba(32, 32, 70, 0.034),
+    0 6.7px 5.3px rgba(32, 32, 70, 0.048), 0 12.5px 10px rgba(32, 32, 70, 0.06),
+    0 22.3px 17.9px rgba(32, 32, 70, 0.072),
+    0 41.8px 33.4px rgba(32, 32, 70, 0.086), 0 100px 80px rgba(32, 32, 70, 0.12);
 }
 
 .slide .photo .buttons {
   position: absolute;
   display: flex;
 
-  left: 45%;
+  left: 20%;
   bottom: 12%;
 }
 
@@ -205,6 +214,7 @@ footer {
   }
 
   .slide .photo .buttons {
+    left: 40%;
     bottom: 9%;
   }
 }

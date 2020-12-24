@@ -45,5 +45,9 @@ Your users should be able to:
 - [Ahmad Shadeed: Image Techniques on the Web](https://ishadeed.com/article/image-techniques/#css-background-image)
 - [W3 Schools: CSS Styling Images](https://www.w3schools.com/css/css3_images.asp)
 - [Positioning in CSS by Eric A Meyer](https://www.oreilly.com/library/view/positioning-in-css/9781491930366/)
+- [CSS Tricks: box-shadow](https://css-tricks.com/almanac/properties/b/box-shadow/)
 
 ## Notes/Issues
+
+- FIX: the attribution links in the footer are not recognized as links when
+  `text-align: center` is applied to `footer`

@@ -10,17 +10,9 @@ img {
 
 /* -- General Styling -- */
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   font-family: "Inter", sans-serif;
   font-size: 1.125rem;
   font-weight: 300;
-
-  width: min(100vw, 1440px);
-  height: 100vh;
-  overflow: hidden;
 
   background-image: url(./images/pattern-curve.svg);
   background-repeat: no-repeat;
@@ -28,7 +20,26 @@ body {
   background-size: 60%;
 
   margin: 0;
-  padding: 0;
+  padding-bottom: 1vw;
+  overflow: hidden;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: min(100vw, 1440px);
+  height: 100vh;
 }
 
 /* -- Slide -- */

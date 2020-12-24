@@ -14,6 +14,7 @@ Design and coding challenges from
 1. [Four Card Feature Section](https://janegca.github.io/fem-challenges/05-four-card/index.html)
 1. [Base Apparel](https://janegca.github.io/fem-challenges/06-base/index.html)
 1. [Single Price Grid Component](https://janegca.github.io/fem-challenges/07-single-price-grid/index.html)
+1. [Coding Bootcamp Testimonial Slider](https://janegca.github.io/fem-challenges/08-slider/index.html)
 
 ## Basic Approach to the Challenges
 

@@ -21,16 +21,20 @@ body {
 
   margin: 0;
   padding-bottom: 1vw;
+
+  width: min(100vw, 1440px);
+  height: 100vh;
   overflow: hidden;
 }
 
-footer .attribution {
+footer {
   font-size: 11px;
-  text-align: center;
-}
+  margin-left: 1vw;
 
-footer .attribution a {
-  color: hsl(228, 45%, 44%);
+  /* FIXME: for some odd reason using text-align results in the links not 
+            being seen as links
+  */
+  /* text-align: center; */
 }
 
 .wrapper {
@@ -38,8 +42,8 @@ footer .attribution a {
   justify-content: center;
   align-items: center;
 
-  width: min(100vw, 1440px);
-  height: 100vh;
+  width: 100%;
+  height: 98%;
 }
 
 /* -- Slide -- */
@@ -142,6 +146,7 @@ footer .attribution a {
   display: inline-block;
   padding: 0.5em 1em;
   border: none;
+  cursor: pointer;
 }
 
 .slide .photo .buttons button:hover {

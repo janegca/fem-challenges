@@ -1,9 +1,3 @@
-/* -- Custom Properties -- */
-:root {
-  --clr-fg: hsl(240, 38%, 20%);
-  --clr-accent: hsl(240, 18%, 77%);
-}
-
 /* -- Resets -- */
 * {
   box-sizing: border-box;
@@ -12,13 +6,6 @@
 img {
   display: block;
   max-width: 100%;
-}
-
-body,
-blockquote,
-p {
-  margin: 0;
-  padding: 0;
 }
 
 /* -- General Styling -- */
@@ -39,13 +26,21 @@ body {
   background-repeat: no-repeat;
   background-position: left bottom;
   background-size: 60%;
+
+  margin: 0;
+  padding: 0;
 }
 
 /* -- Slide -- */
 .slide {
+  --clr-fg: hsl(240, 38%, 20%);
+  --clr-accent: hsl(240, 18%, 77%);
+
   display: flex;
   justify-content: center;
   align-items: center;
+
+  color: var(--clr-fg);
 
   width: 100%;
   height: 100%;
@@ -75,8 +70,11 @@ body {
 .slide .testimony blockquote {
   font-size: 1.25rem;
   line-height: 1.6;
+
   justify-content: center;
   width: 80%;
+  padding: 0;
+  margin: 0;
 }
 
 .slide .testimony .testifier {
@@ -84,12 +82,14 @@ body {
   padding-top: 2rem;
 }
 
-.slide .testimony p {
+.slide .testimony .testifier p {
   font-size: 0.94rem;
   font-weight: 700;
+  padding: 0;
+  margin: 0;
 }
 
-.slide .testimony p:last-of-type {
+.slide .testimony .testifier p:last-of-type {
   font-weight: 500;
   color: var(--clr-accent);
   padding-left: 1rem;
@@ -103,14 +103,14 @@ body {
   margin: 1vw;
 }
 
-.slide #photo-bg {
+.slide .photo .photo-bg {
   position: absolute;
   width: 100%;
   height: 94%;
   z-index: -1;
 }
 
-.slide #photo-image {
+.slide .photo .photo-image {
   position: absolute;
   width: calc(100% - 20%);
   height: calc((100% - 20%) * 0.95);
@@ -127,22 +127,22 @@ body {
   bottom: 12%;
 }
 
-.slide .photo button {
+.slide .photo .buttons button {
   display: inline-block;
   padding: 0.5em 1em;
   border: none;
 }
 
-.slide .photo button:hover {
+.slide .photo .buttons button:hover {
   background-color: hsl(240, 18%, 72%);
 }
 
-.slide .photo button:first-of-type {
+.slide .photo .buttons button:first-of-type {
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
 }
 
-.slide .photo button:last-of-type {
+.slide .photo .buttons button:last-of-type {
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
 }
@@ -156,15 +156,15 @@ body {
     flex-direction: column;
   }
 
-  body {
-    background-size: 70%;
-    width: 95%;
-  }
-
   .slide,
   .slide .testimony,
   .slide .photo {
     width: 100%;
+  }
+
+  body {
+    background-size: 70%;
+    width: 95%;
   }
 
   .slide {

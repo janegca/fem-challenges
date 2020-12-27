@@ -193,6 +193,8 @@ footer {
   body {
     background-size: 70%;
     width: 95%;
+    min-height: 750px;
+    padding-top: 3em;
     overflow-y: visible;
   }
 
@@ -208,6 +210,7 @@ footer {
     top: 0;
     left: 0;
     text-align: center;
+    min-height: 60.8%;
   }
 
   .slide .testimony blockquote {
@@ -215,7 +218,7 @@ footer {
   }
 
   .slide .photo {
-    /* align-items: flex-start; */
+    align-items: flex-start;
     order: -1;
     min-height: 44%;
   }

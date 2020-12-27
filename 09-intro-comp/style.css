@@ -1,13 +1,56 @@
+:root {
+  --clr-bg: hsl(0, 100%, 74%);
+  --clr-btn: hsl(154, 59%, 51%);
+  --clr-accent: hsl(248, 32%, 49%);
+  --clr-fg: white;
+  --clr-fg-dark: hsl(249, 10%, 26%);
+  --clr-fg-accent: hsl(246, 25%, 77%);
+
+  --fs-11: 0.6875rem;
+  --fs-14: 0.875rem;
+  --fs-15: 0.9375rem;
+  --fs-16: 1rem;
+  --fs-28: 1.75rem;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+}
+
+/* -- Resets -- */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* -- General Styling -- */
+body {
+  background-image: url(./images/bg-intro-mobile.png);
+  background-color: var(--clr-bg);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: var(--clr-fg);
+}
+
+/* -- Intro Component -- */
+
 /* -- Footer -- */
 footer {
   position: fixed;
   bottom: 0;
+  width: 100%;
   text-align: center;
 }
 
 .attribution {
+  display: inline-block;
   font-size: 11px;
-  text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);

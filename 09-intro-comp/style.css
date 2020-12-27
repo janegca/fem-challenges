@@ -40,6 +40,7 @@ body {
   font-size: 1rem;
   line-height: var(--lh-normal);
   color: var(--clr-fg);
+  text-align: center;
 }
 
 /* -- Intro Component -- */
@@ -47,7 +48,7 @@ body {
   margin: 5.5rem 1.5rem 4.25rem;
 }
 .ic-Lede {
-  text-align: center;
+  margin-bottom: 4rem;
 }
 .ic-Lede > h1 {
   font-size: var(--fs-28);
@@ -55,12 +56,23 @@ body {
   line-height: var(--lh-heading);
 }
 
+.ic-Plug {
+  background-color: var(--clr-accent);
+  border-radius: 0.5rem;
+  box-shadow: 0 16px 8px -8px var(--clr-fg-dark);
+
+  padding: 1.125em 4.125em;
+  margin-bottom: 1.5rem;
+}
+.ic-Plug > p > span {
+  font-weight: var(--fw-bold);
+}
+
 /* -- Footer -- */
 footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  text-align: center;
 }
 
 .attribution {

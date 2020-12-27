@@ -198,8 +198,8 @@ footer {
   .slide {
     justify-content: center;
     margin: 1vw;
-    height: fit-content;
-    min-height: 667px;
+    /* height: fit-content; */
+    min-height: 700px;
   }
 
   .slide .testimony {
@@ -216,6 +216,12 @@ footer {
   .slide .photo {
     align-items: flex-start;
     order: -1;
+    min-height: 44%;
+  }
+
+  .slide .photo .photo-image {
+    min-height: 82.14%;
+    min-width: 77.68%;
   }
 
   .slide .photo .buttons {

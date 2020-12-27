@@ -35,3 +35,7 @@ Your users should be able to:
 - Family: [Poppins](https://fonts.google.com/specimen/Poppins)
 - Weights: 400, 500, 600, 700
 - Body Font size: 16px
+
+## Notes/Issues
+
+- trying out a modified version of ECSS naming conventions

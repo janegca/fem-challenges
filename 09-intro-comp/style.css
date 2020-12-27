@@ -16,6 +16,9 @@
   --fw-medium: 500;
   --fw-semi-bold: 600;
   --fw-bold: 700;
+
+  --lh-normal: 1.625;
+  --lh-heading: calc(var(--lh-normal) * 0.777);
 }
 
 /* -- Resets -- */
@@ -35,10 +38,22 @@ body {
 
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
+  line-height: var(--lh-normal);
   color: var(--clr-fg);
 }
 
 /* -- Intro Component -- */
+.ic {
+  margin: 5.5rem 1.5rem 4.25rem;
+}
+.ic-Lede {
+  text-align: center;
+}
+.ic-Lede > h1 {
+  font-size: var(--fs-28);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-heading);
+}
 
 /* -- Footer -- */
 footer {

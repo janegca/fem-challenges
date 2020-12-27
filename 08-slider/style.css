@@ -198,7 +198,7 @@ footer {
   .slide {
     justify-content: center;
     margin: 1vw;
-    /* height: fit-content; */
+
     min-height: 700px;
   }
 
@@ -214,7 +214,7 @@ footer {
   }
 
   .slide .photo {
-    align-items: flex-start;
+    /* align-items: flex-start; */
     order: -1;
     min-height: 44%;
   }

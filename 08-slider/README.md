@@ -55,9 +55,13 @@ Your users should be able to:
     `z-index` to 5 fixed the problem _after_ I positioned the `footer` (z-index
     has no effect on elements that still have the default `static` position)
 
-- ISSUE: while the mobile size looks ok in the browser, an actual test on my
+- ✔️ FIX: while the mobile size looks ok in the browser, an actual test on my
   Android phone had the image squished; set the min-height to 700px to see if it
   will improve things
+
+  - problems due to setting heights, had to tweak the body, slide, photo and
+    testimony min-height values using the `target/context = result` formula
+    described in the Ben Frain book (see below) to get things to work ok.
 
 ## Notes
 
@@ -75,3 +79,4 @@ Your users should be able to:
 - [Positioning in CSS by Eric A Meyer](https://www.oreilly.com/library/view/positioning-in-css/9781491930366/)
 - [CSS Tricks: box-shadow](https://css-tricks.com/almanac/properties/b/box-shadow/)
 - [Set and get CSS styles of elements](https://plainjs.com/javascript/styles/set-and-get-css-styles-of-elements-53/)
+- [Responsive Web Design with HTML5 and CSS - Third Edition by Ben Frain](https://www.packtpub.com/product/responsive-web-design-with-html5-and-css-third-edition/9781839211560)

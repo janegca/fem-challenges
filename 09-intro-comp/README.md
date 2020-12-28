@@ -16,8 +16,9 @@ Your users should be able to:
 ## Design Overview
 
 - Mobile (375px) and Desktop (1440px) layouts
-- Background images for both into two sizes
+- Background images for both, two sizes available
 - 3 sections: Intro, TryIt, Form
+  - rounded edges with matching, un-blurred shadows on bottom edge only
 - hover action on form button
 - error highlighting on form fields
   - red outline, error icon
@@ -43,3 +44,4 @@ Your users should be able to:
 References:
 
 - [CoreLangs box shadow](http://www.corelangs.com/css/box/shadow.html)
+- [MDN "input type = text"](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text)

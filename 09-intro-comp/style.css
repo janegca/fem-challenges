@@ -91,6 +91,8 @@ body {
   border-radius: 0.5rem;
   width: 100%;
   padding: 1em;
+
+  /* box-shadow: none; */
 }
 
 .ic-SignUp_Form > input::placeholder {

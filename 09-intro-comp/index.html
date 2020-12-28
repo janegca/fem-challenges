@@ -41,29 +41,37 @@
               name="first_name"
               placeholder="First Name"
               aria-label="First Name"
+              required
             />
+            <label for="first_name">First name cannot be empty</label>
             <input
               type="text"
               id="last_name"
               name="last_name"
               placeholder="Last Name"
               aria-label="Last Name"
+              required
             />
+            <label for="last_name">Last name cannot be empty</label>
             <input
               type="email"
               id="email"
               name="email"
               placeholder="Email Address"
               aria-label="Email"
+              required
             />
+            <label for="emal">Looks like this is not an email</label>
             <input
               type="password"
               id="password"
               name="password"
               placeholder="Password"
               aria-label="Password"
+              required
             />
-            <button>Claim your free trial</button>
+            <label for="password">Password cannot be empty</label>
+            <button aria-label="Submit">Claim your free trial</button>
           </form>
           <p>
             By clicking the button, you are agreeing to our

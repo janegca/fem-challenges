@@ -1,3 +1,4 @@
+/* -- Custom Properties */
 :root {
   --clr-bg: hsl(0, 100%, 74%);
   --clr-btn: hsl(154, 59%, 51%);
@@ -47,6 +48,15 @@ body {
 .ic {
   margin: 5.5rem 1.5rem 1rem;
 }
+
+.ic-SignUp {
+  background-color: var(--clr-fg);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0px 10px 0px rgba(62, 60, 73, 0.2);
+}
+
+/* the Lede */
 .ic-Lede {
   margin-bottom: 4rem;
 }
@@ -56,6 +66,7 @@ body {
   line-height: var(--lh-heading);
 }
 
+/* the Plug */
 .ic-Plug {
   background-color: var(--clr-accent);
   box-shadow: 0px 10px 0px rgba(62, 60, 73, 0.2);
@@ -68,22 +79,18 @@ body {
   font-weight: var(--fw-bold);
 }
 
-.ic-SignUp {
-  background-color: var(--clr-fg);
-  border-radius: 0.5rem;
-  padding: 1.5rem;
-  box-shadow: 0px 10px 0px rgba(62, 60, 73, 0.2);
-}
+/* the SignUp Form */
 
+/* Input fields */
 .ic-SignUp_Form > input {
   font-size: var(--fs-14);
   line-height: 1.625;
+  outline: none;
   border: none;
   border: 1px solid var(--clr-fg-accent);
   border-radius: 0.5rem;
   width: 100%;
   padding: 1em;
-  margin-bottom: 1em;
 }
 
 .ic-SignUp_Form > input::placeholder {
@@ -91,6 +98,31 @@ body {
   color: var(--clr-fg-dark);
 }
 
+.ic-SignUp_Form > input:hover,
+.ic-SignUp_Form > input:focus {
+  border: 1px solid var(--clr-accent);
+}
+
+/* Input Labels - for error messages
+     this hides the label until the related input is invalid 
+*/
+.ic-SignUp_Form > label {
+  position: relative;
+  top: -2em;
+  z-index: -1;
+
+  display: block;
+  font-size: var(--fs-11);
+  font-style: italic;
+  font-weight: var(--fw-medium);
+  color: var(--clr-bg);
+  text-align: right;
+
+  margin-top: -1em;
+  margin-bottom: 2em;
+}
+
+/* Submit Button */
 .ic-SignUp_Form > button {
   cursor: pointer;
   background-color: var(--clr-btn);
@@ -104,6 +136,21 @@ body {
   padding: 1rem 2.8rem;
 }
 
+/* Validation and Error Messages */
+
+.ic-SignUp_Form > input:invalid {
+  border-color: var(--clr-bg);
+  background-image: url(./images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: top 0.8em right 0.5em;
+}
+
+.ic-SignUp_Form > input:invalid + label {
+  top: 1em;
+  z-index: 0;
+}
+
+/* Terms and Conditions Warning */
 .ic-SignUp > p {
   font-size: var(--fs-11);
   color: var(--clr-fg-accent);

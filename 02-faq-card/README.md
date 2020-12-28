@@ -1,5 +1,9 @@
 # FAQ Accordian Card (Newbie)
 
+[Frontend Mentor FAQ Accordian Card Challenge](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam)
+
+[Finished Project](https://janegca.github.io/fem-challenges/02-faq-card/index.html)
+
 ## Criteria
 
 Your users should be able to:

@@ -2,6 +2,8 @@
 
 [Frontend Mentor Single Price Grid Component Challenge](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc)
 
+[Finished Project](https://janegca.github.io/fem-challenges/07-single-price-grid/index.html)
+
 ## Criteria
 
 Your users should be able to:

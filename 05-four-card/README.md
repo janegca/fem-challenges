@@ -2,6 +2,8 @@
 
 [Frontend Mentor Challenge - Four Card Feature Section](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK)
 
+[Finished Project](https://janegca.github.io/fem-challenges/05-four-card/index.html)
+
 ## Criteria
 
 Your users should:

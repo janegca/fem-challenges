@@ -2,6 +2,8 @@
 
 [Frontend Mentor Base Apparel Challenge](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0)
 
+[Finished Project](https://janegca.github.io/fem-challenges/06-base/index.html)
+
 ## Criteria
 
 Your users should be able to:

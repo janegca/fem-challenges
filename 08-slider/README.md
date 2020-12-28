@@ -1,5 +1,9 @@
 # Coding Bootcamp Testimonial Slider (newbie)
 
+[Frontend Mentor Coding Bootcamp Testimonial Slider Challenge](https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL)
+
+[Finished Project](https://janegca.github.io/fem-challenges/08-slider/index.html)
+
 ## Criteria
 
 Your users should be able to:

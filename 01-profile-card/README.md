@@ -1,5 +1,9 @@
 # Profile Card Challenge (Newbie)
 
+[Frontend Mentor Profile Card Component Challenge](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ)
+
+[Finished Project](https://janegca.github.io/fem-challenges/01-profile-card/index.html)
+
 ## Issue
 
 The background graphics move around as the window is resized, would be nicer if

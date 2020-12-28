@@ -2,6 +2,8 @@
 
 [Frontend Mentor Challenge - Article Preview Component](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT)
 
+[Finished Project](https://janegca.github.io/fem-challenges/04-article-preview/index.html)
+
 ## Criteria
 
 Your users should be able to:

@@ -1,5 +1,9 @@
 # Social Proof Section (Newbie)
 
+[Frontend Mentor Social Proof Section Challenge](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA)
+
+[Finished Project](https://janegca.github.io/fem-challenges/03-social-proof/index.html)
+
 ## Criteria
 
 Your users should be able to:

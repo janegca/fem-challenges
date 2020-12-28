@@ -37,9 +37,32 @@ Your users should be able to:
 - Weights: 400, 500, 600, 700
 - Body Font size: 16px
 
-## Notes/Issues
+## Notes
 
-- trying out a modified version of ECSS naming conventions
+- trying out a modified version of ECSS naming convention
+
+### Form Validation
+
+The browser validation hints kick in when the button is clicked, the CSS styling
+will be ignored if it is not already showing. Did find
+[a script on Stackoverflow](https://stackoverflow.com/questions/5478800/override-css-for-html5-form-validation-required-popup)
+to disable the browser hints:
+
+```javascript
+ document.addEventListener(
+      "invalid",
+      (function () {
+        return function (e) {
+          //prevent the browser from showing default error bubble/ hint
+          e.preventDefault();
+          // optionally fire off some custom validation handler
+          // myvalidationfunction();
+        };
+      })(),
+      true
+```
+
+but I decided against using it as the hints are helpful.
 
 References:
 

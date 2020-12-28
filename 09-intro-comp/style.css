@@ -197,6 +197,7 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 1110px;
+    padding: 2vw;
     margin: auto auto;
   }
 

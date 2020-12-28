@@ -113,6 +113,7 @@ body {
 /* Input Labels - for error messages
      this hides the label until the related input is invalid 
 */
+.ic-SignUp_Form > input + label,
 .ic-SignUp_Form > input:placeholder-shown + label {
   position: relative;
   top: -2em;

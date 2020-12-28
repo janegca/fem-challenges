@@ -58,15 +58,46 @@ body {
 
 .ic-Plug {
   background-color: var(--clr-accent);
-  /* box-shadow: 0 16px 0px -8px var(--clr-fg-dark); */
   box-shadow: 0px 10px 0px rgba(62, 60, 73, 0.2);
   border-radius: 0.5rem;
 
-  padding: 1.125em 4.125em;
+  padding: 1em 3.7em;
   margin-bottom: 1.5rem;
 }
 .ic-Plug > p > span {
   font-weight: var(--fw-bold);
+}
+
+.ic-SignUp {
+  background-color: var(--clr-fg);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+.ic-SignUp_Form > button {
+  cursor: pointer;
+  background-color: var(--clr-btn);
+  color: var(--clr-fg);
+  text-transform: uppercase;
+  font-weight: var(--fw-bold);
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0px 5px 0px rgba(62, 60, 73, 0.2);
+
+  padding: 1rem 2.8rem;
+}
+
+.ic-SignUp > p {
+  font-size: var(--fs-11);
+  color: var(--clr-fg-accent);
+
+  margin: 1rem 1rem 0;
+}
+
+.ic-SignUp > p a {
+  font-weight: var(--fw-bold);
+  text-decoration: none;
+  color: var(--clr-bg);
 }
 
 /* -- Footer -- */
@@ -81,5 +112,5 @@ footer {
   font-size: 11px;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--clr-fg-dark);
 }

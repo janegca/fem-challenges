@@ -39,3 +39,7 @@ Your users should be able to:
 ## Notes/Issues
 
 - trying out a modified version of ECSS naming conventions
+
+References:
+
+- [CoreLangs box shadow](http://www.corelangs.com/css/box/shadow.html)

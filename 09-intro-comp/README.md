@@ -1,4 +1,4 @@
-# Intro Component with Signup Form (newbie)
+# Intro Component with Sign-up Form (newbie)
 
 [Frontend Mentor Intro component with sign-up form challenge](https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1)
 
@@ -43,7 +43,8 @@ Your users should be able to:
 
 ## Notes
 
-- trying out a modified version of ECSS naming convention
+- trying out a modified version of
+  [Enduring CSS (ECSS)](https://ecss.benfrain.com/) naming convention
 
 ### Issues
 

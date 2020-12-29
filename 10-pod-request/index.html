@@ -1,19 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Pod request access landing page</title>
-</head>
-<body>
-  Publish your podcasts everywhere.
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
-  Apple Podcasts, Google Podcasts, Pocket Casts and more!
-
-  Request access
-</body>
+    <title>Frontend Mentor | Pod request access landing page</title>
+  </head>
+  <body>
+    <img id="Logo" src="images/logo.svg" alt="Logo" />
+    <div class="cta">
+      <div class="cta-Lede">
+        <h1><span>Publish your podcasts</span> everywhere.</h1>
+        <p>
+          Upload your audio to Pod with a single click. We’ll then distribute
+          your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
+          and more!
+        </p>
+      </div>
+      <div class="cta-Social">
+        <ul>
+          <li>
+            <img src="images/spotify.svg" alt="Spotify" />
+          </li>
+          <li>
+            <img src="images/apple-podcast.svg" alt="Apple Podcast" />
+          </li>
+          <li>
+            <img src="images/google-podcasts.svg" alt="Google Podcasts" />
+          </li>
+          <li>
+            <img src="images/pocket-casts.svg" alt="Pocket-casts" />
+          </li>
+        </ul>
+      </div>
+      <div class="cta-SignUp">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email Address"
+          aria-label="Email"
+          required
+        />
+        <button>Request access</button>
+      </div>
+    </div>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/janegca" target="_blank">janegca</a>.
+      </p>
+    </footer>
+  </body>
 </html>

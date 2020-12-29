@@ -25,7 +25,7 @@ Your users should be able to:
   - a `bg-pattern-dots.svg` used in the desktop and tablet layouts
   - a number of .svg social media icons
   - the logo and social media icon images include their related text
-- 3 basic sections:
+- 2 basic sections:
   - logo
   - callout
     - lede

@@ -21,7 +21,9 @@
 
   --lh-normal: 1.625;
   --lh-heading: calc(var(--lh-normal) * 0.777);
-  --lh-wide: calc(var(--fs-50) * 1.1);
+  --lh-heading-large: calc(var(--fs-50) * 1.1);
+
+  --border-radius: 0.5rem;
 }
 
 /* -- Resets -- */
@@ -53,7 +55,7 @@ body {
 
 .ic-SignUp {
   background-color: var(--clr-fg);
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius);
   padding: 1.5rem;
   box-shadow: 0px 10px 0px rgba(62, 60, 73, 0.2);
 }
@@ -72,7 +74,7 @@ body {
 .ic-Plug {
   background-color: var(--clr-accent);
   box-shadow: 0px 10px 0px rgba(62, 60, 73, 0.2);
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius);
 
   padding: 1em 3.7em;
   margin-bottom: 1.5rem;
@@ -87,10 +89,12 @@ body {
 .ic-SignUp_Form > input {
   font-size: var(--fs-14);
   line-height: 1.625;
+
   outline: none;
   border: none;
   border: 1px solid var(--clr-fg-accent);
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius);
+
   width: 100%;
   padding: 1em;
 }
@@ -132,6 +136,7 @@ body {
   margin-bottom: 1em;
 }
 
+/* this shows the labels when input is invalid */
 .ic-SignUp_Form > input:invalid:not(:placeholder-shown) + label {
   top: 1em;
   z-index: 0;
@@ -146,8 +151,9 @@ body {
   color: var(--clr-fg);
   text-transform: uppercase;
   font-weight: var(--fw-bold);
+
   border: none;
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius);
   box-shadow: 0px 5px 0px rgba(62, 60, 73, 0.2);
 
   padding: 1rem 2.8rem;
@@ -185,6 +191,8 @@ body {
     justify-content: center;
     align-items: center;
 
+    background-image: url(./images/bg-intro-desktop.png);
+
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -194,6 +202,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     max-width: 1110px;
     padding: 2vw;
     margin: auto auto;
@@ -206,7 +215,7 @@ body {
 
   .ic-Lede > h1 {
     font-size: var(--fs-50);
-    line-height: var(--lh-wide);
+    line-height: var(--lh-heading-large);
     margin-bottom: 0.6875rem;
   }
 

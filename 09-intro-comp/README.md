@@ -45,6 +45,17 @@ Your users should be able to:
 
 - trying out a modified version of ECSS naming convention
 
+### Issues
+
+1. ✔️ Just discovered the error handling technique I used DOES NOT WORK on
+   Chrome, Samsung Galaxy internet browser or Firefox on Android. It does work
+   on Firefox (both developer and regular editions) on the desktop.
+   Disappointing. They don't appear to recognize the `:placeholder-shown`
+   property.
+
+   FIX: I was using the `:not()` function incorrectly, now error messages work
+   on Chrome 😄
+
 ### Form Validation
 
 The browser validation hints kick in when the button is clicked, the CSS styling

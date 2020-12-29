@@ -73,6 +73,8 @@ Your users should be able to:
 - Paragraph:
   - mobile: 15px, line-height: 25px (light)
   - tablet and desktop: 18px, line-height: 28px (light)
+- Social:
+  - mobile: 11px
 - Email and Button:
   - mobile, tablet, desktop: 14px, line-height: 28px (bold)
 - Error Message: 12px, bold, default line-height
@@ -130,3 +132,16 @@ Desktop:
   - paragraph top 24px
   - sign-up top 40px
   - social top 64px
+
+## Notes
+
+## Issues
+
+- ISSUE: difficulty sizing .svg icons in .cta-Social when they are links
+  - ✔️ FIX: need to set `min-width: 0` for the link and the image and give the
+    image a specific height
+
+References:
+
+- [Autosizing images and inline SVG as flex children](https://github.com/philipwalton/flexbugs/issues/184)
+- [CSS Flex Positioning Gotchas](https://medium.com/@gaurav5430/css-flex-positioning-gotchas-child-expands-to-more-than-the-width-allowed-by-the-parent-799c37428dd6)

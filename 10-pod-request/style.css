@@ -16,10 +16,12 @@
   --fw-bold: 700;
 
   /* rem-scale for fonts, line-heights, and outside margins */
+  --rs-11: 0.6875rem;
   --rs-12: 0.75rem;
   --rs-14: 0.875rem;
   --rs-15: 0.9375rem;
   --rs-16: 1rem;
+  --rs-17: 1.0625rem;
   --rs-25: 1.5625rem;
   --rs-26: 1.625rem;
   --rs-28: 1.75rem;
@@ -63,6 +65,7 @@ body {
 
 /* -- CTA -- */
 .cta {
+  width: 100%;
   margin: var(--rs-56) auto 0;
 }
 
@@ -84,4 +87,37 @@ body {
   color: var(--clr-fg);
   padding: 0 1em;
   margin-top: var(--rs-16);
+}
+
+/* Social */
+
+.cta-Social {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  width: 84%;
+  margin: var(--rs-33) auto 0;
+}
+
+.cta-Social > a {
+  display: flex;
+  text-decoration: none;
+  padding: 0;
+  min-width: 0;
+  margin: auto;
+}
+
+.cta-Social > a img {
+  min-width: 0;
+  height: var(--rs-17);
+}
+
+.cta-Social a + a {
+  margin-left: 1rem;
+}
+
+/* Sign-up */
+.cta-SignUp {
+  margin-top: var(--rs-48);
 }

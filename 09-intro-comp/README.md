@@ -53,8 +53,9 @@ Your users should be able to:
    Disappointing. They don't appear to recognize the `:placeholder-shown`
    property.
 
-   FIX: I was using the `:not()` function incorrectly, now error messages work
-   on Chrome 😄
+   FIX: Discovered (on reading a WebDev Tricks article) that I was using the
+   `:not()` function incorrectly, now error messages work on Chrome and Android
+   😄
 
 ### Form Validation
 
@@ -83,3 +84,4 @@ References:
 
 - [CoreLangs box shadow](http://www.corelangs.com/css/box/shadow.html)
 - [MDN "input type = text"](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text)
+- [WebDev Tricks HTML CSS Form Validation](https://webdevtrick.com/html-css-form-validation/)

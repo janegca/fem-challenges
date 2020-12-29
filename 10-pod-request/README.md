@@ -29,7 +29,7 @@ Your users should be able to:
   - logo
   - callout
     - lede
-      - header
+      - header (uppercase)
       - text
     - social media links
     - sign-up
@@ -74,9 +74,7 @@ Your users should be able to:
   - mobile: 15px, line-height: 25px (light)
   - tablet and desktop: 18px, line-height: 28px (light)
 - Email and Button:
-
   - mobile, tablet, desktop: 14px, line-height: 28px (bold)
-
 - Error Message: 12px, bold, default line-height
 
 ## Sizing
@@ -106,6 +104,7 @@ Desktop:
 Mobile:
 
 - page top 62px
+- logo bottom 57px
 - cta left auto
 - cta top 57px
   - paragraph top 16px

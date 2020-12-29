@@ -1,0 +1,87 @@
+/* -- Custom Properties -- */
+:root {
+  --clr-bg: hsl(224, 35%, 11%);
+  --clr-bg-email: hsl(225, 26%, 23%);
+  --clr-fg: hsl(225, 40%, 83%);
+  --clr-fg-email: hsl(0, 0%, 100%);
+
+  --clr-button: hsl(157, 100%, 85%);
+  --clr-err-msg: hsl(0, 96%, 61%);
+
+  --clr-header: hsl(157, 74%, 62%);
+  --clr-social: hsl(225, 21%, 45%);
+
+  --fw-light: 300;
+  --fw-medium: 400;
+  --fw-bold: 700;
+
+  /* rem-scale for fonts, line-heights, and outside margins */
+  --rs-12: 0.75rem;
+  --rs-14: 0.875rem;
+  --rs-15: 0.9375rem;
+  --rs-16: 1rem;
+  --rs-25: 1.5625rem;
+  --rs-26: 1.625rem;
+  --rs-28: 1.75rem;
+  --rs-33: 2.0625rem;
+  --rs-38: 2.375rem;
+  --rs-48: 3rem;
+  --rs-52: 3.25rem;
+  --rs-56: 3.5rem;
+  --rs-62: 3.875rem;
+}
+
+/* -- Resets -- */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* -- General Styling -- */
+body {
+  background-color: var(--clr-bg);
+  color: white;
+  font-family: "Chivo", sans-serif;
+  font-size: var(--rs-16);
+  font-weight: var(--fw-medium);
+  text-align: center;
+
+  padding: 0 1vw;
+}
+
+/* -- Logo -- */
+#Logo {
+  display: block;
+  margin-top: var(--rs-62);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* -- CTA -- */
+.cta {
+  margin: var(--rs-56) auto 0;
+}
+
+.cta-Lede > h1 {
+  font-size: var(--rs-26);
+  font-weight: var(--fw-light);
+  line-height: var(--rs-38);
+  text-transform: uppercase;
+}
+
+.cta-Lede > h1 > span {
+  color: var(--clr-header);
+}
+
+.cta-Lede > p {
+  font-size: var(--rs-15);
+  line-height: var(--rs-25);
+
+  color: var(--clr-fg);
+  padding: 0 1em;
+  margin-top: var(--rs-16);
+}

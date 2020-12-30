@@ -145,3 +145,4 @@ References:
 
 - [Autosizing images and inline SVG as flex children](https://github.com/philipwalton/flexbugs/issues/184)
 - [CSS Flex Positioning Gotchas](https://medium.com/@gaurav5430/css-flex-positioning-gotchas-child-expands-to-more-than-the-width-allowed-by-the-parent-799c37428dd6)
+- [Philip Walton's flexbugs Repo](https://github.com/philipwalton/flexbugs)

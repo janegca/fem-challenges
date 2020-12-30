@@ -45,14 +45,19 @@ html {
 
 /* -- General Styling -- */
 body {
-  background-color: var(--clr-bg);
-  color: white;
+  display: flex;
+  flex-direction: column;
+
   font-family: "Chivo", sans-serif;
   font-size: var(--rs-16);
   font-weight: var(--fw-medium);
   text-align: center;
 
-  padding: 0 1vw;
+  background-color: var(--clr-bg);
+  color: var(--clr-fg-email);
+
+  padding: 1vw;
+  min-height: 100vh;
 }
 
 /* -- Logo -- */
@@ -83,8 +88,8 @@ body {
 .cta-Lede > p {
   font-size: var(--rs-15);
   line-height: var(--rs-25);
-
   color: var(--clr-fg);
+
   padding: 0 1em;
   margin-top: var(--rs-16);
 }
@@ -93,13 +98,20 @@ body {
 
 .cta-Social {
   display: flex;
-
   justify-content: space-around;
   align-items: center;
+
   width: 84%;
   margin: var(--rs-33) auto 0;
 }
 
+/* NOTE: fix for known flex layout 'gotcha'
+    the 'min-width' values here are to override a flex-bug
+    that enforces an elements minimum width despite thw container
+    size. Had to apply it to both the 'a' tag and the 'img' tag.
+    Additionally, the image must have a height for things
+    to work correctly in a flex container.
+*/
 .cta-Social > a {
   display: flex;
   text-decoration: none;
@@ -108,16 +120,58 @@ body {
   margin: auto;
 }
 
-.cta-Social > a img {
+.cta-Social > a > img {
   min-width: 0;
   height: var(--rs-17);
 }
 
-.cta-Social a + a {
+.cta-Social > a + a {
   margin-left: 1rem;
 }
 
 /* Sign-up */
 .cta-SignUp {
   margin-top: var(--rs-48);
+}
+
+.cta-SignUp > input,
+.cta-SignUp > button {
+  font-family: inherit;
+  font-size: var(--fs-14);
+  font-weight: var(--fw-medium);
+  line-height: var(--rs-28);
+
+  outline: none;
+  border: none;
+  border-radius: 20px;
+
+  width: 100%;
+  padding: 0.5rem 0;
+}
+
+.cta-SignUp > input {
+  background-color: var(--clr-bg-email);
+  color: var(--clr-fg);
+  padding-left: var(--rs-33);
+}
+
+.cta-SignUp > button {
+  cursor: pointer;
+  background-color: var(--clr-button);
+  margin-top: var(--rs-16);
+}
+
+/* -- Footer -- */
+footer {
+  margin-top: auto;
+}
+
+.attribution {
+  display: inline-block;
+  font-size: 11px;
+  color: var(--clr-fg-email);
+  width: 100%;
+}
+.attribution > a {
+  color: var(--clr-fg);
 }

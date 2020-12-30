@@ -22,15 +22,18 @@
   --rs-15: 0.9375rem;
   --rs-16: 1rem;
   --rs-17: 1.0625rem;
+  --rs-18: 1.125rem;
   --rs-25: 1.5625rem;
   --rs-26: 1.625rem;
   --rs-28: 1.75rem;
   --rs-33: 2.0625rem;
   --rs-38: 2.375rem;
+  --rs-45: 2.8125rem;
   --rs-48: 3rem;
   --rs-52: 3.25rem;
   --rs-56: 3.5rem;
   --rs-62: 3.875rem;
+  --rs-93: 5.8125rem;
 }
 
 /* -- Resets -- */
@@ -184,4 +187,56 @@ footer {
 }
 .attribution > a {
   color: var(--clr-fg);
+}
+
+/* -- Media Queries -- */
+@media (min-width: 768px) {
+  body {
+    background-image: linear-gradient(
+        to top right,
+        rgba(0, 0, 0, 1) 40%,
+        rgba(0, 0, 0, 0)
+      ),
+      url(images/image-host-tablet.jpg);
+
+    text-align: left;
+    min-height: fit-content;
+  }
+
+  #Logo {
+    align-self: flex-start;
+    margin: 0;
+    margin-left: var(--rs-38);
+    margin-top: 85px;
+  }
+
+  .cta {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--clr-bg);
+
+    min-width: 0;
+    max-width: 36rem;
+    margin-left: var(--rs-38);
+    margin-top: 16.125rem;
+  }
+
+  .cta-Lede > h1 {
+    font-size: var(--rs-45);
+    font-weight: var(--fw-light);
+    line-height: var(--rs-56);
+
+    margin-top: var(--rs-93);
+  }
+
+  .cta-Lede > p {
+    font-size: var(--rs-18);
+    padding-left: 0;
+    max-width: 28rem;
+  }
+
+  .cta-Social {
+    order: 1;
+  }
 }

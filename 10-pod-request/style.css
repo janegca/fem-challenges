@@ -233,10 +233,36 @@ footer {
   .cta-Lede > p {
     font-size: var(--rs-18);
     padding-left: 0;
-    max-width: 28rem;
+    max-width: 42ch;
+  }
+
+  .cta-SignUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 427px;
+  }
+
+  .cta-SignUp > input {
+    flex: 2;
+  }
+
+  .cta-SignUp > button {
+    flex: 1;
+    padding: 0.3rem 0;
+    margin-left: -27vw;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .cta-Social {
     order: 1;
+    justify-content: space-between;
+    margin-top: 4rem;
+    margin-left: 0;
+  }
+
+  .cta-Social > a {
+    margin: 0;
   }
 }

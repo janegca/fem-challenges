@@ -81,6 +81,11 @@ body {
   margin-right: auto;
 }
 
+/* -- Dots Pattern -- */
+#dots {
+  display: none;
+}
+
 /* -- CTA -- */
 .cta {
   width: 100%;
@@ -190,7 +195,7 @@ footer {
 }
 
 /* -- Media Queries -- */
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   body {
     background-image: linear-gradient(
         to top right,
@@ -208,6 +213,13 @@ footer {
     margin: 0;
     margin-left: var(--rs-38);
     margin-top: 85px;
+  }
+
+  #dots {
+    align-self: flex-start;
+    background-repeat: no-repeat;
+    margin-left: var(--rs-38);
+    display: block;
   }
 
   .cta {
@@ -240,7 +252,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 427px;
+    max-width: 27rem;
   }
 
   .cta-SignUp > input {
@@ -250,7 +262,7 @@ footer {
   .cta-SignUp > button {
     flex: 1;
     padding: 0.3rem 0;
-    margin-left: -27vw;
+    margin-left: -13em;
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -260,9 +272,14 @@ footer {
     justify-content: space-between;
     margin-top: 4rem;
     margin-left: 0;
+    margin-bottom: 153px;
   }
 
   .cta-Social > a {
     margin: 0;
+  }
+
+  footer {
+    margin: auto auto 0;
   }
 }

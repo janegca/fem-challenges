@@ -1,0 +1,94 @@
+/* -- Media Query for Tablet Size -- */
+@media (min-width: 600px) {
+  body {
+    background-image: linear-gradient(
+        to top right,
+        rgba(0, 0, 0, 1) 40%,
+        rgba(0, 0, 0, 0)
+      ),
+      url(../images/image-host-tablet.jpg);
+    background-size: auto;
+    background-position: top right;
+    text-align: left;
+    padding-bottom: 0;
+  }
+
+  #Logo {
+    align-self: flex-start;
+    margin: 0;
+    margin-left: var(--rs-38);
+    margin-top: var(--rs-35);
+  }
+
+  .cta {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--clr-bg);
+
+    min-width: 0;
+    max-width: 36rem;
+    margin-left: var(--rs-38);
+    margin-top: var(--rs-152);
+  }
+
+  .cta-Lede > h1 {
+    font-size: var(--rs-45);
+    font-weight: var(--fw-light);
+    line-height: var(--rs-56);
+
+    margin-top: var(--rs-93);
+  }
+
+  .cta-Lede > p {
+    font-size: var(--rs-18);
+    padding-left: 0;
+    max-width: 42ch;
+    margin-top: var(--rs-31);
+  }
+
+  .cta-SignUp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 27rem;
+    margin-top: var(--rs-40);
+  }
+
+  .cta-SignUp > input {
+    flex: 2;
+  }
+
+  .cta-SignUp > button {
+    flex: 1;
+    padding: 0.3rem 0;
+    margin-left: -13em;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .cta-Social {
+    order: 1;
+    justify-content: space-between;
+    margin-top: var(--rs-64);
+    margin-left: 0;
+  }
+
+  .cta-Social > a {
+    margin: 0;
+  }
+
+  #dots {
+    align-self: flex-start;
+    background-repeat: no-repeat;
+    margin-left: var(--rs-38);
+    display: block;
+    margin-top: var(--rs-152);
+  }
+
+  footer {
+    margin-top: -2vw;
+    margin-right: 2vw;
+    text-align: right;
+  }
+}

@@ -1,3 +1,4 @@
+/* -- Initial styles set for mobile screen sizes -- */
 /* -- Custom Properties -- */
 :root {
   --clr-bg: hsl(224, 35%, 11%);
@@ -15,7 +16,8 @@
   --fw-medium: 400;
   --fw-bold: 700;
 
-  /* rem-scale for fonts, line-heights, and outside margins */
+  /* rem-scale for fonts, line-heights, and margins */
+  --rs-08: 0.5rem;
   --rs-11: 0.6875rem;
   --rs-12: 0.75rem;
   --rs-14: 0.875rem;
@@ -26,14 +28,20 @@
   --rs-25: 1.5625rem;
   --rs-26: 1.625rem;
   --rs-28: 1.75rem;
+  --rs-31: 1.9375rem;
   --rs-33: 2.0625rem;
+  --rs-35: 2.1875rem;
+  --rs-36: 2.25rem;
   --rs-38: 2.375rem;
+  --rs-40: 2.5rem;
   --rs-45: 2.8125rem;
   --rs-48: 3rem;
   --rs-52: 3.25rem;
   --rs-56: 3.5rem;
   --rs-62: 3.875rem;
+  --rs-64: 4rem;
   --rs-93: 5.8125rem;
+  --rs-152: 9.5rem;
 }
 
 /* -- Resets -- */
@@ -56,14 +64,17 @@ body {
   font-weight: var(--fw-medium);
   text-align: center;
 
+  /* the gradient provides an overlay to dull 
+     the image a bit so the text will be readable */
   background-image: linear-gradient(
       to top right,
       rgba(0, 0, 0, 1) 40%,
       rgba(0, 0, 0, 0)
     ),
-    url(images/image-host-mobile.jpg);
+    url(../images/image-host-mobile.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
+  background-position: top right;
   background-attachment: fixed;
   background-color: var(--clr-bg);
 
@@ -79,11 +90,6 @@ body {
   margin-top: var(--rs-62);
   margin-left: auto;
   margin-right: auto;
-}
-
-/* -- Dots Pattern -- */
-#dots {
-  display: none;
 }
 
 /* -- CTA -- */
@@ -125,16 +131,19 @@ body {
 
 /* NOTE: fix for known flex layout 'gotcha'
     the 'min-width' values here are to override a flex-bug
-    that enforces an elements minimum width despite thw container
-    size. Had to apply it to both the 'a' tag and the 'img' tag.
+    that enforces an element's minimum width. Had to apply 
+    it to both the 'a' tag and the 'img' tag.
+
     Additionally, the image must have a height for things
     to work correctly in a flex container.
 */
 .cta-Social > a {
   display: flex;
   text-decoration: none;
-  padding: 0;
+
   min-width: 0;
+
+  padding: 0;
   margin: auto;
 }
 
@@ -164,7 +173,7 @@ body {
   border-radius: 20px;
 
   width: 100%;
-  padding: 0.5rem 0;
+  padding: var(--rs-08) 0;
 }
 
 .cta-SignUp > input {
@@ -179,107 +188,25 @@ body {
   margin-top: var(--rs-16);
 }
 
+/* -- Dots Pattern -- 
+    only visible for tablet and
+    desktop layouts
+*/
+#dots {
+  display: none;
+}
+
 /* -- Footer -- */
 footer {
-  margin-top: auto;
+  margin-top: auto; /* push it to the bottom */
 }
 
 .attribution {
   display: inline-block;
-  font-size: 11px;
+  font-size: var(--rs-11);
   color: var(--clr-fg-email);
   width: 100%;
 }
 .attribution > a {
   color: var(--clr-fg);
-}
-
-/* -- Media Queries -- */
-@media (min-width: 600px) {
-  body {
-    background-image: linear-gradient(
-        to top right,
-        rgba(0, 0, 0, 1) 40%,
-        rgba(0, 0, 0, 0)
-      ),
-      url(images/image-host-tablet.jpg);
-
-    text-align: left;
-    min-height: fit-content;
-  }
-
-  #Logo {
-    align-self: flex-start;
-    margin: 0;
-    margin-left: var(--rs-38);
-    margin-top: 85px;
-  }
-
-  #dots {
-    align-self: flex-start;
-    background-repeat: no-repeat;
-    margin-left: var(--rs-38);
-    display: block;
-  }
-
-  .cta {
-    display: flex;
-    flex-direction: column;
-
-    background-color: var(--clr-bg);
-
-    min-width: 0;
-    max-width: 36rem;
-    margin-left: var(--rs-38);
-    margin-top: 16.125rem;
-  }
-
-  .cta-Lede > h1 {
-    font-size: var(--rs-45);
-    font-weight: var(--fw-light);
-    line-height: var(--rs-56);
-
-    margin-top: var(--rs-93);
-  }
-
-  .cta-Lede > p {
-    font-size: var(--rs-18);
-    padding-left: 0;
-    max-width: 42ch;
-  }
-
-  .cta-SignUp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 27rem;
-  }
-
-  .cta-SignUp > input {
-    flex: 2;
-  }
-
-  .cta-SignUp > button {
-    flex: 1;
-    padding: 0.3rem 0;
-    margin-left: -13em;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
-  .cta-Social {
-    order: 1;
-    justify-content: space-between;
-    margin-top: 4rem;
-    margin-left: 0;
-    margin-bottom: 153px;
-  }
-
-  .cta-Social > a {
-    margin: 0;
-  }
-
-  footer {
-    margin: auto auto 0;
-  }
 }

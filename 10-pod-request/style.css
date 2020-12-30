@@ -53,7 +53,17 @@ body {
   font-weight: var(--fw-medium);
   text-align: center;
 
+  background-image: linear-gradient(
+      to top right,
+      rgba(0, 0, 0, 1) 40%,
+      rgba(0, 0, 0, 0)
+    ),
+    url(images/image-host-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   background-color: var(--clr-bg);
+
   color: var(--clr-fg-email);
 
   padding: 1vw;

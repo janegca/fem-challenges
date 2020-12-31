@@ -185,7 +185,7 @@ body {
   padding-left: var(--rs-33);
 }
 
-.cta-SignUp label {
+.cta-SignUp > label {
   display: block;
   font-family: inherit;
   font-size: var(--rs-12);

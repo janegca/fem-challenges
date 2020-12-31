@@ -79,61 +79,11 @@ Your users should be able to:
   - mobile, tablet, desktop: 14px, line-height: 28px (bold)
 - Error Message: 12px, bold, default line-height
 
-## Sizing
-
-### Widths
-
-Mobile:
-
-- cta 327px
-- social 315px (content?)
-- sign-up 327 px (width 100%)
-
-Tablet:
-
-- cta 635px
-  - paragraph constrained to 445px
-- social, sign-up (content?)
-
-Desktop:
-
-- max-width: 1275px
-- cta 723px
-  - paragraph, social, sign-up as for tablet
-
-### Margins
-
-Mobile:
-
-- page top 62px
-- logo bottom 57px
-- cta left auto
-- cta top 57px
-  - paragraph top 16px
-  - social top 33px
-  - sign-up top 48px
-    - button top 16px
-
-Tablet:
-
-- page top 50px
-- cta left 39px
-- cta top 150px
-  - paragraph top 33px
-  - social top 64px
-  - sign-up top 40px
-
-Desktop:
-
-- page top/bottom - vertical alignment in viewport
-- left margin 165px (whole abuts the right side)
-- cta
-  - header top 88px
-  - paragraph top 24px
-  - sign-up top 40px
-  - social top 64px
-
 ## Notes
+
+Took a fair bit of planning, and re-planning, to get this done but at least on
+this one when I ran into a snag I had an easier time identifying the problem
+than before; all the practice is beginning to pay off, learning wise ☀️
 
 ## Issues
 

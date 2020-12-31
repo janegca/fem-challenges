@@ -1,0 +1,6 @@
+/* -- Media Query for Desktop Layout -- */
+@media (min-width: 1224px) {
+  body {
+    background-image: url(../images/image-host.jpg);
+  }
+}

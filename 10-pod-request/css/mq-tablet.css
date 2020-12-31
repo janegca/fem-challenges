@@ -1,4 +1,4 @@
-/* -- Media Query for Tablet Size -- */
+/* -- Media Query for Tablet Layout -- */
 @media (min-width: 600px) {
   body {
     background-image: linear-gradient(

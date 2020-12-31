@@ -16,6 +16,7 @@ Design and coding challenges from
 1. [Single Price Grid Component](https://janegca.github.io/fem-challenges/07-single-price-grid/index.html)
 1. [Coding Bootcamp Testimonial Slider](https://janegca.github.io/fem-challenges/08-slider/index.html)
 1. [Intro Component with Sign-up Form](https://janegca.github.io/fem-challenges/09-intro-comp/index.html)
+1. [Pod Request Access Landing Page](https://janegca.github.io/fem-challenges/10-pod-request/index.html)
 
 ## Basic Approach to the Challenges
 

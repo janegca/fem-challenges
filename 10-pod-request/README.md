@@ -140,6 +140,7 @@ Desktop:
 - ISSUE: difficulty sizing .svg icons in .cta-Social when they are links
   - ✔️ FIX: need to set `min-width: 0` for the link and the image and give the
     image a specific height
+- ISSUE: thought I could get away without a page wrapper, wrong 😒
 
 References:
 

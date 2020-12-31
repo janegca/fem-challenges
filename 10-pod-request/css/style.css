@@ -38,6 +38,7 @@
   --rs-48: 3rem;
   --rs-52: 3.25rem;
   --rs-56: 3.5rem;
+  --rs-57: 3.5625rem;
   --rs-62: 3.875rem;
   --rs-64: 4rem;
   --rs-93: 5.8125rem;
@@ -64,6 +65,13 @@ body {
   font-weight: var(--fw-medium);
   text-align: center;
 
+  background-color: var(--clr-bg);
+  color: var(--clr-fg-email);
+
+  min-height: 98vh;
+}
+
+.wrapper {
   /* the gradient provides an overlay to dull 
      the image a bit so the text will be readable */
   background-image: linear-gradient(
@@ -75,13 +83,8 @@ body {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: top right;
-  background-attachment: fixed;
-  background-color: var(--clr-bg);
-
-  color: var(--clr-fg-email);
 
   padding: 1vw;
-  min-height: 100vh;
 }
 
 /* -- Logo -- */
@@ -95,7 +98,7 @@ body {
 /* -- CTA -- */
 .cta {
   width: 100%;
-  margin: var(--rs-56) auto 0;
+  margin: var(--rs-57) auto 0;
 }
 
 .cta-Lede > h1 {
@@ -182,10 +185,22 @@ body {
   padding-left: var(--rs-33);
 }
 
+.cta-SignUp label {
+  display: block;
+  font-family: inherit;
+  font-size: var(--rs-12);
+  font-weight: var(--fw-bold);
+  text-align: left;
+
+  color: var(--clr-err-msg);
+  padding-left: var(--rs-33);
+  margin-top: var(--rs-08);
+}
+
 .cta-SignUp > button {
   cursor: pointer;
   background-color: var(--clr-button);
-  margin-top: var(--rs-16);
+  margin-top: var(--rs-08);
 }
 
 /* -- Dots Pattern -- 
@@ -198,7 +213,7 @@ body {
 
 /* -- Footer -- */
 footer {
-  margin-top: auto; /* push it to the bottom */
+  margin-top: auto; /* push it to the bottom of the viewport */
 }
 
 .attribution {

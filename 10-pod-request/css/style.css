@@ -85,12 +85,13 @@ body {
   background-position: top right;
 
   padding: 1vw;
+  margin-top: var(--rs-62);
 }
 
 /* -- Logo -- */
 #Logo {
   display: block;
-  margin-top: var(--rs-62);
+
   margin-left: auto;
   margin-right: auto;
 }

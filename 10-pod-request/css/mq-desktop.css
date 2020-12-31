@@ -1,6 +1,43 @@
 /* -- Media Query for Desktop Layout -- */
 @media (min-width: 1224px) {
   body {
-    background-image: url(../images/image-host.jpg);
+    margin: auto;
+  }
+
+  .wrapper {
+    position: relative;
+    background-image: linear-gradient(
+        to top right,
+        rgba(0, 0, 0, 1) 40%,
+        rgba(0, 0, 0, 0)
+      ),
+      url(../images/image-host.jpg);
+    background-size: auto;
+    background-position: top right;
+
+    max-width: 1440px;
+    max-height: 900px;
+  }
+
+  #Logo {
+    margin-left: 20%;
+  }
+
+  .cta {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: 38%; /* 552/1440 */
+  }
+
+  #dots {
+    position: absolute;
+    bottom: -9%;
+    right: 0;
+  }
+
+  footer {
+    margin: 0;
+    text-align: center;
   }
 }

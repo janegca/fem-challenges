@@ -141,6 +141,9 @@ Desktop:
   - ✔️ FIX: need to set `min-width: 0` for the link and the image and give the
     image a specific height
 - ISSUE: thought I could get away without a page wrapper, wrong 😒
+  - ✔️ REFACTOR: added a wrapper around the #Logo and .cta in the HTML then
+    refactored the layouts for mobile (style.css) and tablet (mq-tablet.css)
+    before completing the desktop (mq-desktop.css) layout
 
 References:
 

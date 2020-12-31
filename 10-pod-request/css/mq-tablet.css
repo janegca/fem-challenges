@@ -14,13 +14,14 @@
       url(../images/image-host-tablet.jpg);
     background-size: auto;
     background-position: top right;
+
+    margin-left: var(--rs-38);
+    margin-top: var(--rs-35);
   }
 
   #Logo {
     align-self: flex-start;
     margin: 0;
-    margin-left: var(--rs-38);
-    margin-top: var(--rs-35);
   }
 
   .cta {

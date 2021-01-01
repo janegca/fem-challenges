@@ -61,6 +61,20 @@ Wrapped the image to ensure responsive sizing, the wrapper is sized and
 positioned on the page, the image then fills the wrapper (width: 100%) and
 adjusts its height accordingly (height: auto) regardless of the viewport size.
 
+#### Colorizing the SVG Icons
+
+Used _Ionicons_ .svg files for the social media icons.
+
+Appears colorizing cannot be done directly use `fill` or `stroke`, instead, can
+applied a series of filters (see article on CSS Tricks by Cassie Evans
+referenced below); colour difficult to match exactly as you can't assign it
+directly. Took the base settings using the suggested filters and a 0deg hue and
+then subtracted to get the degrees as close to the desired colour as possible.
+
 References:
 
 - [Setting Height and Width On Images is Important Again](https://www.smashingmagazine.com/2020/03/setting-height-width-images-important-again/)
+- [CSS Tricks: The Many Ways to Change an SVG Fill](https://css-tricks.com/the-many-ways-to-change-an-svg-fill-on-hover-and-when-to-use-them/)
+- [Quackit: CSS hue-rotate()](https://www.quackit.com/css/functions/css_hue-rotate_function.cfm)
+- [Quackit: CSS invert()](https://www.quackit.com/css/functions/css_invert_function.cfm)
+- [Quackit: CSS sepia()](https://www.quackit.com/css/functions/css_sepia_function.cfm)

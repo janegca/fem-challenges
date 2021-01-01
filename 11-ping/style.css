@@ -49,7 +49,9 @@ body {
 .pcs {
   text-align: center;
 
+  min-width: 15rem;
   max-width: 45rem;
+
   margin-right: auto;
   margin-left: auto;
   margin-top: var(--rs-80);
@@ -82,6 +84,7 @@ body {
   margin-bottom: var(--rs-32);
 }
 
+/* CTA */
 .pcs-Intro_cta > input,
 .pcs-Intro_cta > button {
   font-family: inherit;
@@ -142,6 +145,36 @@ body {
 }
 
 /* Social and Copyright */
+.pcs-Footer_social > a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+
+  width: 50px;
+  height: 50px;
+
+  border: 1px solid var(--clr-accent-light);
+  border-radius: 50%;
+}
+
+.pcs-Footer_social > a > img {
+  box-sizing: content-box;
+
+  padding: 8px;
+
+  /*
+      The filters (with hue-rotate(0deg) yields  hsl(38, 100%, 46%)
+      The desired blue has a hue of hsl(223, 87%, 63%);
+      223deg - 38deg = 185deg which yields hsl(216, 100%, 68%) fairly close 
+      bumping up 1 more deg gets us a little closer  hsl(222, 100%, 71%);
+   */
+  filter: invert(0.5) sepia(1) hue-rotate(185deg) saturate(5) brightness(1);
+}
+
+.pcs-Footer_social > a + a {
+  margin-left: 1rem;
+}
+
 .pcs-Footer > p {
   font-size: var(--rs-10);
   color: var(--clr-footer);

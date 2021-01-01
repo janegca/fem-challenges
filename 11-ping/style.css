@@ -1,4 +1,27 @@
 /* -- Custom Properties -- */
+:root {
+  --clr-accent: hsl(223, 87%, 63%);
+  --clr-accent-light: hsl(223, 100%, 88%);
+  --clr-errors: hsl(354, 100%, 66%);
+  --clr-fg: hsl(209, 33%, 12%);
+  --clr-footer: hsl(0, 0%, 59%);
+
+  /* Scale for font, margin, etc. sizing in REM's */
+  --rs-10: 0.625rem;
+  --rs-12: 0.75rem;
+  --rs-16: 1rem;
+  --rs-20: 1.25rem;
+  --rs-22: 1.375;
+  --rs-32: 2rem;
+  --rs-48: 3rem;
+  --rs-72: 4.5rem;
+  --rs-80: 5rem;
+  --rs-120: 7.5rem;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
 
 /* -- Resets -- */
 html {
@@ -14,21 +37,55 @@ html {
 /* -- General Styling -- */
 body {
   font-family: "Libre Franklin", sans-serif;
+  font-size: var(--rs-20);
+  font-weight: var(--fw-light);
+  text-align: center;
+  color: var(--clr-fg);
 }
 
 /* -- pcs -- */
 .pcs {
+  text-align: center;
+
   max-width: 45rem;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin-top: var(--rs-80);
+
+  padding-left: var(--rs-16);
+  padding-right: var(--rs-16);
 }
 
+/* Logo and Intro text */
+.pcs-Intro {
+  margin-bottom: var(--rs-72);
+}
+
+.pcs-Intro > img {
+  margin-bottom: var(--rs-32);
+}
+
+.pcs-Intro > h1 {
+  font-size: var(--rs-22);
+  font-weight: inherit;
+  margin-bottom: var(--rs-16);
+}
+
+.pcs-Intro > h1 > strong {
+  font-weight: var(--fw-bold);
+}
+
+.pcs-Intro > p {
+  font-size: var(--rs-12);
+  margin-bottom: var(--rs-32);
+}
+
+/* Dashboard Image */
 .pcs-Dashboard {
   width: 90%; /* 640px / 712px */
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: var(--rs-120);
 }
 
 .pcs-Dashboard > img {
@@ -36,11 +93,18 @@ body {
   height: auto;
 }
 
+/* Social and Copyright */
+.pcs-Footer > p {
+  font-size: var(--rs-10);
+  color: var(--clr-footer);
+}
+
 /* -- Footer -- */
 .attribution {
-  font-size: 11px;
-  text-align: center;
+  font-size: var(--rs-10);
+  color: var(--clr-footer);
 }
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--clr-accent);
 }

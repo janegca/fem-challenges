@@ -49,12 +49,17 @@ Your users should be able to:
 
 ## Notes/Issues
 
-- included the image width and heights in the HTML based on the Barry Pollard
-  article listed below; essentially, letting the browser know the image size
-  helps prevent pages from _jumping_ as each image is loaded
-- the image is wrapped to ensure responsive sizing, the wrapper is sized and
-  positioned on the page, the image then fills the wrapper (width: 100%) and
-  adjusts its height accordingly (height: auto)
+### Images
+
+#### The Dashboard Image
+
+Included the image width and height in the HTML based on the Barry Pollard
+article referenced below; essentially, letting the browser know the image size
+helps prevent pages from _jumping_ as each image is loaded.
+
+Wrapped the image to ensure responsive sizing, the wrapper is sized and
+positioned on the page, the image then fills the wrapper (width: 100%) and
+adjusts its height accordingly (height: auto) regardless of the viewport size.
 
 References:
 

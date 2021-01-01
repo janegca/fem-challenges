@@ -97,6 +97,15 @@ than before; all the practice is beginning to pay off, learning wise ☀️
     refactored the layouts for mobile (style.css) and tablet (mq-tablet.css)
     before completing the desktop (mq-desktop.css) layout
 
+## Refactor
+
+- ISSUE: re: accessibility pointed out by @grace-snow on _Frontend Mentor_
+  - ✔️ REFACTOR: based on Grace's suggestions:
+    - used a more descriptive title for the logo
+    - instead of using a label for the email error message (which is tied to the
+      input field and read by the screen reader) used a paragraph tag and added
+      required aria-\* attributes
+
 References:
 
 - [Autosizing images and inline SVG as flex children](https://github.com/philipwalton/flexbugs/issues/184)

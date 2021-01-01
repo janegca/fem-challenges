@@ -22,7 +22,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <img id="Logo" src="images/logo.svg" alt="Logo" />
+      <img id="Logo" src="images/logo.svg" alt="Podcasts" />
       <div class="cta">
         <div class="cta-Lede">
           <h1><span>Publish your podcasts</span> everywhere.</h1>
@@ -51,9 +51,10 @@
             name="email"
             placeholder="Email address"
             aria-label="Email"
+            aria-describedby="err-email"
             required
           />
-          <label for="email"></label>
+          <p id="err-email" aria-live="polite"></p>
           <button type="submit">Request Access</button>
         </div>
       </div>

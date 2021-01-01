@@ -4,7 +4,7 @@
  */
 
 const email = document.getElementById("email");
-const label = document.querySelector("label");
+const errMsg = document.getElementById("err-email");
 const button = document.querySelector("button");
 
 email.addEventListener("keypress", enterPressed);
@@ -16,14 +16,14 @@ function enterPressed(ev) {
 
 function checkEmail() {
   if (email.value == "") {
-    label.innerHTML = "Oops! Please add your email.";
+    errMsg.innerHTML = "Oops! Please add your email.";
     return false;
   }
 
   if (!email.checkValidity()) {
-    label.innerHTML = "Oops! Please check your email.";
+    errMsg.innerHTML = "Oops! Please check your email.";
     return false;
   }
 
-  label.innerHTML = "";
+  errMsg.innerHTML = "";
 }

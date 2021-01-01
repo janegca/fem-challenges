@@ -2,9 +2,11 @@
 :root {
   --clr-accent: hsl(223, 87%, 63%);
   --clr-accent-light: hsl(223, 100%, 88%);
-  --clr-errors: hsl(354, 100%, 66%);
+  --clr-err-msg: hsl(354, 100%, 66%);
   --clr-fg: hsl(209, 33%, 12%);
   --clr-footer: hsl(0, 0%, 59%);
+  --clr-shadow-1: hsla(223, 100%, 88%, 0.19);
+  --clr-shadow-2: hsla(223, 100%, 88%, 0.23);
 
   /* Scale for font, margin, etc. sizing in REM's */
   --rs-10: 0.625rem;
@@ -78,6 +80,52 @@ body {
 .pcs-Intro > p {
   font-size: var(--rs-12);
   margin-bottom: var(--rs-32);
+}
+
+.pcs-Intro_cta > input,
+.pcs-Intro_cta > button {
+  font-family: inherit;
+  font-size: var(--rs-12);
+
+  outline: none;
+  border: none;
+  border-radius: 20px;
+
+  width: 93%;
+}
+
+.pcs-Intro_cta > input {
+  line-height: var(--rs-20);
+
+  border: 1px solid var(--clr-accent-light);
+  color: var(--clr-accent);
+
+  padding-left: var(--rs-32);
+  padding-top: var(--rs-10);
+  padding-bottom: var(--rs-10);
+}
+
+#err-email {
+  display: block;
+  font-family: inherit;
+  font-size: var(--rs-10);
+  font-style: italic;
+  text-align: center;
+
+  color: var(--clr-err-msg);
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.pcs-Intro_cta > button {
+  cursor: pointer;
+  font-weight: var(--fw-bold);
+  background-color: var(--clr-accent);
+  color: white;
+  box-shadow: 0 10px 20px var(--clr-shadow-1), 0 6px 6px var(--clr-shadow-2);
+  border: 1px solid var(--clr-join);
+  padding-top: var(--rs-12);
+  padding-bottom: var(--rs-12);
 }
 
 /* Dashboard Image */

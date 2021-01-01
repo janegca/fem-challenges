@@ -1,34 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <div class="pcs">
+      <div class="pcs-Intro">
+        <img src="images/logo.svg" alt="Ping" width="86" height="26" />
+        <h1>We are launching <strong>soon</strong>!</h1>
+        <p>Subscribe and get notified</p>
+        <div class="pcs-Intro_notify">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email address"
+            aria-label="Email"
+            aria-describedby="err-email"
+            required
+          />
+          <p id="err-email" aria-live="polite"></p>
+          <button type="submit">Notify Me</button>
+        </div>
+      </div>
+      <img
+        src="images/illustration-dashboard.png"
+        alt="A dashboard template with a right hand sidebar listing options and the main content
+        area being a two by two grid containing four graphs."
+        width="1280"
+        height="782"
+      />
+      <div class="pcs-Footer">
+        <ul>
+          <li>FB</li>
+          <li>T</li>
+          <li>I</li>
+        </ul>
+        <p>&copy;Copyright Ping. All rights reserved.</p>
+      </div>
+    </div>
 
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://janegca.github.com" target="_blank">janegca</a>.
+      </p>
+    </footer>
+  </body>
 </html>

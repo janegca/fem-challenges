@@ -104,7 +104,11 @@ than before; all the practice is beginning to pay off, learning wise ☀️
     - used a more descriptive title for the logo
     - instead of using a label for the email error message (which is tied to the
       input field and read by the screen reader) used a paragraph tag and added
-      required aria-\* attributes
+      required `aria-*` attributes
+- ISSUE: @grace-snow also pointed out the background image in the design for the
+  mobile layout was much darker; as it is, the text is a little hard to read
+  - ✔️ REFACTOR: bumped up the opacity on the gradient used with the background
+    image for the mobile layout
 
 References:
 

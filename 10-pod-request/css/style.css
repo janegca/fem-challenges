@@ -76,7 +76,7 @@ body {
      the image a bit so the text will be readable */
   background-image: linear-gradient(
       to top right,
-      rgba(0, 0, 0, 1) 40%,
+      rgba(0, 0, 0, 1) 65%,
       rgba(0, 0, 0, 0)
     ),
     url(../images/image-host-mobile.jpg);

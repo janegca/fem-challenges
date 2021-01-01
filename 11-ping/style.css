@@ -1,5 +1,41 @@
 /* -- Custom Properties -- */
 
+/* -- Resets -- */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* -- General Styling -- */
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+/* -- pcs -- */
+.pcs {
+  max-width: 45rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pcs-Dashboard {
+  width: 90%; /* 640px / 712px */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pcs-Dashboard > img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* -- Footer -- */
 .attribution {
   font-size: 11px;

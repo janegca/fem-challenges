@@ -4,7 +4,7 @@
  */
 
 const email = document.getElementById("email");
-const errMsg = document.getElementById("err-email");
+const errMsg = document.getElementsByClassName("pcs-ErrMsg_email")[0];
 const button = document.querySelector("button");
 
 email.addEventListener("keypress", enterPressed);
@@ -20,10 +20,16 @@ function checkEmail() {
     return false;
   }
 
-  if (!email.checkValidity()) {
+  /*
+    FireFox sees the input as invalid when the email.value is reset to ""
+    Can't find a way to prevent the behaviour.
+  */
+  let isValid = email.checkValidity();
+  if (isValid) {
+    errMsg.innerHTML = "";
+    email.value = "";
+  } else {
     errMsg.innerHTML = "Please provide a valid email address";
     return false;
   }
-
-  errMsg.innerHTML = "";
 }

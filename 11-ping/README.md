@@ -73,6 +73,12 @@ then subtracted to get the degrees as close to the desired colour as possible.
 Found a Codepen [CSS Filter Generator](https://codepen.io/sosuke/pen/Pjoqqp)
 that makes this method it a bit easier.
 
+### Error Handling
+
+Firefox adds a red box-shadow to the input field when it detects an error. The
+shadow stays in place even when the field is cleared. Had to add a specific rule
+to turn it off if the placeholder text is showing.
+
 References:
 
 - [Setting Height and Width On Images is Important Again](https://www.smashingmagazine.com/2020/03/setting-height-width-images-important-again/)

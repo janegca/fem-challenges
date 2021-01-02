@@ -33,8 +33,13 @@ Design and coding challenges from
      appearance, sections, components, similarities across sections/pages,
      graphics, etc.
 
-1. HTML - Structure the content using semantic HTML
+1. HTML
+   - Structure the content and layout using semantic HTML, keeping in mind the
+     needs of the largest design layout. What needs to be grouped? What may need
+     positioning? Where are wrappers and/or containers needed? Use
+     understandable class names.
 1. CSS
+   - Design for mobile first
    - Define custom properties (adapt
      [Kevin Powell](https://www.kevinpowell.co/)'s naming style)
    - Focus on general styles first
@@ -43,6 +48,8 @@ Design and coding challenges from
 1. Review code, cleanup where necessary
 1. Run the HTML and CSS through the W3 Validators, make any necessary
    corrections
-1. Test on mobile phone and desktop, cleanup where necessary
+1. Test on mobile phone and desktop, and try live pages on the
+   [Responsive Design Checker](https://responsivedesignchecker.com/) cleanup
+   where necessary
 1. Submit solution on Frontend Mentor
 1. Correct any Accessibility problems identified by Frontend Mentor

@@ -63,19 +63,24 @@ Wrapped the image to ensure responsive sizing, the wrapper is sized and
 positioned on the page, the image then fills the wrapper (width: 100%) and
 adjusts its height accordingly (height: auto) regardless of the viewport size.
 
+ISSUE: could not figure out how to apply this correctly the Logo, it does not
+grow or shrink with the viewport; even wrapped, not sure what to relate it to
+for responsive sizing.
+
 #### Colorizing the SVG Icons
 
 Used _Ionicons_ .svg files for the social media icons.
 
-Appears colorizing cannot be done directly use `fill` or `stroke`, instead, can
-applied a series of filters (see article on CSS Tricks by Cassie Evans
-referenced below); colour difficult to match exactly as you can't assign it
+Appears colorizing cannot be done directly using `fill` or `stroke`, instead,
+can apply a series of filters (see article on CSS-Tricks by Cassie Evans
+referenced below); an exact colour is difficult to match as you can't assign it
 directly. Took the base settings using the suggested filters and a 0deg hue and
 then subtracted to get the degrees as close to the desired colour as possible.
 Found a Codepen [CSS Filter Generator](https://codepen.io/sosuke/pen/Pjoqqp)
-that makes this method it a bit easier.
+that makes this method it a bit easier although turned out my own approach
+looked a bit better to my eye.
 
-### Error Handling
+### Error Handling - Issue with Firefox
 
 Firefox adds a red box-shadow to the input field when it detects an error. The
 shadow stays in place even when the field is cleared. Had to add a specific rule

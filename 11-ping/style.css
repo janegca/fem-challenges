@@ -15,14 +15,20 @@
   --rs-20: 1.25rem;
   --rs-22: 1.375;
   --rs-32: 2rem;
+  --rs-40: 2.5rem;
   --rs-48: 3rem;
+  --rs-60: 3.75rem;
   --rs-72: 4.5rem;
   --rs-80: 5rem;
+  --rs-94: 5.875rem;
   --rs-120: 7.5rem;
 
   --fw-light: 300;
   --fw-regular: 400;
   --fw-bold: 700;
+
+  --pcs-min-width: 15rem;
+  --pcs-max-width: 45rem;
 }
 
 /* -- Resets -- */
@@ -38,35 +44,33 @@ html {
 
 /* -- General Styling -- */
 body {
+  display: flex;
+  flex-direction: column;
+
   font-family: "Libre Franklin", sans-serif;
   font-size: var(--rs-20);
   font-weight: var(--fw-light);
+
   text-align: center;
   color: var(--clr-fg);
 }
 
 /* -- pcs -- */
 .pcs {
-  text-align: center;
+  min-width: var(--pcs-min-width);
+  max-width: var(--pcs-max-width);
 
-  min-width: 15rem;
-  max-width: 45rem;
+  padding-left: var(--rs-16);
+  padding-right: var(--rs-16);
 
   margin-right: auto;
   margin-left: auto;
   margin-top: var(--rs-80);
-
-  padding-left: var(--rs-16);
-  padding-right: var(--rs-16);
 }
 
 /* Logo and Intro text */
 .pcs-Intro {
   margin-bottom: var(--rs-72);
-}
-
-.pcs-Intro > img {
-  margin-bottom: var(--rs-32);
 }
 
 .pcs-Intro > h1 {
@@ -181,6 +185,9 @@ body {
 }
 
 /* -- Footer -- */
+footer {
+  margin-top: auto;
+}
 .attribution {
   font-size: var(--rs-10);
   color: var(--clr-footer);
@@ -191,5 +198,38 @@ body {
 }
 
 /* -- Media Queries -- */
-@media (min-width: 1024) {
+@media (min-width: 800px) {
+  body {
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+  .pcs {
+    margin: var(--rs-80) auto var(--rs-40) auto;
+  }
+  .pcs-Intro > img {
+    width: 90px;
+    height: auto;
+    margin-bottom: var(--rs-40);
+  }
+  .pcs-Intro > h1 {
+    font-size: var(--rs-48);
+  }
+  .pcs-Intro > p {
+    font-size: var(--rs-20);
+    margin-bottom: var(--rs-40);
+  }
+  .pcs-Intro_cta {
+    display: flex;
+    margin-bottom: var(--rs-94);
+  }
+  .pcs-Intro_cta > input {
+    flex: 3;
+    margin-right: var(--rs-16);
+  }
+  .pcs-Intro_cta > button {
+    flex: 1;
+  }
+  .pcs-Dashboard {
+    margin-bottom: var(--rs-72);
+  }
 }

@@ -2,6 +2,8 @@
 
 [Frontend Mentor Ping single column coming soon page challenge](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da)
 
+[Finished Project](https://janegca.github.io/fem-challenges/11-ping/index.html)
+
 ## Criteria
 
 Your users should be able to:

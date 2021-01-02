@@ -118,7 +118,6 @@ body {
   background-color: var(--clr-accent);
   color: white;
   box-shadow: 0 10px 24px var(--clr-shadow-1), 0 6px 6px var(--clr-shadow-2);
-  border: 1px solid var(--clr-join);
   padding-top: var(--rs-12);
   padding-bottom: var(--rs-12);
 }
@@ -243,6 +242,7 @@ body {
   }
   .pcs-ErrMsg_email {
     position: absolute;
+    font-size: var(--rs-12);
     padding-left: var(--rs-32);
     bottom: -70%;
   }

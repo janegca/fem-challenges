@@ -70,6 +70,8 @@ applied a series of filters (see article on CSS Tricks by Cassie Evans
 referenced below); colour difficult to match exactly as you can't assign it
 directly. Took the base settings using the suggested filters and a 0deg hue and
 then subtracted to get the degrees as close to the desired colour as possible.
+Found a Codepen [CSS Filter Generator](https://codepen.io/sosuke/pen/Pjoqqp)
+that makes this method it a bit easier.
 
 References:
 

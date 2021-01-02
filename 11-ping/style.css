@@ -5,8 +5,8 @@
   --clr-err-msg: hsl(354, 100%, 66%);
   --clr-fg: hsl(209, 33%, 12%);
   --clr-footer: hsl(0, 0%, 59%);
-  --clr-shadow-1: hsla(223, 100%, 88%, 0.19);
-  --clr-shadow-2: hsla(223, 100%, 88%, 0.23);
+  --clr-shadow-1: hsla(223, 87%, 63%, 0.19);
+  --clr-shadow-2: hsla(223, 87%, 63%, 0.23);
 
   /* Scale for font, margin, etc. sizing in REM's */
   --rs-10: 0.625rem;
@@ -125,7 +125,7 @@ body {
   font-weight: var(--fw-bold);
   background-color: var(--clr-accent);
   color: white;
-  box-shadow: 0 10px 20px var(--clr-shadow-1), 0 6px 6px var(--clr-shadow-2);
+  box-shadow: 0 10px 24px var(--clr-shadow-1), 0 6px 6px var(--clr-shadow-2);
   border: 1px solid var(--clr-join);
   padding-top: var(--rs-12);
   padding-bottom: var(--rs-12);
@@ -168,7 +168,7 @@ body {
       223deg - 38deg = 185deg which yields hsl(216, 100%, 68%) fairly close 
       bumping up 1 more deg gets us a little closer  hsl(222, 100%, 71%);
    */
-  filter: invert(0.5) sepia(1) hue-rotate(185deg) saturate(5) brightness(1);
+  filter: invert(0.5) sepia(1) hue-rotate(185deg) saturate(5) brightness(0.98);
 }
 
 .pcs-Footer_social > a + a {

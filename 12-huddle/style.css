@@ -41,6 +41,12 @@ body {
   line-height: var(--rs-24);
   text-align: center;
 
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: 100% 45%;
+  background-color: var(--clr-bg);
+
   background-color: var(--clr-bg);
   color: var(--clr-fg);
 }

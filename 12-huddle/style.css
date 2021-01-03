@@ -1,3 +1,9 @@
+/* -- Custom Properties -- */
+:root {
+  --clr-bg: hsl(257, 40%, 49%);
+  --clr-hover: hsl(300, 69%, 71%);
+}
+
 /* -- General Styling -- */
 body {
   font-family: "Open Sans", sans-serif;
@@ -5,6 +11,30 @@ body {
 
 h1 {
   font-family: "Poppins", sans-serif;
+}
+
+/* -- Social Icons -- */
+.hlp-Icon {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background: var(--clr-bg);
+  mask-size: cover;
+}
+
+.hlp-Icon:hover,
+.hlp-Icon:focus {
+  background: var(--clr-hover);
+}
+
+[aria-label="Facebook"] {
+  mask: url(images/logo-facebook.svg);
+}
+[aria-label="Twitter"] {
+  mask: url(images/logo-twitter.svg);
+}
+[aria-label="Instagram"] {
+  mask: url(images/logo-instagram.svg);
 }
 
 /* -- Footer -- */

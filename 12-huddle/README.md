@@ -59,4 +59,8 @@ however, I've opted to use 48px for both as that is the recommended size for
 accessible 'hit' targets on touch screens.
 
 🌞 Woot! Figured out a very easy way to colour the icons using a mask and the
-`aria-label` attribute
+`aria-label` attribute based on reading
+[CSS-Tricks: Change Color of SVG on Hover](https://css-tricks.com/change-color-of-svg-on-hover/)
+by Chris Coyier and a concept from Ben Frain's
+[Enduring CSS](https://ecss.benfrain.com/) methodology, about using WIA-Aria
+attributes for progressive enhancements.

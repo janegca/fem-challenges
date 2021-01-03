@@ -21,6 +21,7 @@ the starter code.
     - detail
     - button (register) w/hover effect
   - social icons w/hover effect
+    - Facebook, Twitter, Instagram
 
 ## Colours
 
@@ -48,3 +49,11 @@ Free to choose which social icons are used, suggestions are:
 - [Font Awesome](https://fontawesome.com/)
 - [IcoMoon](https://icomoon.io/)
 - [Ionicons](https://ionicons.com/)
+
+## Notes and Issues
+
+### Social Icons
+
+Used Ionicons. The design widths are 27.5px for mobile, 40px for desktop;
+however, I've opted to use 48px for both as that is the recommended size for
+accessible 'hit' targets on touch screens.

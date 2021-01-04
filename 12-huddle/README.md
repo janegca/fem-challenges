@@ -52,6 +52,13 @@ Free to choose which social icons are used, suggestions are:
 
 ## Notes and Issues
 
+### Graphic and Intro
+
+Had some problems with these two for the desktop layout until I came across
+Stephanie Eckles
+[Modern CSS Solutions #16](https://moderncss.dev/3-popular-website-heroes-created-with-css-grid-layout/)
+on styling hero sections using a one cell grid.
+
 ### Social Icons
 
 Used Ionicons. The design widths are 27.5px for mobile, 40px for desktop;
@@ -64,3 +71,6 @@ accessible 'hit' targets on touch screens.
 by Chris Coyier and a concept from Ben Frain's
 [Enduring CSS](https://ecss.benfrain.com/) methodology, about using WIA-Aria
 attributes for progressive enhancements.
+
+However, Chrome requires a polyfill `-webkit-mask-image: url(...)`
+([Stackoverflow](https://stackoverflow.com/questions/44100139/css-mask-not-working-on-chrome-webkit))

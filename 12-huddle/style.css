@@ -9,12 +9,15 @@
   --rs-10: 0.625rem;
   --rs-12: 0.75rem;
   --rs-16: 1rem;
+  --rs-18: 1.125rem;
   --rs-20: 1.25rem;
   --rs-24: 1.5rem;
+  --rs-27: 1.6875;
   --rs-36: 2.25rem;
   --rs-40: 2.5rem;
   --rs-44: 2.75rem;
   --rs-48: 3rem;
+  --rs-60: 3.75rem;
   --rs-120: 7.5rem;
   --rs-240: 15rem;
 
@@ -30,6 +33,7 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
 img {
   max-width: 100%;
 }
@@ -65,21 +69,22 @@ body {
   margin-bottom: var(--rs-48);
 }
 
-.hlp-Graphic {
+/* -- Intro -- */
+.hlp-Intro_image {
   margin-bottom: var(--rs-44);
 }
 
-.hlp-Intro > h1 {
+.hlp-Intro_cta > h1 {
   font-family: "Poppins", sans-serif;
   font-size: var(--rs-24);
   line-height: var(--rs-36);
   margin-bottom: var(--rs-16);
 }
-.hlp-Intro > p {
+.hlp-Intro_cta > p {
   margin-bottom: var(--rs-24);
 }
 
-.hlp-Intro > button {
+.hlp-Intro_cta > button {
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   font-size: var(--rs-12);
@@ -88,7 +93,7 @@ body {
   color: var(--clr-bg);
   box-shadow: 0 10px 24px var(--clr-shadow-1), 0 6px 6px var(--clr-shadow-2);
   border: 2px solid var(--clr-bg);
-  border-radius: 20px;
+  border-radius: 30px;
 
   padding-top: var(--rs-12);
   padding-bottom: var(--rs-12);
@@ -97,8 +102,8 @@ body {
   width: 66%;
 }
 
-.hlp > button:hover,
-.hlp > button:focus {
+.hlp-Intro_cta > button:hover,
+.hlp-Intro_cta > button:focus {
   background-color: var(--clr-hover);
   color: var(--clr-fg);
 }
@@ -141,14 +146,18 @@ body {
   background: var(--clr-hover);
 }
 
+/* Chrome needs the -webkit-* polyfill */
 [aria-label="Facebook"] {
-  mask: url(images/logo-facebook.svg);
+  mask-image: url(images/logo-facebook.svg);
+  -webkit-mask-image: url(images/logo-facebook.svg);
 }
 [aria-label="Twitter"] {
-  mask: url(images/logo-twitter.svg);
+  mask-image: url(images/logo-twitter.svg);
+  -webkit-mask-image: url(images/logo-twitter.svg);
 }
 [aria-label="Instagram"] {
-  mask: url(images/logo-instagram.svg);
+  mask-image: url(images/logo-instagram.svg);
+  -webkit-mask-image: url(images/logo-instagram.svg);
 }
 
 /* -- Footer -- */
@@ -164,12 +173,81 @@ footer {
 }
 
 /* -- Media Queries -- */
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   body {
     background: url(images/bg-desktop.svg);
     background-repeat: no-repeat;
-    background-position: top;
     background-size: cover;
     background-color: var(--clr-bg);
+
+    padding-bottom: 1vh;
+
+    max-width: 98vw;
+    max-height: 98vh;
+    overflow: hidden;
+  }
+
+  .hlp {
+    height: 95vh;
+  }
+
+  .hlp-Intro {
+    display: grid;
+    grid-template-areas: "intro";
+    align-items: center;
+
+    height: 80%;
+  }
+
+  .hlp-Intro_image,
+  .hlp-Intro_cta {
+    grid-area: intro;
+  }
+
+  .hlp-Intro_image {
+    justify-self: start;
+    object-fit: contain;
+
+    height: 100%;
+    max-height: 506px;
+    width: 55%;
+    margin: 0;
+
+    transition: 180ms width ease-in;
+  }
+
+  .hlp-Intro_cta {
+    justify-self: end;
+    text-align: left;
+
+    font-size: var(--rs-18);
+    line-height: var(--rs-27);
+
+    margin-left: 7.5%;
+    margin-right: 8%;
+
+    max-width: 35%;
+    min-width: 30ch;
+  }
+
+  .hlp-Intro_cta > h1 {
+    font-size: var(--rs-40);
+    line-height: var(--rs-60);
+  }
+
+  .hlp-Intro_cta > button {
+    font-size: inherit;
+    line-height: inherit;
+    max-width: 200px;
+  }
+
+  .hlp-SocialLinks {
+    justify-content: flex-end;
+    margin-top: auto;
+  }
+
+  footer {
+    position: relative;
+    top: -3vw;
   }
 }

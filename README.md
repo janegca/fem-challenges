@@ -18,6 +18,7 @@ Design and coding challenges from
 1. [Intro Component with Sign-up Form](https://janegca.github.io/fem-challenges/09-intro-comp/index.html)
 1. [Pod Request Access Landing Page](https://janegca.github.io/fem-challenges/10-pod-request/index.html)
 1. [Ping Coming Soon Page](https://janegca.github.io/fem-challenges/11-ping/index.html)
+1. [Huddle Landing Page](https://janegca.github.io/fem-challenges/11-ping/index.html)
 
 ## Basic Approach to the Challenges
 

@@ -2,6 +2,8 @@
 
 [Huddle landing page with a single introductory section](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0)
 
+[Finished Project](https://janegca.github.io/fem-challenges/12-huddle/index.html)
+
 ## Criteria
 
 Your challenge is to build out this landing page from the designs provided in

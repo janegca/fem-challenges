@@ -51,37 +51,35 @@ body {
   color: var(--clr-fg);
 }
 
-main {
+/* -- Huddle Landing Page (hlp) -- */
+.hlp {
   min-width: var(--min-width);
-  margin: 0 var(--rs-40);
+  margin: var(--rs-36) var(--rs-40) 0 var(--rs-40);
 }
 
 /* -- Logo -- */
 .hlp-Logo {
   width: var(--rs-120);
   height: var(--rs-20);
-  margin-left: var(--rs-36);
-  margin-top: var(--rs-36);
+
   margin-bottom: var(--rs-48);
 }
 
-/* -- Graphic -- */
 .hlp-Graphic {
   margin-bottom: var(--rs-44);
 }
 
-/* -- Huddle Landing Page (hlp) -- */
-.hlp > h1 {
+.hlp-Intro > h1 {
   font-family: "Poppins", sans-serif;
   font-size: var(--rs-24);
   line-height: var(--rs-36);
   margin-bottom: var(--rs-16);
 }
-.hlp > p {
+.hlp-Intro > p {
   margin-bottom: var(--rs-24);
 }
 
-.hlp > button {
+.hlp-Intro > button {
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   font-size: var(--rs-12);

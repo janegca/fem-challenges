@@ -63,9 +63,7 @@ on styling hero sections using a one cell grid.
 
 ### Social Icons
 
-Used Ionicons. The design widths are 27.5px for mobile, 40px for desktop;
-however, I've opted to use 48px for both as that is the recommended size for
-accessible 'hit' targets on touch screens.
+Used Ionicons.
 
 🌞 Woot! Figured out a very easy way to colour the icons using a mask and the
 `aria-label` attribute based on reading

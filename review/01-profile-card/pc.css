@@ -5,6 +5,18 @@
   --clr-fg: hsl(229, 23%, 23%);
   --clr-accent: hsl(227, 10%, 46%);
   --clr-neutral: hsl(0, 0%, 59%);
+
+  --rs-04: 0.25rem;
+  --rs-08: 0.5rem;
+  --rs-10: 0.625rem;
+  --rs-12: 0.75rem;
+  --rs-16: 1rem;
+  --rs-18: 1.125rem;
+  --rs-24: 1.5rem;
+  --rs-28: 1.75rem;
+
+  --fw-norm: 400;
+  --fw-bold: 700;
 }
 
 /* -- Resets -- */
@@ -18,6 +30,12 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  /* constrain images to 100% of their container */
+  max-width: 100%;
+}
+
+/* -- General Styling -- */
 body {
   /* size to viewport 
       specific to this design, as it is presentational
@@ -29,17 +47,14 @@ body {
   overflow: hidden;
 }
 
-img {
-  /* constrain images to 100% of their container */
-  max-width: 100%;
-}
-
-/* -- Utilities -- */
-
 /* -- Profile Card Wrapper -- */
 .pc-Wrapper {
+  /* setup positioning context for background images  */
   position: relative;
-  display: grid;
+
+  /* control position of component */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -51,6 +66,7 @@ img {
 
 .pc-Wrapper::before,
 .pc-Wrapper::after {
+  /* position relative to wrapper */
   position: absolute;
 
   content: "";
@@ -72,21 +88,114 @@ img {
   left: 100%;
   background: url("./images/bg-pattern-bottom.svg") no-repeat top left;
 }
-/* -- Profile Card -- */
 
+/* -- Profile Card -- */
 .pc {
+  display: grid;
+  grid-template-rows: 1fr 1fr 0.5fr;
+
   font-family: "Kumbh Sans", sans-serif;
-  font-size: 1.125rem; /* 18px */
+  font-size: var(--rs-18);
+  text-align: center;
+
+  border-radius: var(--rs-24);
 
   background-color: var(--clr-bg-card);
 
-  /* size the card 
-      1440 - 375 = 1065, 326/1065=31%, 350/1065=33%
+  /* size the card responsively
+      1440px - 375px = 1065px, 326/1065=31%, 350/1065=33%
       middle ground, 32% or 32vw
   */
   width: clamp(326px, 32vw, 350px);
 
-  /* keep card on top of wrapper */
+  /* keep the card on top of wrapper */
   transform: translate(0);
   z-index: 1;
+
+  /* required so avatar background image will not 
+     cover rounded borders
+  */
+  overflow: hidden;
+}
+
+/*
+   set font weights for identity and stat lines
+   each is formed of pairs of paragraphs
+ */
+.pc p:first-of-type {
+  font-weight: var(--fw-bold);
+  margin-top: var(--rs-08);
+  margin-bottom: 0;
+}
+
+.pc p:last-of-type {
+  font-size: var(--rs-12);
+  color: var(--clr-accent);
+  margin-top: var(--rs-08);
+  margin-bottom: var(--rs-28);
+}
+
+/* Avatar */
+.pc-Avatar {
+  background: url(./images/bg-pattern-card.svg) top left / cover;
+}
+
+.pc-Avatar > img {
+  display: block;
+
+  border: var(--rs-04) solid var(--clr-bg-card);
+  border-radius: 50%;
+
+  /* offset image with respect to its own position
+     in the normal flow
+  */
+  position: relative;
+  left: 7rem;
+  bottom: -6rem;
+}
+
+/* Identity */
+.pc-Identity p:first-of-type {
+  padding-top: 4rem;
+}
+
+.pc-Identity p span {
+  font-weight: var(--fw-norm);
+  color: var(--clr-accent);
+}
+
+/* Statistics */
+.pc-Stats {
+  border-top: 1px solid var(--clr-neutral);
+}
+
+.pc-Stats p:last-of-type {
+  font-size: var(--rs-10);
+  margin-top: var(--rs-08);
+}
+
+.pc-Stats ul {
+  display: flex;
+  justify-content: space-around;
+
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: var(--rs-04);
+}
+
+.pc-Stats li {
+  display: inline-block;
+}
+
+/* -- Page Footer -- */
+footer {
+  margin-top: 1vw;
+}
+.attribution {
+  font-size: var(--rs-12);
+  text-align: center;
+  color: var(--clr-fg);
+}
+.attribution a {
+  color: var(--clr-bg-card);
 }

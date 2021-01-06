@@ -1,7 +1,5 @@
 # Profile Card
 
-#TODO: figure out how to structure files
-
 ## The Challenge and Finished Project
 
 [Frontend Mentor Profile Card Component Challenge](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ)
@@ -40,12 +38,12 @@
 
 - How are the background graphics loaded and made responsive?
 
-  - add the graphics to the background
-  - position them, anchoring them to their respective sides
+  - use `::before ::after` pseudo-elements
+  - `postion: absolute` (the wrapper itself must be `position: relative`)
 
 - How is the component most easily centered?
   - whole screen is involved, set the body and wrapper to viewport size
-  - use `grid` layout, no utility class required
+  - use `flex` in column mode to allow attribution to be displayed
   - [Viewport Height/Width CSS Code](https://www.exeideas.com/2013/09/viewport-height-width-css-code.html)
 
 #### Card

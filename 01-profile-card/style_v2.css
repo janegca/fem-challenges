@@ -1,24 +1,3 @@
-/* -- Custom Properties -- */
-:root {
-  --clr-bg: hsl(185, 75%, 39%);
-  --clr-bg-card: white;
-  --clr-fg: hsl(229, 23%, 23%);
-  --clr-accent: hsl(227, 10%, 46%);
-  --clr-neutral: hsl(0, 0%, 59%);
-
-  --rs-04: 0.25rem;
-  --rs-08: 0.5rem;
-  --rs-10: 0.625rem;
-  --rs-12: 0.75rem;
-  --rs-16: 1rem;
-  --rs-18: 1.125rem;
-  --rs-24: 1.5rem;
-  --rs-28: 1.75rem;
-
-  --fw-norm: 400;
-  --fw-bold: 700;
-}
-
 /* -- Resets -- */
 html {
   box-sizing: border-box;
@@ -35,6 +14,11 @@ img {
   max-width: 100%;
 }
 
+/* -- Utilities -- */
+.flex-gap {
+  margin-top: 1vmin;
+}
+
 /* -- General Styling -- */
 body {
   /* size to viewport 
@@ -44,15 +28,17 @@ body {
   height: 100vh;
 
   margin: 0;
-  overflow: hidden;
 }
 
 /* -- Profile Card Wrapper -- */
 .pc-Wrapper {
-  /* setup positioning context for background images  */
+  /* custom property used only by the wrapper */
+  --clr-bg: hsl(185, 75%, 39%);
+
+  /* setup positioning context for pseudo-elements  */
   position: relative;
 
-  /* control position of component */
+  /* control positioning and alignment of the wrapper's contents */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,31 +52,54 @@ body {
 
 .pc-Wrapper::before,
 .pc-Wrapper::after {
-  /* position relative to wrapper */
+  /* sets positioning context relative to pc-Wrapper */
   position: absolute;
 
   content: "";
+
+  /* each pseudo-element will be the size of the pc-Wrapper element */
   width: 100%;
   height: 100%;
   background-size: auto;
-
-  /* change origin (0,0) to center */
-  transform: translate(-50%, -50%);
 }
 
 .pc-Wrapper::before {
-  top: 0;
-  left: 0;
+  /* move the pseudo-element's origin (center point) to it's top, left corner */
+  transform: translate(-50%, -50%);
+
+  /* place the image in the pseudo-element's bottom, right corner */
   background: url("./images/bg-pattern-top.svg") no-repeat bottom right;
 }
+
 .pc-Wrapper::after {
-  top: 100%;
-  left: 100%;
+  /* move the pseudo-element's origin (center point) to it's bottom, right corner */
+  transform: translate(50%, 50%);
+
+  /* place the image in the pseudo-element's top, left corner */
   background: url("./images/bg-pattern-bottom.svg") no-repeat top left;
 }
 
 /* -- Profile Card -- */
 .pc {
+  /* custom properties required by the card and it's children */
+  --clr-bg-card: white;
+  --clr-fg: hsl(229, 23%, 23%);
+  --clr-accent: hsl(227, 10%, 46%);
+  --clr-neutral: hsl(0, 0%, 59%);
+
+  --rs-04: 0.25rem;
+  --rs-08: 0.5rem;
+  --rs-10: 0.625rem;
+  --rs-12: 0.75rem;
+  --rs-16: 1rem;
+  --rs-18: 1.125rem;
+  --rs-24: 1.5rem;
+  --rs-28: 1.75rem;
+
+  --fw-norm: 400;
+  --fw-bold: 700;
+
+  /* basic styling */
   display: grid;
   grid-template-rows: 1fr 1fr 0.5fr;
 
@@ -105,22 +114,28 @@ body {
   /* size the card responsively
       1440px - 375px = 1065px, 326/1065=31%, 350/1065=33%
       middle ground, 32% or 32vw
+
+     card will be sized at 32% of the viewport but never
+     less than 326px or more than 350px wide
   */
   width: clamp(326px, 32vw, 350px);
+  min-height: 374px;
 
-  /* keep the card on top of wrapper */
+  /* keep the card on top of the wrapper 
+      the 'transform' sets up a positioning context
+  */
   transform: translate(0);
   z-index: 1;
 
-  /* required so avatar background image will not 
-     cover rounded borders
+  /* required so the background image will not 
+     cover the card's rounded borders
   */
   overflow: hidden;
 }
 
 /*
-   set font weights for identity and stat lines
-   each is formed of pairs of paragraphs
+   set font weights and spacing for pc-Identity and pc-Stat 
+   text blocks, each is formed by a pair of paragraphs
  */
 .pc p:first-of-type {
   font-weight: var(--fw-bold);
@@ -143,15 +158,12 @@ body {
 .pc-Avatar > img {
   display: block;
 
+  /* wrap image in a circular border */
   border: var(--rs-04) solid var(--clr-bg-card);
   border-radius: 50%;
 
-  /* offset image with respect to its own position
-     in the normal flow
-  */
-  position: relative;
-  left: 7rem;
-  bottom: -6rem;
+  /* offset the image */
+  transform: translate(130%, 95%);
 }
 
 /* Identity */
@@ -187,15 +199,18 @@ body {
   display: inline-block;
 }
 
-/* -- Page Footer -- */
+/* -- Page Footer, Attribution -- */
 footer {
-  margin-top: 1vw;
+  /* move above pc-Wrapper's 'after' pseudo-element 
+     to allow interaction with the links */
+  z-index: 1;
 }
+
 .attribution {
-  font-size: var(--rs-12);
+  font-size: 0.75rem; /* 12px */
   text-align: center;
-  color: var(--clr-fg);
+  color: #1b1b1b;
 }
 .attribution a {
-  color: var(--clr-bg-card);
+  color: #ccc;
 }

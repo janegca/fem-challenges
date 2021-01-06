@@ -8,6 +8,8 @@
 
 [Refactored Project](https://janegca.github.io/fem-challenges/01-profile-card/index_v2.html)
 
+[Notes on refactor](profile-card-review.md)
+
 ## Issue
 
 The background graphics move around as the window is resized, would be nicer if

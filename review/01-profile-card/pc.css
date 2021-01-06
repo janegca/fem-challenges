@@ -1,0 +1,92 @@
+/* -- Custom Properties -- */
+:root {
+  --clr-bg: hsl(185, 75%, 39%);
+  --clr-bg-card: white;
+  --clr-fg: hsl(229, 23%, 23%);
+  --clr-accent: hsl(227, 10%, 46%);
+  --clr-neutral: hsl(0, 0%, 59%);
+}
+
+/* -- Resets -- */
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  /* size to viewport 
+      specific to this design, as it is presentational
+  */
+  width: 100vw;
+  height: 100vh;
+
+  margin: 0;
+  overflow: hidden;
+}
+
+img {
+  /* constrain images to 100% of their container */
+  max-width: 100%;
+}
+
+/* -- Utilities -- */
+
+/* -- Profile Card Wrapper -- */
+.pc-Wrapper {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--clr-bg);
+
+  height: 100%;
+  overflow: hidden;
+}
+
+.pc-Wrapper::before,
+.pc-Wrapper::after {
+  position: absolute;
+
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-size: auto;
+
+  /* change origin (0,0) to center */
+  transform: translate(-50%, -50%);
+}
+
+.pc-Wrapper::before {
+  top: 0;
+  left: 0;
+  background: url("./images/bg-pattern-top.svg") no-repeat bottom right;
+}
+.pc-Wrapper::after {
+  top: 100%;
+  left: 100%;
+  background: url("./images/bg-pattern-bottom.svg") no-repeat top left;
+}
+/* -- Profile Card -- */
+
+.pc {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.125rem; /* 18px */
+
+  background-color: var(--clr-bg-card);
+
+  /* size the card 
+      1440 - 375 = 1065, 326/1065=31%, 350/1065=33%
+      middle ground, 32% or 32vw
+  */
+  width: clamp(326px, 32vw, 350px);
+
+  /* keep card on top of wrapper */
+  transform: translate(0);
+  z-index: 1;
+}

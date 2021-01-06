@@ -36,35 +36,49 @@
 
 ### Technical Questions
 
-- What naming rules will work best, keeping in mind that we want to be able to
-  easily extract the card for use elsewhere?
-- Presentation Wrapper
-  - How are the background graphics loaded and made responsive?
-  - How is the component most easily centered?
-    - Use `grid` layout, no utility class required
-- Card
-  - How is the background graphic confined to the top half of the card?
-  - How is the card responsive but also constrained to its min/max widths?
-    - use `clamp()`
-  - How is the avatar image presented framed in a circle?
-  - How is the avatar offset from the background graphic?
-  - What is the best way to structure the identity?
-    - Name, Age are displayed on one line
-    - Location below
-  - What is the best way to structure the statistics section and each stat?
-    - statistics presented in one row
-    - stat
-      - value bold on one line
-      - label centered below, regular text
+#### Presentation Wrapper
+
+- How are the background graphics loaded and made responsive?
+
+  - add the graphics to the background
+  - position them, anchoring them to their respective sides
+
+- How is the component most easily centered?
+  - whole screen is involved, set the body and wrapper to viewport size
+  - use `grid` layout, no utility class required
+  - [Viewport Height/Width CSS Code](https://www.exeideas.com/2013/09/viewport-height-width-css-code.html)
+
+#### Card
+
+- How is the background graphic confined to the top half of the card?
+
+- How is the card responsive but also constrained to its min/max widths?
+
+  - use `clamp()`
+  - [MDN: clamp()](<https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()>)
+
+- How is the avatar image presented framed in a circle?
+- How is the avatar offset from the background graphic?
+- What is the best way to structure the identity?
+  - Name, Age are displayed on one line
+  - Location below
+- What is the best way to structure the statistics section and each stat?
+  - statistics presented in one row
+  - stat
+    - value bold on one line
+    - label centered below, regular text
 
 ### Naming Decisions
+
+- What naming rules will work best, keeping in mind that we want to be able to
+  easily extract the card for use elsewhere?
 
 - identify what needs a classname, for styling purposes
 
 | Class         | Description              |
 | ------------- | ------------------------ |
 | pc            | the Profile Card         |
-| pcw           | the Presentation Wrapper |
+| pc-Wrapper    | the Presentation Wrapper |
 | pc-Avatar     | background and photo     |
 | pc-Identity   | name and title           |
 | pc-Stats      | statistics list          |
@@ -80,7 +94,4 @@
 children margins and padding can be set on the children. i.e. the _component_
 acts as _container_, not simply as a presentation wrapper.
 
-References:
-
-- [MDN: clamp()](<https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()>)
-- [Viewport Height/Width CSS Code](https://www.exeideas.com/2013/09/viewport-height-width-css-code.html)
+-

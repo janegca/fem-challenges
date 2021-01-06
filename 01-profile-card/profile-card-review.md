@@ -1,6 +1,6 @@
 # Profile Card
 
-## The Challenge and Finished Project
+## The Challenge, Finished Project, and Refactored Project
 
 [Frontend Mentor Profile Card Component Challenge](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ)
 

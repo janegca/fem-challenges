@@ -4,7 +4,8 @@
 
 [Frontend Mentor Profile Card Component Challenge](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ)
 
-[Finished Project](https://janegca.github.io/fem-challenges/01-profile-card/index.html)
+[Finished Project](https://janegca.github.io/fem-challenges/01-profile-card/index.html)  
+
 [Refactored Project](https://janegca.github.io/fem-challenges/01-profile-card/index_v2.html)
 
 ## Presentation and Components

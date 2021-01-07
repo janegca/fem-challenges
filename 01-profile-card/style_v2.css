@@ -44,39 +44,16 @@ body {
   justify-content: center;
   align-items: center;
 
+  /* a simplier way to load the background images */
+  background-image: url("images/bg-pattern-top.svg"),
+    url("images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 50vh right 50vw, top 50vh left 50vw;
+  background-attachment: fixed;
   background-color: var(--clr-bg);
 
   height: 100%;
   overflow: hidden;
-}
-
-.pc-Wrapper::before,
-.pc-Wrapper::after {
-  /* sets positioning context relative to pc-Wrapper */
-  position: absolute;
-
-  content: "";
-
-  /* each pseudo-element will be the size of the pc-Wrapper element */
-  width: 100%;
-  height: 100%;
-  background-size: auto;
-}
-
-.pc-Wrapper::before {
-  /* move the pseudo-element's origin (center point) to it's top, left corner */
-  transform: translate(-50%, -50%);
-
-  /* place the image in the pseudo-element's bottom, right corner */
-  background: url("./images/bg-pattern-top.svg") no-repeat bottom right;
-}
-
-.pc-Wrapper::after {
-  /* move the pseudo-element's origin (center point) to it's bottom, right corner */
-  transform: translate(50%, 50%);
-
-  /* place the image in the pseudo-element's top, left corner */
-  background: url("./images/bg-pattern-bottom.svg") no-repeat top left;
 }
 
 /* -- Profile Card -- */

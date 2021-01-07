@@ -4,7 +4,7 @@
 
 [Frontend Mentor Profile Card Component Challenge](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ)
 
-[Finished Project](https://janegca.github.io/fem-challenges/01-profile-card/index.html)  
+[Finished Project](https://janegca.github.io/fem-challenges/01-profile-card/index.html)
 
 [Refactored Project](https://janegca.github.io/fem-challenges/01-profile-card/index_v2.html)
 
@@ -41,6 +41,10 @@
 
 - use `::before ::after` pseudo-elements
 - `postion: absolute` (the wrapper itself must be `position: relative`)
+
+⚡ there is a simpler way to get this done _without_ the use of pseudo-elements,
+updated code based on example on Afolabi Oseni's
+[solution](https://www.frontendmentor.io/solutions/profile-card-created-with-only-html-and-css-gUZSPXsZy)
 
 #### How is the component most easily centered?
 

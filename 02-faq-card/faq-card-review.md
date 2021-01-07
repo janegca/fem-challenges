@@ -10,6 +10,10 @@
 
 ## Presentation and Components
 
+There are two factors to consider: the design as a whole which represents a _FAQ
+Accordian Card_ and the FAQ itself which is presented as a component within the
+card
+
 - 2 design sizes:
   - mobile: 375px x 768px
   - desktop: 1440px x 768px
@@ -38,7 +42,9 @@
 
 ## Technical Questions
 
-### How to handled layer graphic and offset?
+### How best to size the card so its responsive?
+
+### How to handle layer graphic and offset?
 
 - setup a `div` and load them as background graphics
 - position the `div` with respect to the FAQ
@@ -56,13 +62,12 @@
 
 ## Naming Decisions
 
-| Class         | Description         |
-| ------------- | ------------------- |
-| wrapper       | generic positioning |
-| panel         | presentation panel  |
-| panel_left    | left side of panel  |
-| panel_right   | right side of pane  |
-| graphic       | layered graphic     |
-| faq           | the FAQ             |
-| faq_Header    | text header for faq |
-| faq_Questions | list of questions   |
+| Class            | Description        |
+| ---------------- | ------------------ |
+| fac              | FAQ Accordian Card |
+| fac-Card         | presentation panel |
+| fac-Card_graphic | layered graphic    |
+| faq              | the FAQ component  |
+| faq_Questions    | list of questions  |
+
+## Thoughts

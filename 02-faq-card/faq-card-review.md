@@ -46,7 +46,7 @@ card
 
 ### How to handle layer graphic and offset?
 
-- setup a `div` and load them as background graphics
+- setup a `div` and load them as image and background graphics
 - position the `div` with respect to the FAQ
 
 ### How to build the FAQ Component?

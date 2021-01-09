@@ -60,6 +60,10 @@ card
 - add as a `pseudo-element`
 - use `transform` to rotate
 
+### How to collapse open questions when new selection made?
+
+- need to do this so text will not overflow the card
+
 ## Naming Decisions
 
 | Class            | Description        |
@@ -67,7 +71,5 @@ card
 | fac              | FAQ Accordian Card |
 | fac-Card         | presentation panel |
 | fac-Card_graphic | layered graphic    |
-| faq              | the FAQ component  |
+| fac_Card_faq     | the FAQ            |
 | faq_Questions    | list of questions  |
-
-## Thoughts

@@ -101,6 +101,8 @@ img {
   --clr-accent-light: hsl(14, 88%, 65%);
 
   --rs-12: 0.75rem;
+  --rs-13: 0.8125rem;
+  --rs-14: 0.875rem;
   --rs-16: 1rem;
   --rs-18: 1.125rem;
   --rs-24: 1.5rem;
@@ -145,11 +147,15 @@ img {
   display: flex;
   justify-content: space-between;
 
+  /* typography */
+  font-size: var(--rs-13);
+
   cursor: pointer;
 }
 
 .faq > details summary::after {
   content: var(--arrow-down);
+  padding-left: 0.5em;
 }
 
 /* effects */
@@ -162,7 +168,6 @@ img {
 }
 
 .faq > details[open] summary::after {
-  content: var(--arrow-down);
   transform: scale(-1); /* flips the arrow */
 }
 
@@ -184,7 +189,7 @@ footer a {
     /* display and position */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     /* box model */
@@ -211,6 +216,7 @@ footer a {
     background-repeat: no-repeat;
   }
 
+  /* box */
   .fac-Card_graphic > img {
     position: relative;
     top: 8rem;
@@ -240,6 +246,15 @@ footer a {
   }
 
   .faq > h1 {
+    font-size: var(--rs-32);
     text-align: left;
+  }
+
+  .faq > details {
+    font-size: var(--rs-13);
+  }
+
+  .faq > details summary {
+    font-size: var(--rs-14);
   }
 }

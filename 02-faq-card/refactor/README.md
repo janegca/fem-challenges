@@ -6,7 +6,7 @@
 
 [Finished Project](https://janegca.github.io/fem-challenges/02-faq-card/index.html)
 
-[Refactored Project](https://janegca.github.io/fem-challenges/02-faq-card/index_v2.html)
+[Refactored Project](https://janegca.github.io/fem-challenges/02-faq-card/refactor/index.html)
 
 ## Presentation and Components
 
@@ -88,8 +88,8 @@ card
 
 # Thoughts
 
-Worked hard on this one to separate visual elements structure CSS into separate,
-hopefully reuseable, components.
+Worked hard on this one to separate visual elements and structure the CSS into
+separate, hopefully reuseable, components.
 
 Chose to keep the images used by the components with the component files; not
 sure if this is a good or bad idea; time will tell when I hit bigger projects.

@@ -11,6 +11,8 @@ Design and coding challenges from
    - [Refactored Profile Card](https://janegca.github.io/fem-challenges/01-profile-card/index_v2.html)
    - [Review and Notes relating to refactor](01-profile-card/profile-card-review.md)
 1. [FAQ Accordion Card](https://janegca.github.io/fem-challenges/02-faq-card/index.html)
+   - [Refactored FAQ Accordian Card](https://janegca.github.io/fem-challenges/02-faq-card/refactor/index.html)
+   - [Review Notes](https://github.com/janegca/fem-challenges/blob/main/02-faq-card/refactor/README.md)
 1. [Social Proof](https://janegca.github.io/fem-challenges/03-social-proof/index.html)
 1. [Article Preview](https://janegca.github.io/fem-challenges/04-article-preview/index.html)
 1. [Four Card Feature Section](https://janegca.github.io/fem-challenges/05-four-card/index.html)

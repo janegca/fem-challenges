@@ -48,14 +48,17 @@ card
 
 ### How to handle layered graphics and offsets?
 
-- setup a `div` and load them as image and background graphics
-- position the `div` with respect to the FAQ
+- layered: setup a `div` and load them as image and background graphics
+- offset: position the `div` with respect to the FAQ
 - in styling the background graphics, found using 'top left' or 'bottom right'
   serves to anchor images to the respective sides but to keep the shadow from
   moving all over in the desktop layout had to use a combination of rem and %
   values; the 'woman' graphic stayed fixed using 'top left' positioning
 
 ### How to handle and animate the box graphic?
+
+- add it as an image, hidden for mobile layouts
+- use `animate` `@keyframes` to animate
 
 ### How to build the FAQ Component?
 
@@ -66,9 +69,9 @@ card
 ### How to add arrow icon and rotate it when details revealed?
 
 - add as a `pseudo-element`
-- use `transform` to rotate
+- use `transform: scale(-1)` to rotate
 
-### How to collapse open questions when new selection made?
+### How to collapse open questions when a new selection is made?
 
 - need to do this so text will not overflow the card
 - used JS
@@ -80,5 +83,5 @@ card
 | fac              | FAQ Accordian Card |
 | fac-Card         | presentation panel |
 | fac-Card_graphic | layered graphic    |
-| fac_Card_faq     | the FAQ            |
-| faq_Questions    | list of questions  |
+| fac_Card_faq     | the FAQ wrapper    |
+| faq              | the FAQ component  |

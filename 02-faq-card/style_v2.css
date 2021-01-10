@@ -72,6 +72,7 @@ img {
   background-repeat: no-repeat;
 }
 
+/* the box */
 .fac-Card_graphic > img {
   visibility: hidden;
 }
@@ -155,7 +156,6 @@ img {
 
 .faq > details summary::after {
   content: var(--arrow-down);
-  padding-left: 0.5em;
 }
 
 /* effects */
@@ -184,13 +184,12 @@ footer a {
 }
 
 /* -- Media Query -- */
-@media (min-width: 1200px) {
+@media (min-width: 1250px) {
   .fac-Card {
     /* display and position */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
 
     /* box model */
     max-height: 509px;
@@ -240,9 +239,15 @@ footer a {
     }
   }
 
+  .fac-Card_faq {
+    margin-top: 4rem;
+    margin-left: 4rem;
+  }
+
   .faq {
     text-align: left;
-    padding-left: clamp(50%, calc(60% + 1rem), 65%);
+    /* padding-left: clamp(50%, calc(55% + 1rem), 65%); */
+    padding-left: 22rem;
   }
 
   .faq > h1 {
@@ -256,5 +261,9 @@ footer a {
 
   .faq > details summary {
     font-size: var(--rs-14);
+  }
+
+  footer {
+    margin-top: 0;
   }
 }

@@ -97,8 +97,4 @@
   .faq > details summary {
     font-size: var(--rs-14);
   }
-
-  footer {
-    margin-top: 0;
-  }
 }

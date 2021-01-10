@@ -31,3 +31,9 @@ footer {
 footer a {
   color: #ccc;
 }
+
+@media (min-width: 1250px) {
+  footer {
+    margin-top: 0;
+  }
+}

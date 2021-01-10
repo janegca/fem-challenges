@@ -1,10 +1,10 @@
-/* Ensure only the selected FAQ question is 'open' */
+/* Utility to ensure only the selected details item is 'open' */
 const questions = document.querySelectorAll("details");
 questions.forEach((item) => {
   item.addEventListener("click", toggleOpen);
 });
 
-/* close all open questions except the currently selected one */
+/* ensure only the selected details item is 'open' */
 function toggleOpen() {
   questions.forEach((item) => {
     if (item.hasAttribute("open") && item !== this) {

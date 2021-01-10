@@ -1,0 +1,104 @@
+/* -- FAQ Component -- */
+.faq {
+  /* custom properties */
+  --clr-fg: hsl(237, 12%, 33%);
+  --clr-fg-light: hsl(240, 6%, 50%);
+  --clr-dividers: hsl(240, 5%, 91%);
+  --clr-accent-dark: hsl(238, 29%, 16%);
+  --clr-accent-light: hsl(14, 88%, 65%);
+
+  --rs-12: 0.75rem;
+  --rs-13: 0.8125rem;
+  --rs-14: 0.875rem;
+  --rs-16: 1rem;
+  --rs-18: 1.125rem;
+  --rs-24: 1.5rem;
+  --rs-32: 2rem;
+  --rs-48: 3rem;
+  --rs-96: 6rem;
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  --arrow-down: url("images/icon-arrow-down.svg");
+
+  /* box model */
+  padding-left: var(--rs-24);
+  padding-right: var(--rs-24);
+
+  /* typography */
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: var(--rs-16);
+  line-height: 1.5;
+}
+
+.faq > h1 {
+  margin-bottom: 0;
+  font-size: var(--rs-32);
+  font-weight: bold;
+  text-align: center;
+}
+
+/* questions and answers */
+.faq > details {
+  /* box model */
+  padding: 0.5em 1em 1em 0;
+  border-bottom: 2px solid var(--clr-dividers);
+
+  /* typography */
+  font-size: var(--rs-12);
+}
+
+.faq > details summary {
+  /* setup correct spacing for the text and arrow icon */
+  display: flex;
+  justify-content: space-between;
+
+  /* typography */
+  font-size: var(--rs-13);
+
+  cursor: pointer;
+}
+
+.faq > details summary::after {
+  content: var(--arrow-down);
+}
+
+/* effects */
+.faq > details summary:hover {
+  color: var(--clr-accent-light);
+}
+
+.faq > details[open] summary {
+  font-weight: var(--fw-bold);
+}
+
+.faq > details[open] summary::after {
+  transform: scale(-1); /* flips the arrow */
+}
+
+/* -- Media Query -- */
+@media (min-width: 1250px) {
+  .faq {
+    text-align: left;
+    /* padding-left: clamp(50%, calc(55% + 1rem), 65%); */
+    padding-left: 22rem;
+  }
+
+  .faq > h1 {
+    font-size: var(--rs-32);
+    text-align: left;
+  }
+
+  .faq > details {
+    font-size: var(--rs-13);
+  }
+
+  .faq > details summary {
+    font-size: var(--rs-14);
+  }
+
+  footer {
+    margin-top: 0;
+  }
+}

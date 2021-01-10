@@ -1,0 +1,33 @@
+/* -- All styling not directly related to the 
+      FAQ Accordian Card or the FAQ itself
+   -- */
+/* -- Resets -- */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* -- Footer -- */
+footer {
+  padding-bottom: 2vh;
+  margin-top: auto;
+  font-size: 0.75rem;
+  color: #212121;
+}
+
+footer a {
+  color: #ccc;
+}

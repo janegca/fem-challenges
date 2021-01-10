@@ -85,3 +85,11 @@ card
 | fac-Card_graphic | layered graphic    |
 | fac_Card_faq     | the FAQ wrapper    |
 | faq              | the FAQ component  |
+
+# Thoughts
+
+Worked hard on this one to separate visual elements structure CSS into separate,
+hopefully reuseable, components.
+
+Chose to keep the images used by the components with the component files; not
+sure if this is a good or bad idea; time will tell when I hit bigger projects.

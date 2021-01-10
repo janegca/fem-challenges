@@ -93,3 +93,8 @@ separate, hopefully reuseable, components.
 
 Chose to keep the images used by the components with the component files; not
 sure if this is a good or bad idea; time will tell when I hit bigger projects.
+
+Oops... should mention I've been trying to structure the properties based on
+this article
+[Better Ways to Organise CSS Properties](https://medium.com/swlh/better-ways-to-organise-css-properties-9a066e7ded62)
+by Nijin Vinodan.

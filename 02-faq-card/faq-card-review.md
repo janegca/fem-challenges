@@ -44,10 +44,16 @@ card
 
 ### How best to size the card so its responsive?
 
+- use a max-height rather than hard coding sizes
+
 ### How to handle layer graphic and offset?
 
 - setup a `div` and load them as image and background graphics
 - position the `div` with respect to the FAQ
+- in styling the background graphics, found using 'top left' or 'bottom right'
+  serves to anchor images to the respective sides but to keep the shadow from
+  moving all over in the desktop layout had to use a combination of rem and %
+  values; the 'woman' graphic stayed fixed using 'top left' positioning
 
 ### How to build the FAQ Component?
 
@@ -63,6 +69,7 @@ card
 ### How to collapse open questions when new selection made?
 
 - need to do this so text will not overflow the card
+- used JS
 
 ## Naming Decisions
 

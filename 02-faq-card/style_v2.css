@@ -170,23 +170,24 @@ footer a {
 
 /* -- Media Query -- */
 @media (min-width: 900px) {
-  .fac {
-    min-height: 100vh;
-    min-width: 100vh;
-    overflow: hidden;
-  }
   .fac-Card {
+    /* display and position */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    /* box model */
     max-height: 509px;
+    margin: auto;
   }
 
   .fac-Card_graphic {
-    /* FIXME: add a calc() for positioning */
+    /* position */
     top: 4vh;
     left: -5vw;
+
+    /* box model */
     min-height: 500px;
 
     /* remove mobile graphics */
@@ -196,7 +197,7 @@ footer a {
     /* add desktop graphics */
     background-image: url("images/illustration-woman-online-desktop.svg"),
       url("images/bg-pattern-desktop.svg");
-    background-position: left top, right -180% bottom 20%;
+    background-position: top left, -31rem 78%;
     background-repeat: no-repeat;
   }
 

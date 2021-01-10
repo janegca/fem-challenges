@@ -33,7 +33,11 @@ Your users should be able to:
   shadows in both desktop and smaller sizes; probably should have them grouped
   with their related images
 
-### Refactors
+### Initial Refactors
+
+Note: fully refactored the project a few weeks after completing the challenge
+(see the 'refactor' directory and new page
+[Refactored FAQ Accordian Card](https://janegca.github.io/fem-challenges/02-faq-card/refactor/index.html))
 
 #### Fixing the mobile image swap
 

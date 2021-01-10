@@ -78,6 +78,21 @@ img {
 
 /* -- FAQ Component -- */
 .fac-Card_faq {
+  /* display and position */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  /* box model */
+  margin-top: 6rem;
+  margin-left: var(--rs-24);
+  margin-right: var(--rs-24);
+  margin-bottom: var(--rs-48);
+}
+
+.faq {
   /* custom properties */
   --clr-fg: hsl(237, 12%, 33%);
   --clr-fg-light: hsl(240, 6%, 50%);
@@ -98,18 +113,9 @@ img {
 
   --arrow-down: url("images/icon-arrow-down.svg");
 
-  /* display and position */
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-
   /* box model */
-  margin-top: 6rem;
-  margin-left: var(--rs-24);
-  margin-right: var(--rs-24);
-  margin-bottom: var(--rs-48);
+  padding-left: var(--rs-24);
+  padding-right: var(--rs-24);
 
   /* typography */
   font-family: "Kumbh Sans", sans-serif;
@@ -117,7 +123,7 @@ img {
   line-height: 1.5;
 }
 
-.fac-Card_faq > h1 {
+.faq > h1 {
   margin-bottom: 0;
   font-size: var(--rs-32);
   font-weight: bold;
@@ -125,7 +131,7 @@ img {
 }
 
 /* questions and answers */
-.fac-Card_faq > details {
+.faq > details {
   /* box model */
   padding: 0.5em 1em 1em 0;
   border-bottom: 2px solid var(--clr-dividers);
@@ -134,7 +140,7 @@ img {
   font-size: var(--rs-12);
 }
 
-.fac-Card_faq > details summary {
+.faq > details summary {
   /* setup correct spacing for the text and arrow icon */
   display: flex;
   justify-content: space-between;
@@ -142,20 +148,20 @@ img {
   cursor: pointer;
 }
 
-.fac-Card_faq > details summary::after {
+.faq > details summary::after {
   content: var(--arrow-down);
 }
 
 /* effects */
-.fac-Card_faq > details summary:hover {
+.faq > details summary:hover {
   color: var(--clr-accent-light);
 }
 
-.fac-Card_faq > details[open] summary {
+.faq > details[open] summary {
   font-weight: var(--fw-bold);
 }
 
-.fac-Card_faq > details[open] summary::after {
+.faq > details[open] summary::after {
   content: var(--arrow-down);
   transform: scale(-1); /* flips the arrow */
 }
@@ -173,12 +179,12 @@ footer a {
 }
 
 /* -- Media Query -- */
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
   .fac-Card {
     /* display and position */
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
     /* box model */
@@ -228,12 +234,12 @@ footer a {
     }
   }
 
-  .fac-Card_faq {
+  .faq {
     text-align: left;
-    padding-left: 55%;
+    padding-left: clamp(50%, calc(60% + 1rem), 65%);
   }
 
-  .fac-Card_faq > h1 {
+  .faq > h1 {
     text-align: left;
   }
 }

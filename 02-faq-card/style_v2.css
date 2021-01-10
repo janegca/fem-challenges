@@ -72,6 +72,10 @@ img {
   background-repeat: no-repeat;
 }
 
+.fac-Card_graphic > img {
+  visibility: hidden;
+}
+
 /* -- FAQ Component -- */
 .fac-Card_faq {
   /* custom properties */
@@ -169,7 +173,7 @@ footer a {
 }
 
 /* -- Media Query -- */
-@media (min-width: 900px) {
+@media (min-width: 1250px) {
   .fac-Card {
     /* display and position */
     display: flex;
@@ -199,6 +203,29 @@ footer a {
       url("images/bg-pattern-desktop.svg");
     background-position: top left, -31rem 78%;
     background-repeat: no-repeat;
+  }
+
+  .fac-Card_graphic > img {
+    position: relative;
+    top: 8rem;
+    left: -0.4rem;
+
+    transform: scale(0.7);
+    animation: bounce 3s ease-in-out 1s infinite;
+    visibility: visible;
+  }
+
+  @keyframes bounce {
+    0%,
+    50%,
+    100% {
+      /* OR from, 50%, to */
+      top: 8rem;
+    }
+    25%,
+    75% {
+      top: 0;
+    }
   }
 
   .fac-Card_faq {

@@ -46,7 +46,7 @@ card
 
 - use a max-height rather than hard coding sizes
 
-### How to handle layer graphic and offset?
+### How to handle layered graphics and offsets?
 
 - setup a `div` and load them as image and background graphics
 - position the `div` with respect to the FAQ
@@ -55,10 +55,12 @@ card
   moving all over in the desktop layout had to use a combination of rem and %
   values; the 'woman' graphic stayed fixed using 'top left' positioning
 
+### How to handle and animate the box graphic?
+
 ### How to build the FAQ Component?
 
 - `h1` for heading
-- `summary` and `detail` element for question and answers
+- `details` and `summary` elements for question and answers
   - automatically collapsible
 
 ### How to add arrow icon and rotate it when details revealed?

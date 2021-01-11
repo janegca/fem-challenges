@@ -61,6 +61,7 @@
 }
 
 .faq > details summary::after {
+  /* set the icon marker on the right */
   content: var(--arrow-down);
 }
 
@@ -81,7 +82,6 @@
 @media (min-width: 1250px) {
   .faq {
     text-align: left;
-    /* padding-left: clamp(50%, calc(55% + 1rem), 65%); */
     padding-left: 22rem;
   }
 

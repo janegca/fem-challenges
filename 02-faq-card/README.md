@@ -62,6 +62,7 @@ Setting a width on the details element corrected this at all sizes.
 References:
 
 - [MDN: details](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
+- [HTML5 Doctor: The Details and Summary Elements](https://html5doctor.com/the-details-and-summary-elements/)
 - [MDN: linear-gradient()](<https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient()>)
 - [Stackoverflow: Making Gradient Fill the Page with CSS](https://stackoverflow.com/questions/16841323/making-gradient-background-fill-page-with-css)
 - [Dev ED: CSS Position Tutorial](https://www.youtube.com/watch?v=gD3G67oPg-w&list=PLDyQo7g0_nsUjf046cCHKJ16U1SoXrElZ&index=3)

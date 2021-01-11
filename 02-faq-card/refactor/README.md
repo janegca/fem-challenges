@@ -70,6 +70,8 @@ card
 
 - add as a `pseudo-element`
 - use `transform: scale(-1)` to rotate
+- FIXME: caniuse.com claims 'animation and transition' is not recognized on
+  `:after` pseudo-element by Safari on iPad
 
 ### How to collapse open questions when a new selection is made?
 

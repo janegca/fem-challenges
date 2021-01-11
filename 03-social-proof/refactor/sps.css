@@ -1,9 +1,25 @@
 /* The Social Proof Section (sps) Component */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 
 .sps {
   /* custom properties */
+  --clr-accent: hsl(333, 80%, 67%);
+  --clr-bg-card: hsl(300, 43%, 22%);
+  --clr-bg-ratings: hsl(300, 24%, 96%);
+  --clr-fg: hsl(301, 10%, 53%);
 
-  /* display and position */
+  --rs-15: 0.9375rem;
+  --rs-16: 1rem;
+  --rs-18: 1.125rem;
+  --rs-25: 1.5625;
+  --rs-32: 2rem;
+  --rs-40: 2.5rem;
+
+  --lh-normal: var(--rs-25);
+  --lh-headings: var(--rs-32);
+
+  --fw-normal: 500;
+  --fw-bold: 700;
 
   /* box model */
   min-width: clamp(77vw, 88vw, 1110px); /* 1110/1440 = 77%, 327/375 = 88% */
@@ -17,6 +33,43 @@
   background-position: top left, center 100%;
 
   /* typography */
+  font-family: "Spartan", sans-serif;
+  font-size: var(--rs-15);
+  font-weight: var(--fw-normal);
+  line-height: var(--lh-normal);
+  color: var(--clr-fg);
 
   outline: 1px solid red;
+}
+
+.sps > * + * {
+  margin-bottom: var(--rs-40);
+}
+
+.sps-Intro {
+  text-align: center;
+
+  outline: 1px solid red;
+}
+
+.sps-Intro > h1 {
+  /* display and position */
+  display: inline-block;
+
+  /* box model */
+  max-width: 12ch;
+  margin-top: 0;
+  margin-bottom: var(--rs-18);
+
+  /* typography */
+  font-size: var(--rs-32);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-headings);
+  color: var(--clr-bg-card);
+}
+
+.sps-Intro > p {
+  /* box model */
+  max-width: 30ch;
+  margin: 0;
 }

@@ -1,0 +1,42 @@
+/* Resets */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Page Style */
+body {
+  /* display and position */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* box model */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+  /* misc */
+  overflow: hidden;
+}
+
+main {
+  margin: auto;
+}
+
+footer {
+  margin-top: auto;
+  margin-bottom: 2vh;
+
+  text-align: center;
+}

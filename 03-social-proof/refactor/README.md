@@ -68,7 +68,7 @@ elements that need to be grouped solely for positioning or styling purposes.
 
 [HTML Living Standard](https://html.spec.whatwg.org/multipage/sections.html#the-article-element)
 
-### Wrappers, Containers, and Components, Oh My!
+### Wrappers, Containers, and Components, Oh My
 
 Work on the assumptions that:
 

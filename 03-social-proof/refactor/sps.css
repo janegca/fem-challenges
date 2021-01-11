@@ -1,0 +1,22 @@
+/* The Social Proof Section (sps) Component */
+
+.sps {
+  /* custom properties */
+
+  /* display and position */
+
+  /* box model */
+  min-width: clamp(77vw, 88vw, 1110px); /* 1110/1440 = 77%, 327/375 = 88% */
+  height: 80vh;
+  padding: 2vw;
+
+  /* appearance */
+  background-image: url("../images/bg-pattern-top-mobile.svg"),
+    url("../images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top left, center 100%;
+
+  /* typography */
+
+  outline: 1px solid red;
+}

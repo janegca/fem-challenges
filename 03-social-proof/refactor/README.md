@@ -29,15 +29,15 @@ the subcomponents together and that the section can appear anywhere on a page.
 
 ## Naming Decisions
 
-| Class         | Description                 | Tag     | Element(s)      |
-| ------------- | --------------------------- | ------- | --------------- |
-| sps           | Social Proof Section        | article | sps-\* classes  |
-| sps-Intro     | the Intro component         | section | h1, p           |
-| sps-Ratings\* | a list of ratings           | ul      | sps-Rating      |
-| sps-Rating    | the Rating component        | li      | div, p          |
-| sps-Reviews\* | a list of reviews           | ul      | sps-Review      |
-| sps-Review    | the Review component        | li      | sps-Reviewer, p |
-| sps-Reviewer  | an ID card for the reviewer | article | img, p, p       |
+| Class         | Description                 | Tag     | Element(s)               |
+| ------------- | --------------------------- | ------- | ------------------------ |
+| sps           | Social Proof Section        | article | sps-\* classes           |
+| sps-Intro     | the Intro component         | section | h1, p                    |
+| sps-Ratings\* | a list of ratings           | article | ul > sps-Rating          |
+| sps-Rating    | the Rating component        | li      | div, p                   |
+| sps-Reviews\* | a collection of reviews     | article | sps-Review               |
+| sps-Review    | the Review component        | article | sps-Reviewer, blockquote |
+| sps-Reviewer  | an ID card for the reviewer | article | img, div > p, p          |
 
 ## Technical Questions
 
@@ -80,10 +80,10 @@ Work on the assumptions that:
 1. Containers and Components are basically the same thing, they are opinionated
    as to the relationships that exist between the elements they contain but
    agnostic with regards to their own relationship with what's around them.
-1. The design is to be built mobile first in such a way that it will require
-   only a rearrangement of components to achieve larger layouts i.e. each
-   component is to be responsive in its own right and adjust meaningfully to
-   whatever space the layout allots the section as a whole
+1. Build mobile first in such a way that it will require only a rearrangement of
+   components to achieve larger layouts i.e. each component is to be responsive
+   in its own right and adjust meaningfully to whatever space the layout allots
+   the section as a whole
 
 Build the design with these assumptions in mind. Identify the concerns of each
 visual component and define them accordingly. Want to be able to easily

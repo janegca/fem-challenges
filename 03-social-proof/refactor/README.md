@@ -34,9 +34,9 @@ the subcomponents together and that the section can appear anywhere on a page.
 | sps           | Social Proof Section        | article | sps-\* classes  |
 | sps-Intro     | the Intro component         | section | h1, p           |
 | sps-Ratings\* | a list of ratings           | ul      | sps-Rating      |
-| sps-Rating    | the Rating component        | article | img, p          |
+| sps-Rating    | the Rating component        | li      | div, p          |
 | sps-Reviews\* | a list of reviews           | ul      | sps-Review      |
-| sps-Review    | the Review component        | article | sps-Reviewer, p |
+| sps-Review    | the Review component        | li      | sps-Reviewer, p |
 | sps-Reviewer  | an ID card for the reviewer | article | img, p, p       |
 
 ## Technical Questions

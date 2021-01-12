@@ -1,5 +1,5 @@
 /* The Social Proof Section (sps) Component */
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap"); */
 
 .sps {
   /* custom properties */
@@ -14,12 +14,17 @@
   --rs-25: 1.5625;
   --rs-32: 2rem;
   --rs-40: 2.5rem;
+  --rs-76: 4.75rem;
 
   --lh-normal: var(--rs-25);
   --lh-headings: var(--rs-32);
 
+  --ff-default: "Spartan", sans-serif;
   --fw-normal: 500;
   --fw-bold: 700;
+
+  --comp-spacer: var(--rs-40);
+  --star: url(../images/icon-star.svg);
 
   /* box model */
   min-width: clamp(77vw, 88vw, 1110px); /* 1110/1440 = 77%, 327/375 = 88% */
@@ -33,7 +38,7 @@
   background-position: top left, center 100%;
 
   /* typography */
-  font-family: "Spartan", sans-serif;
+  font-family: var(--ff-default, "Spartan", sans-serif);
   font-size: var(--rs-15);
   font-weight: var(--fw-normal);
   line-height: var(--lh-normal);
@@ -42,20 +47,20 @@
   outline: 1px solid red;
 }
 
-.sps > * + * {
-  margin-bottom: var(--rs-40);
-}
-
+/* -- Intro -- */
 .sps-Intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: var(--comp-spacer);
   text-align: center;
 
   outline: 1px solid red;
 }
 
 .sps-Intro > h1 {
-  /* display and position */
-  display: inline-block;
-
   /* box model */
   max-width: 12ch;
   margin-top: 0;
@@ -72,4 +77,26 @@
   /* box model */
   max-width: 30ch;
   margin: 0;
+}
+
+/* -- Ratings -- */
+.sps-Ratings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.sps-Ratings > ul {
+  list-style: none;
+}
+
+.sps-Rating {
+  padding: var(--rs-16) var(--rs-76);
+  margin-bottom: var(--rs-16);
+
+  background-color: var(--clr-bg-ratings);
+}
+
+.sps-Rating > p {
+  display: inline-block;
 }

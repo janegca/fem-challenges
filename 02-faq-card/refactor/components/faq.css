@@ -60,6 +60,8 @@
   cursor: pointer;
 }
 
+/* FIXME: this doesn't work in Safari on the iPad.
+          need to find a polyfill  */
 .faq > details summary::after {
   /* set the icon marker on the right */
   content: var(--arrow-down);

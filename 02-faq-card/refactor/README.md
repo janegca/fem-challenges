@@ -71,7 +71,8 @@ card
 - add as a `pseudo-element`
 - use `transform: scale(-1)` to rotate
 - FIXME: caniuse.com claims 'animation and transition' is not recognized on
-  `:after` pseudo-element by Safari on iPad, it appears `transform` falls under this category as the arrow is not being displayed
+  `:after` pseudo-element by Safari on iPad, it appears `transform` falls under
+  this category as the arrow is not being displayed
 
 ### How to collapse open questions when a new selection is made?
 
@@ -88,7 +89,14 @@ card
 | fac_Card_faq     | the FAQ wrapper    |
 | faq              | the FAQ component  |
 
-# Thoughts
+## Issue
+
+After splitting visual components into individual files found that LiveServer
+will not automatically update with changes made in those files, have to manually
+reload. Doesn't make for a pleasant development experience, may need to switch
+to SASS.
+
+## Thoughts
 
 Worked hard on this one to separate visual elements and structure the CSS into
 separate, hopefully reuseable, components.

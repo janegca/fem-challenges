@@ -54,10 +54,12 @@ footer {
   --rs-25: 1.5625;
   --rs-32: 2rem;
   --rs-40: 2.5rem;
+  --rs-48: 3rem;
   --rs-76: 4.75rem;
 
   --lh-normal: var(--rs-25);
   --lh-headings: var(--rs-32);
+  --lh-heading-lg: var(--rs-48);
 
   --fw-normal: 500;
   --fw-bold: 700;
@@ -163,6 +165,9 @@ footer {
 }
 
 .sps-Review {
+  display: flex;
+  flex-direction: column;
+
   padding: var(--rs-32);
 
   background-color: var(--clr-bg-card);
@@ -170,8 +175,14 @@ footer {
   border-radius: 1em;
 }
 
+.sps-Review > blockquote {
+  flex: 2;
+  margin-top: auto;
+}
+
 .sps-Reviewer {
   display: flex;
+  flex: 1;
   align-items: center;
   margin-bottom: 0.5em;
 }
@@ -187,4 +198,46 @@ footer {
 
 .sps-Reviewer > div > p:last-of-type {
   color: var(--clr-accent);
+}
+
+/* -- Media Queries -- */
+@media (min-width: 800px) {
+  .sps {
+    display: grid;
+    grid-template:
+      "intro ratings"
+      "reviews reviews";
+  }
+
+  .sps-Intro {
+    grid-area: intro;
+
+    display: unset;
+    text-align: unset;
+  }
+
+  .sps-Intro > h1 {
+    font-size: var(--rs-48);
+    line-height: var(--lh-heading-lg);
+  }
+
+  .sps-Intro > p {
+    max-width: 40ch;
+  }
+
+  .sps-Ratings {
+    grid-area: ratings;
+  }
+
+  .sps-Reviews {
+    grid-area: reviews;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+  }
+
+  .sps-Reviews > * + * {
+    margin-left: 1em;
+  }
 }

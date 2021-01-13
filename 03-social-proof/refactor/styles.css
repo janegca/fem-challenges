@@ -47,9 +47,11 @@ footer {
   --clr-fg-review: white;
 
   /* font sizes in REM's */
+  --rs-13: 0.8125rem;
   --rs-15: 0.9375rem;
   --rs-16: 1rem;
   --rs-18: 1.125rem;
+  --rs-20: 1.25rem;
   --rs-24: 1.5rem;
   --rs-25: 1.5625;
   --rs-32: 2rem;
@@ -202,7 +204,7 @@ footer {
 }
 
 /* -- Media Queries -- */
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   body {
     max-height: 100vh;
   }
@@ -218,6 +220,7 @@ footer {
       "reviews reviews";
   }
 
+  /* Intro */
   .sps-Intro {
     grid-area: intro;
 
@@ -234,10 +237,35 @@ footer {
     max-width: 40ch;
   }
 
+  /* Ratings */
   .sps-Ratings {
     grid-area: ratings;
   }
 
+  .sps-Rating {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .sps-Rating > div,
+  .sps-Rating > p {
+    padding-top: var(--rs-20);
+    padding-bottom: var(--rs-20);
+    margin: 0;
+
+    font-size: var(--rs-13);
+  }
+
+  .sps-Ratings > ul > li:first-of-type {
+    transform: translateX(-5vw);
+  }
+
+  .sps-Ratings > ul > li:nth-of-type(2) {
+    transform: translateX(-2.5vw);
+  }
+
+  /* Reviews */
   .sps-Reviews {
     grid-area: reviews;
 
@@ -254,10 +282,10 @@ footer {
   }
 
   .sps-Reviews > article:first-of-type {
-    transform: translateY(-5vh);
+    transform: translateY(-2.5vh);
   }
 
   .sps-Reviews > article:last-of-type {
-    transform: translateY(+5vh);
+    transform: translateY(5vh);
   }
 }

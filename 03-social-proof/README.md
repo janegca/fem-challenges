@@ -4,6 +4,8 @@
 
 [Finished Project](https://janegca.github.io/fem-challenges/03-social-proof/index.html)
 
+[Refactored Solution](https://janegca.github.io/fem-challenges/03-social-proof/refactor/index.html)
+
 ## Criteria
 
 Your users should be able to:

@@ -55,6 +55,7 @@ footer {
   --rs-32: 2rem;
   --rs-40: 2.5rem;
   --rs-48: 3rem;
+  --rs-72: 4.5rem;
   --rs-76: 4.75rem;
 
   --lh-normal: var(--rs-25);
@@ -202,6 +203,14 @@ footer {
 
 /* -- Media Queries -- */
 @media (min-width: 800px) {
+  body {
+    max-height: 100vh;
+  }
+
+  main {
+    width: 77%;
+  }
+
   .sps {
     display: grid;
     grid-template:
@@ -232,12 +241,23 @@ footer {
   .sps-Reviews {
     grid-area: reviews;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 1fr;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    margin-top: var(--rs-72);
   }
 
-  .sps-Reviews > * + * {
+  .sps-Reviews > article + article {
+    margin-top: 0;
     margin-left: 1em;
+  }
+
+  .sps-Reviews > article:first-of-type {
+    transform: translateY(-5vh);
+  }
+
+  .sps-Reviews > article:last-of-type {
+    transform: translateY(+5vh);
   }
 }

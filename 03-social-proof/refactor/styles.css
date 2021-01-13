@@ -140,6 +140,10 @@ footer {
   list-style: none;
 }
 
+.sps-Ratings li + li {
+  margin-top: var(--rs-16);
+}
+
 .sps-Rating {
   display: flex;
   flex-direction: column;
@@ -156,10 +160,6 @@ footer {
   margin-bottom: var(--rs-16);
   font-weight: var(--fw-bold);
   color: var(--clr-bg-card);
-}
-
-.sps-Ratings li + li {
-  margin-top: var(--rs-16);
 }
 
 /* -- Reviews -- */
@@ -218,6 +218,12 @@ footer {
     grid-template:
       "intro ratings"
       "reviews reviews";
+
+    /* appearance */
+    background-image: url("../images/bg-pattern-top-desktop.svg"),
+      url("../images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top left, right bottom;
   }
 
   /* Intro */
@@ -242,6 +248,14 @@ footer {
     grid-area: ratings;
   }
 
+  .sps-Ratings > ul > li:first-of-type {
+    transform: translateX(-5vw);
+  }
+
+  .sps-Ratings > ul > li:nth-of-type(2) {
+    transform: translateX(-2.5vw);
+  }
+
   .sps-Rating {
     flex-direction: row;
     justify-content: space-around;
@@ -255,14 +269,6 @@ footer {
     margin: 0;
 
     font-size: var(--rs-13);
-  }
-
-  .sps-Ratings > ul > li:first-of-type {
-    transform: translateX(-5vw);
-  }
-
-  .sps-Ratings > ul > li:nth-of-type(2) {
-    transform: translateX(-2.5vw);
   }
 
   /* Reviews */

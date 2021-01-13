@@ -4,6 +4,8 @@
 
 [Initial Solution](https://janegca.github.io/fem-challenges/03-social-proof/index.html)
 
+[Refactored Solution](https://janegca.github.io/fem-challenges/03-social-proof/refactor/index.html)
+
 ## Presentation and Components
 
 The design is described as a _section_ so assume the intent is to always present
@@ -39,8 +41,6 @@ the subcomponents together and that the section can appear anywhere on a page.
 | sps-Review    | the Review component        | article | sps-Reviewer, blockquote |
 | sps-Reviewer  | an ID card for the reviewer | article | img, div > p, p          |
 
-## Technical Questions
-
 ## Thoughts
 
 ### Component Definitions
@@ -68,7 +68,7 @@ elements that need to be grouped solely for positioning or styling purposes.
 
 [HTML Living Standard](https://html.spec.whatwg.org/multipage/sections.html#the-article-element)
 
-### Wrappers, Containers, and Components, Oh My
+### Components, Containers, and Wrappers, Oh My
 
 Work on the assumptions that:
 

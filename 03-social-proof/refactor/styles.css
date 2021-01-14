@@ -286,11 +286,11 @@ footer {
     margin-left: 1em;
   }
 
-  .sps-Reviews > article:first-of-type {
+  .sps-Reviews > div:first-of-type {
     transform: translateY(-2.5vh);
   }
 
-  .sps-Reviews > article:last-of-type {
+  .sps-Reviews > div:last-of-type {
     transform: translateY(5vh);
   }
 }

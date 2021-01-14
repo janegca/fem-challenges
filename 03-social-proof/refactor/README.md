@@ -31,15 +31,15 @@ the subcomponents together and that the section can appear anywhere on a page.
 
 ## Naming Decisions
 
-| Class         | Description                 | Tag     | Element(s)               |
-| ------------- | --------------------------- | ------- | ------------------------ |
-| sps           | Social Proof Section        | article | sps-\* classes           |
-| sps-Intro     | the Intro component         | section | h1, p                    |
-| sps-Ratings\* | a list of ratings           | article | ul > sps-Rating          |
-| sps-Rating    | the Rating component        | li      | div, p                   |
-| sps-Reviews\* | a collection of reviews     | article | sps-Review               |
-| sps-Review    | the Review component        | article | sps-Reviewer, blockquote |
-| sps-Reviewer  | an ID card for the reviewer | article | img, div > p, p          |
+| Class         | Description                 | Tag | Element(s)               |
+| ------------- | --------------------------- | --- | ------------------------ |
+| sps           | Social Proof Section        | div | sps-\* classes           |
+| sps-Intro     | the Intro component         | div | h1, p                    |
+| sps-Ratings\* | a list of ratings           | div | ul > sps-Rating          |
+| sps-Rating    | the Rating component        | li  | div, p                   |
+| sps-Reviews\* | a collection of reviews     | div | sps-Review               |
+| sps-Review    | the Review component        | div | sps-Reviewer, blockquote |
+| sps-Reviewer  | an ID card for the reviewer | div | img, div > p, p          |
 
 ## Thoughts
 
@@ -67,6 +67,11 @@ that should be part of the document outline, reserving the `div` tag for any
 elements that need to be grouped solely for positioning or styling purposes.
 
 [HTML Living Standard](https://html.spec.whatwg.org/multipage/sections.html#the-article-element)
+
+UPDATE: well, that doesn't work well, the validator throws a warning to "add
+identifying headings to all articles", not sure why since the standard doesn't
+require a heading but if I don't want things to be messy guess I'll have to go
+back to div's
 
 ### Components, Containers, and Wrappers, Oh My
 

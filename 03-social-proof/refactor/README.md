@@ -43,7 +43,10 @@ the subcomponents together and that the section can appear anywhere on a page.
 
 UPDATE: Added a wrapper-sps class and moved presentation background graphics
 from the sps class to the wrapper. On the plus side, the change was pretty
-straight forward
+straight forward.
+
+UPDATE 2: Had to move the background graphics to the body to match the design,
+use the wrapper-sps for sizing in the larger layout.
 
 ## Thoughts
 

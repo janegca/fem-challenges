@@ -25,6 +25,12 @@ body {
   min-height: 100vh;
   padding: 2vmin;
   margin: 0;
+
+  /* appearance */
+  background-image: url("../images/bg-pattern-top-mobile.svg"),
+    url("../images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top left, center 100%;
 }
 
 footer {
@@ -34,15 +40,6 @@ footer {
   font-family: sans-serif;
   text-align: center;
   color: hsl(0, 87%, 0%);
-}
-
-/* -- Social Proof Section presentation wrapper -- */
-.wrapper-sps {
-  /* appearance */
-  background-image: url("../images/bg-pattern-top-mobile.svg"),
-    url("../images/bg-pattern-bottom-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: top left, center 100%;
 }
 
 /* -- Social Proof Section -- */
@@ -209,17 +206,16 @@ footer {
 @media (min-width: 1000px) {
   body {
     max-height: 100vh;
-  }
-
-  .wrapper-sps {
-    /* box model */
-    width: 77%;
 
     /* appearance */
     background-image: url("../images/bg-pattern-top-desktop.svg"),
       url("../images/bg-pattern-bottom-desktop.svg");
     background-repeat: no-repeat;
     background-position: top left, right bottom;
+  }
+
+  .wrapper-sps {
+    width: 77%;
   }
 
   .sps {

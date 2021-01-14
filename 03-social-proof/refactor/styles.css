@@ -21,7 +21,6 @@ body {
   justify-content: center;
   align-items: center;
 
-  /* box model */
   width: 100vw;
   min-height: 100vh;
   padding: 2vmin;
@@ -35,6 +34,15 @@ footer {
   font-family: sans-serif;
   text-align: center;
   color: hsl(0, 87%, 0%);
+}
+
+/* -- Social Proof Section presentation wrapper -- */
+.wrapper-sps {
+  /* appearance */
+  background-image: url("../images/bg-pattern-top-mobile.svg"),
+    url("../images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top left, center 100%;
 }
 
 /* -- Social Proof Section -- */
@@ -73,12 +81,6 @@ footer {
   min-width: clamp(77vw, 88vw, 1110px); /* 1110/1440 = 77%, 327/375 = 88% */
   padding-left: 2vw;
   padding-right: 2vw;
-
-  /* appearance */
-  background-image: url("../images/bg-pattern-top-mobile.svg"),
-    url("../images/bg-pattern-bottom-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: top left, center 100%;
 
   /* typography */
   font-family: "Spartan", sans-serif;
@@ -163,7 +165,7 @@ footer {
 }
 
 /* -- Reviews -- */
-.sps-Reviews > article + article {
+.sps-Reviews > * + * {
   margin-top: var(--rs-16);
 }
 
@@ -209,8 +211,15 @@ footer {
     max-height: 100vh;
   }
 
-  main {
+  .wrapper-sps {
+    /* box model */
     width: 77%;
+
+    /* appearance */
+    background-image: url("../images/bg-pattern-top-desktop.svg"),
+      url("../images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top left, right bottom;
   }
 
   .sps {
@@ -218,12 +227,6 @@ footer {
     grid-template:
       "intro ratings"
       "reviews reviews";
-
-    /* appearance */
-    background-image: url("../images/bg-pattern-top-desktop.svg"),
-      url("../images/bg-pattern-bottom-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: top left, right bottom;
   }
 
   /* Intro */
@@ -282,7 +285,7 @@ footer {
     margin-top: var(--rs-72);
   }
 
-  .sps-Reviews > article + article {
+  .sps-Reviews > * + * {
     margin-top: 0;
     margin-left: 1em;
   }

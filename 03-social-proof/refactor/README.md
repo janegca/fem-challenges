@@ -41,6 +41,10 @@ the subcomponents together and that the section can appear anywhere on a page.
 | sps-Review    | the Review component        | div | sps-Reviewer, blockquote |
 | sps-Reviewer  | an ID card for the reviewer | div | img, div > p, p          |
 
+UPDATE: Added a wrapper-sps class and moved presentation background graphics
+from the sps class to the wrapper. On the plus side, the change was pretty
+straight forward
+
 ## Thoughts
 
 ### Component Definitions

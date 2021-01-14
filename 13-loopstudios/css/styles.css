@@ -1,0 +1,99 @@
+/* -- Resets -- */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* -- General -- */
+body {
+  margin: 0;
+}
+
+footer {
+  margin-top: 2vw;
+  font-size: 11px;
+  text-align: center;
+}
+
+footer > a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* -- Loopstudios landing page -- */
+.ls {
+  /* custom properties */
+  --clr-fg: black;
+  --clr-accent: white;
+  --clr-overlay: hsl(0, 0%, 55%);
+  --clr-copyright: hsl(0, 0%, 41%);
+
+  --rs-15: 0.9375rem;
+  --rs-16: 1rem;
+  --rs-24: 1.5rem;
+  --rs-40: 2.5rem;
+
+  --fw-light: 300;
+  --fw-normal: 400;
+
+  /* typography */
+  font-family: "Alata", sans-serif;
+  font-size: var(--rs-16);
+  color: var(--clr-fg);
+}
+
+.ls h1,
+.ls h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: var(--fw-light);
+  text-transform: uppercase;
+}
+
+.ls ul {
+  list-style: none;
+}
+
+.ls a {
+  text-decoration: none;
+}
+
+.ls-Hero {
+  /* box-model */
+  min-height: 100vh;
+  padding: var(--rs-24);
+
+  /* appearance */
+  background-image: url("../images/mobile/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--clr-fg);
+  color: var(--clr-accent);
+}
+
+.ls-Hero_navbar {
+  display: flex;
+  padding: var(--rs-40) var(--rs-24) 0;
+}
+
+.ls-Hero_navbar > img {
+  width: 9rem; /* 144px */
+}
+
+.ls-Hero_navbar > nav {
+  margin-left: auto;
+}
+
+.ls-Hero > h1 {
+  border: 1px solid var(--clr-accent);
+  padding: var(--rs-24);
+
+  font-size: var(--rs-40);
+}

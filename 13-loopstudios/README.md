@@ -39,6 +39,10 @@ Button
 - text and background colours flip on hover/focus
 - cursor pointer
 
+Grid Image
+
+- overlay on hover, text set to black
+
 ### Hero/Header
 
 - width: 100vw, all screens
@@ -112,3 +116,7 @@ Developers choice, suggestions:
 - [Font Awesome](https://fontawesome.com)
 - [IcoMoon](https://icomoon.io)
 - [Ionicons](https://ionicons.com)
+
+## References
+
+[Pure CSS Hamburger Menu & Overlay](https://www.youtube.com/watch?v=DZg6UfS5zYg)

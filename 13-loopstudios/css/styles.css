@@ -32,7 +32,7 @@ footer > a {
 .ls {
   /* custom properties */
   --clr-fg: black;
-  --clr-accent: white;
+  --clr-accent: hsl(0, 100%, 100%);
   --clr-overlay: hsl(0, 0%, 55%);
   --clr-copyright: hsl(0, 0%, 41%);
 
@@ -43,6 +43,7 @@ footer > a {
 
   --fw-light: 300;
   --fw-normal: 400;
+  --fw-bold: 700;
 
   /* typography */
   font-family: "Alata", sans-serif;

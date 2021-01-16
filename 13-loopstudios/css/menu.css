@@ -84,6 +84,7 @@ nav .toggler:checked:hover + .hamburger > div {
 
 /* show menu */
 nav .toggler:checked ~ .menu {
+  background-color: black;
   visibility: visible;
 }
 
@@ -115,31 +116,30 @@ nav .menu > div {
   background-color: black;
 
   /* open as a circle that spreads beyond viewport */
-  border-radius: 50%;
-  width: 200vw;
-  height: 200vw;
+  /* border-radius: 50%; */
+  width: 100vw;
+  min-height: 100vw;
   display: flex;
-  flex: none;
+  /* flex: none; */
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   transform: scale(0);
   transition: all 0.4s ease;
 }
 
 nav .menu > div > div {
-  text-align: center;
-  max-width: 90vw;
-  max-height: 100vh;
+  background-color: black;
+  text-align: left;
   opacity: 0;
   transition: opacity 0.4s ease;
 }
 
 nav .menu > div > div > ul > li {
-  font-size: 1.5rem;
-  padding: 1rem;
+  font-size: var(--rs-24);
+  padding: var(--rs-16);
 }
 
 nav .menu > div > div > ul > li a {
-  color: inherit;
-  transition: color 0.4s ease;
+  /* color: inherit; */
+  /* transition: color 0.4s ease; */
 }

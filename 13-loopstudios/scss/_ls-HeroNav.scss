@@ -1,4 +1,4 @@
-.ls-Hero nav {
+.ls-HeroNav {
   --menu-checkbox: 24px;
   --menu-speed: 0.75s;
   --hamburger-line-height: 2px;
@@ -11,7 +11,7 @@
 }
 
 /* the checkbox */
-.ls-Hero nav .toggler {
+.ls-HeroNav .toggler {
   position: absolute;
   top: 0;
   right: 0;
@@ -26,7 +26,7 @@
   opacity: 0;
 }
 
-.ls-Hero nav .hamburger {
+.ls-HeroNav .hamburger {
   position: absolute;
   top: 0;
   right: 0;
@@ -44,7 +44,7 @@
 }
 
 /* hamburger middle line */
-.ls-Hero nav .hamburger > div {
+.ls-HeroNav .hamburger > div {
   position: relative;
   width: 100%;
   height: var(--hamburger-line-height);
@@ -55,8 +55,8 @@
 }
 
 /* hamburger top and bottom lines */
-.ls-Hero nav .hamburger > div::before,
-.ls-Hero nav .hamburger > div::after {
+.ls-HeroNav .hamburger > div::before,
+.ls-HeroNav .hamburger > div::after {
   content: "";
   position: absolute;
   top: -10px;
@@ -68,43 +68,43 @@
   background: inherit;
 }
 
-.ls-Hero nav .hamburger > div::after {
+.ls-HeroNav .hamburger > div::after {
   top: 10px;
 }
 
 /* hamburger animation to create 'x' when checked  */
-.ls-Hero nav .toggler:checked + .hamburger > div {
+.ls-HeroNav .toggler:checked + .hamburger > div {
   transform: rotate(135deg);
 }
 
-.ls-Hero nav .toggler:checked + .hamburger > div::before,
-.ls-Hero nav .toggler:checked + .hamburger > div::after {
+.ls-HeroNav .toggler:checked + .hamburger > div::before,
+.ls-HeroNav .toggler:checked + .hamburger > div::after {
   top: 0;
   transform: rotate(90deg);
 }
 
-.ls-Hero nav .toggler:checked:hover + .hamburger > div {
+.ls-HeroNav .toggler:checked:hover + .hamburger > div {
   transform: rotate(225deg);
 }
 
 /* show menu overlay with animation */
-.ls-Hero nav .toggler:checked ~ .menu {
+.ls-HeroNav .toggler:checked ~ .menu {
   background-color: var(--clr-fg);
   visibility: visible;
 }
 
-.ls-Hero nav .toggler:checked ~ .menu > div {
+.ls-HeroNav .toggler:checked ~ .menu > div {
   transform: scale(1);
   transition-duration: var(--menu-speed);
 }
 
-.ls-Hero nav .toggler:checked ~ .menu > div > div {
+.ls-HeroNav .toggler:checked ~ .menu > div > div {
   opacity: 1;
   transition: var(--transition);
 }
 
 /* show the menu text */
-.ls-Hero nav .menu {
+.ls-HeroNav .menu {
   position: fixed;
   top: 0;
   right: 0;
@@ -119,7 +119,7 @@
   visibility: hidden;
 }
 
-.ls-Hero nav .menu > div {
+.ls-HeroNav .menu > div {
   display: flex;
   align-items: center;
   justify-content: left;
@@ -131,14 +131,14 @@
   transition: var(--transition);
 }
 
-.ls-Hero nav .menu > div > div {
+.ls-HeroNav .menu > div > div {
   background-color: var(--clr-fg);
   text-align: left;
   opacity: 0;
   transition: var(--transition);
 }
 
-.ls-Hero nav .menu ul > li {
+.ls-HeroNav .menu ul > li {
   font-size: var(--rs-24);
   padding: var(--rs-16);
 }

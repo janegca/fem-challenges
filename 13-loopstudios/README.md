@@ -81,13 +81,14 @@ Grid Image
 
 ## Naming Decisions
 
-| Class        | Description  | Tag | Element(s)        |
-| ------------ | ------------ | --- | ----------------- |
-| ls           | Loopstudios  | div | ls-\* classes     |
-| ls-Hero      | Hero section | div | img, h1, nav      |
-| ls-Intro     | Introduction | div | img, [h2 p]       |
-| ls-Creations | Creations    | div | h2, button, img\* |
-| ls-Footer    | Footer       | div | img, nav, ul, p   |
+| Class        | Description     | Tag | Element(s)          |
+| ------------ | --------------- | --- | ------------------- |
+| ls           | Loopstudios     | div | ls-\* classes       |
+| ls-Hero      | Hero section    | div | img, h1, nav        |
+| ls-HeroNav   | Hero Navigation | nav | .toggler .hamburger |
+| ls-Intro     | Introduction    | div | img, [h2 p]         |
+| ls-Creations | Creations       | div | h2, button, img\*   |
+| ls-Footer    | Footer          | div | img, nav, ul, p     |
 
 ## Colours
 
@@ -120,3 +121,10 @@ Developers choice, suggestions:
 ## References
 
 [Pure CSS Hamburger Menu & Overlay](https://www.youtube.com/watch?v=DZg6UfS5zYg)
+
+## Notes
+
+- decided to use SASS for modular capabilities, writing in pure CSS for the
+  moment but storing in .scss files for modularity and minification
+  - 🔸need to remember reference resources from the project directory and not
+    the scss directory

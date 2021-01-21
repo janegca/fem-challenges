@@ -1,0 +1,41 @@
+/* -- Loopstudios landing page -- */
+.ls {
+  /* custom properties */
+  --clr-fg: black;
+  --clr-accent: hsl(0, 100%, 100%);
+  --clr-overlay: hsl(0, 0%, 55%);
+  --clr-copyright: hsl(0, 0%, 41%);
+
+  --rs-15: 0.9375rem;
+  --rs-16: 1rem;
+  --rs-24: 1.5rem;
+  --rs-40: 2.5rem;
+
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  /* typography */
+  font-family: "Alata", sans-serif;
+  font-size: var(--rs-16);
+  color: var(--clr-fg);
+}
+
+.ls h1,
+.ls h2,
+.ls .menu li {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: var(--fw-light);
+  text-transform: uppercase;
+}
+
+.ls ul {
+  list-style: none;
+}
+
+.ls a {
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}

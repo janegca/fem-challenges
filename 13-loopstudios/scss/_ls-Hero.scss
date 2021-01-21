@@ -1,0 +1,45 @@
+/* -- .ls-Hero -- */
+.ls-Hero {
+  /* box-model */
+  min-height: 100vh;
+  padding: var(--rs-24);
+  padding-top: var(--rs-40);
+
+  /* appearance */
+  background-image: url("images/mobile/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--clr-fg);
+  color: var(--clr-accent);
+}
+
+.ls-Hero_navbar {
+  display: flex;
+
+  /* 
+    min: 24px/ 375px = 6.4% or 6.4vw, 24/16 = 1.5rem
+    max: 39px/1440px = 2.7% or 2.7vw, 39/16 = 2.4375rem
+    diff: (39-24)/(1440-375) = 1.4% or 1.4vw
+    avg: 6.4vw - 1.4vw = 5vw
+   */
+  max-height: clamp(1.5rem, 5vw, 2.4375rem);
+}
+
+.ls-Hero_navbar > img {
+  /* min: 144px/ 375px = 13% or 13vw, 144/16 = 9rem
+     max: 192px/1440px = 38% or 38vw, 192/16 = 12rem
+     diff: (192-144)/(1440-375) = 4.5% or 4.5vw,
+     avg: 13vw + 4.5vw = 17.5vw */
+  width: clamp(9rem, 17.5vw, 12rem);
+}
+
+.ls-Hero_navbar > nav {
+  margin-left: auto;
+}
+
+.ls-Hero > h1 {
+  border: 1px solid var(--clr-accent);
+  padding: var(--rs-24);
+
+  font-size: var(--rs-40);
+}

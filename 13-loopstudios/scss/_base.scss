@@ -1,0 +1,29 @@
+/* -- Resets -- */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* -- General -- */
+body {
+  margin: 0;
+}
+
+footer {
+  margin-top: 2vw;
+  font-size: 11px;
+  text-align: center;
+}
+
+footer > a {
+  color: hsl(228, 45%, 44%);
+}

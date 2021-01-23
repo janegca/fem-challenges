@@ -142,3 +142,39 @@
   font-size: var(--rs-24);
   padding: var(--rs-16);
 }
+
+@media (min-width: 700px) {
+  .ls-HeroNav .toggler,
+  .ls-HeroNav .hamburger {
+    display: none;
+  }
+
+  .ls-HeroNav .menu {
+    position: relative;
+
+    visibility: visible;
+  }
+
+  .ls-HeroNav .menu > div {
+    min-width: unset;
+    transform: unset;
+  }
+
+  .ls-HeroNav .menu > div > div {
+    background-color: transparent;
+    opacity: 1;
+  }
+
+  .ls-HeroNav .menu ul {
+    display: flex;
+  }
+
+  .ls-HeroNav .menu ul > li {
+    font-size: var(--rs-15);
+    padding: unset;
+  }
+
+  .ls-HeroNav .menu ul > li + li {
+    margin-left: var(--rs-32);
+  }
+}

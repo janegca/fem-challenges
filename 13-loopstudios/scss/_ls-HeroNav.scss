@@ -152,6 +152,9 @@
   .ls-HeroNav .menu {
     position: relative;
 
+    /* align bottom of menu items with logo */
+    margin-top: 0.5em;
+
     visibility: visible;
   }
 

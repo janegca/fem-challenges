@@ -72,7 +72,7 @@ Grid Image
   - images: mobile 327x120
   - grid gap: 30px
 
-### Footer
+### Footer (.ls-footer)
 
 - logo
 - menu
@@ -81,15 +81,15 @@ Grid Image
 
 ## Naming Decisions
 
-| Class        | Description     | Tag | Element(s)          |
-| ------------ | --------------- | --- | ------------------- |
-| ls           | Loopstudios     | div | ls-\* classes       |
-| ls-Hero      | Hero section    | div | .ls-Hero_navbar     |
-|              |                 |     | .ls-Hero_hdr-wrap   |
-| ls-HeroNav   | Hero Navigation | nav | .toggler .hamburger |
-| ls-Intro     | Introduction    | div | img, [h2 p]         |
-| ls-Creations | Creations       | div | h2, button, img\*   |
-| ls-Footer    | Footer          | div | img, nav, ul, p     |
+| Class        | Description     | Tag | Element(s)                        |
+| ------------ | --------------- | --- | --------------------------------- |
+| ls           | Loopstudios     | div | ls-\* classes                     |
+| ls-Hero      | Hero section    | div | .ls-Hero_navbar                   |
+|              |                 |     | .ls-Hero_hdr-wrap                 |
+| ls-HeroNav   | Hero Navigation | nav | .toggler .hamburger .menu         |
+| ls-Intro     | Introduction    | div | picture, .ls-Intro_details [h1 p] |
+| ls-Creations | Creations       | div | h1, button, img\*                 |
+| ls-Footer    | Footer          | div | img, p, .menu                     |
 
 ## Colours
 
@@ -129,3 +129,6 @@ Developers choice, suggestions:
   moment but storing in .scss files for modularity and minification
   - 🔸need to remember to reference images from the project directory and not
     the scss directory
+- blah, wasted ages trying to position the `ls-Intro_details` first using flex,
+  then using negative margins and padding, gave up on the padding and switched
+  to using absolute position and a grid and voila!

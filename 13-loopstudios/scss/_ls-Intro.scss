@@ -1,9 +1,12 @@
 .ls-Intro {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   padding: var(--rs-24);
+  margin-bottom: 11.5rem;
   text-align: center;
 }
 
@@ -15,8 +18,55 @@
         avg:  74vw - 16vw = 58vw
    */
   width: clamp(17rem, 43%, 28rem);
+  background-color: var(--clr-accent);
 }
 
 .ls-Intro .ls-Intro_details > h1 {
   font-size: var(--rs-32);
+}
+
+@media (min-width: 700px) {
+  .ls-Intro {
+    position: relative;
+    flex-direction: row;
+
+    max-width: 69rem;
+    min-height: 31.25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ls-Intro > picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .ls-Intro_details {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 34rem;
+    height: 64%;
+
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    grid-template-areas:
+      ". . ."
+      ". hdr hdr"
+      ". txt txt";
+
+    text-align: left;
+  }
+
+  .ls-Intro_details > h1 {
+    grid-area: hdr;
+    font-size: var(--rs-48);
+  }
+
+  .ls-Intro_details > p {
+    grid-area: txt;
+    margin: 0;
+  }
 }

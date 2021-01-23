@@ -43,7 +43,7 @@ Grid Image
 
 - overlay on hover, text set to black
 
-### Hero/Header
+### Hero/Header (.ls-Hero, .ls-Hero_navbar, .ls-HeroNav)
 
 - width: 100vw, all screens
 - height: 650px, all screens
@@ -56,7 +56,7 @@ Grid Image
     - collapses to hamburger menu on smaller screens
       - opens as an hero/header overlay with an 'x' for closing
 
-### Intro
+### Intro (.ls-Hero_hdr-wrap)
 
 - width: 100vw
 - height: 500px desktop, 527px mobile
@@ -67,7 +67,7 @@ Grid Image
 
 - header
 - button (see all)
-- a 4x4 grid patter of images
+- a 4x4 grid pattern of images
   - images: desktop are 256px by 450px
   - images: mobile 327x120
   - grid gap: 30px
@@ -84,7 +84,8 @@ Grid Image
 | Class        | Description     | Tag | Element(s)          |
 | ------------ | --------------- | --- | ------------------- |
 | ls           | Loopstudios     | div | ls-\* classes       |
-| ls-Hero      | Hero section    | div | img, h1, nav        |
+| ls-Hero      | Hero section    | div | .ls-Hero_navbar     |
+|              |                 |     | .ls-Hero_hdr-wrap   |
 | ls-HeroNav   | Hero Navigation | nav | .toggler .hamburger |
 | ls-Intro     | Introduction    | div | img, [h2 p]         |
 | ls-Creations | Creations       | div | h2, button, img\*   |
@@ -126,5 +127,5 @@ Developers choice, suggestions:
 
 - decided to use SASS for modular capabilities, writing in pure CSS for the
   moment but storing in .scss files for modularity and minification
-  - 🔸need to remember reference resources from the project directory and not
+  - 🔸need to remember to reference images from the project directory and not
     the scss directory

@@ -40,30 +40,29 @@
   margin-left: auto;
 }
 
-.ls-Hero > div:last-of-type {
-  /*
-      min: 327/375 = 87% or 87vw, 327/16 = 20rem
-      max: 650/1440 = 45% or 45vw, 650/16 = 41rem
-      dif: (650-327)/(1440-375) = 30.3% or 30.3vw
-      avg: 87vw - 30.3vw = 56.7vw
-   */
-  width: clamp(20rem, 56.7vw, 41rem);
-
-  /*
-      min: 123/375 = 32.8% or 32.8vw, 123/16 = 7.6875rem
-      max: 163/1440 = 11.3% 04 11.3vw, 163/16 = 10.1975rem
-      diff: (163-123)/(1440-375) = 3.8% or 3.8vw
-      avg: 32.8vw - 3.8vw = 29vw
+.ls-Hero > .ls-Hero_hdr-wrap {
+  /*  clamp() calculation
+        min: 123/375 = 32.8% or 32.8vw, 123/16 = 7.6875rem
+        max: 163/1440 = 11.3% 04 11.3vw, 163/16 = 10.1975rem
+        diff: (163-123)/(1440-375) = 3.8% or 3.8vw
+        avg: 32.8vw - 3.8vw = 29vw
    */
   margin-top: clamp(7.6875rem, 28vw, 10.1975rem);
-
-  border: 1px solid var(--clr-accent);
 }
 
-.ls-Hero > div > h1 {
+.ls-Hero_hdr-wrap > h1 {
+  /*  clamp() calculation
+        min: 327/375 = 87% or 87vw, 327/16 = 20rem
+        max: 650/1440 = 45% or 45vw, 650/16 = 41rem
+        diff: (650-327)/(1440-375) = 30.3% or 30.3vw
+        avg: 87vw - 30.3vw = 56.7vw
+   */
+  width: clamp(20rem, 56.7vw, 41rem);
   padding: var(--rs-24);
-  font-size: var(--rs-40);
   margin: 0;
+
+  border: 1px solid var(--clr-accent);
+  font-size: var(--rs-40);
 }
 
 @media (min-width: 900px) {
@@ -72,7 +71,14 @@
       url("images/desktop/image-hero.jpg");
   }
 
-  .ls-Hero > div > h1 {
+  .ls-Hero_navbar,
+  .ls-Hero_hdr-wrap {
+    width: 77%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ls-Hero_hdr-wrap > h1 {
     font-size: var(--rs-72);
     line-height: var(--lh-hdr-large);
   }

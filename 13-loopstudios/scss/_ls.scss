@@ -17,12 +17,17 @@
   --fw-normal: 400;
   --fw-bold: 700;
 
+  --lh-body: 1.6;
   --lh-hdr-large: 0.97;
   --lh-hdr-small: 0.95;
 
+  --wrap-width: 77%;
+
   /* typography */
   font-family: "Alata", sans-serif;
-  font-size: var(--rs-16);
+  font-size: var(--rs-15);
+  font-weight: var(--fw-normal);
+  line-height: var(--lh-body);
   color: var(--clr-fg);
 }
 
@@ -32,6 +37,11 @@
   font-family: "Josefin Sans", sans-serif;
   font-weight: var(--fw-light);
   text-transform: uppercase;
+}
+
+.ls h1,
+.ls h2 {
+  line-height: var(--lh-hdr-small);
 }
 
 .ls ul {

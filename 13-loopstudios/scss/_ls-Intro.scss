@@ -1,0 +1,22 @@
+.ls-Intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--rs-24);
+  text-align: center;
+}
+
+.ls-Intro_details {
+  /* clamp() calculation
+        min:  279/ 375 = 74.4% or 74vw, 17rem
+        max:  445/1440 = 30.9% or 31vw, 28rem
+        diff: (445-279)/(1440-375) = 15.6% or 16vw, 10rem
+        avg:  74vw - 16vw = 58vw
+   */
+  width: clamp(17rem, 43%, 28rem);
+}
+
+.ls-Intro .ls-Intro_details > h1 {
+  font-size: var(--rs-32);
+}

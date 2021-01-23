@@ -43,7 +43,7 @@ Grid Image
 
 - overlay on hover, text set to black
 
-### Hero/Header (.ls-Hero, .ls-Hero_navbar, .ls-HeroNav)
+### Hero/Header (.ls-Hero, .ls-Hero_navbar, .ls-Hero_hdr-wrap .ls-HeroNav)
 
 - width: 100vw, all screens
 - height: 650px, all screens
@@ -56,14 +56,14 @@ Grid Image
     - collapses to hamburger menu on smaller screens
       - opens as an hero/header overlay with an 'x' for closing
 
-### Intro (.ls-Hero_hdr-wrap)
+### Intro (.ls-Intro)
 
 - width: 100vw
 - height: 500px desktop, 527px mobile
 - image
 - header and paragraph that slightly overlays the image's bottom right corner
 
-### Creations
+### Creations (.ls-Creations)
 
 - header
 - button (see all)

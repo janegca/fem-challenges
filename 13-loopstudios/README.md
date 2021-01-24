@@ -71,6 +71,7 @@ Grid Image
   - images: desktop are 256px by 450px
   - images: mobile 327x120
   - grid gap: 30px
+- all the images have a linear overlay and text caption
 
 ### Footer (.ls-footer)
 
@@ -122,6 +123,9 @@ Developers choice, suggestions:
 ## References
 
 [Pure CSS Hamburger Menu & Overlay](https://www.youtube.com/watch?v=DZg6UfS5zYg)
+[Using nested figure elements](https://developer.paciellogroup.com/blog/2011/11/html5-accessibility-chops-using-nested-figure-elements/)
+[How to add Gradients to Images with CSS::after](https://peter.coffee/how-to-use-css-pseudo-elements-to-add-a-gradient-to-images)
+[CSS In Depth](https://www.manning.com/books/css-in-depth) by Keith J. Grant
 
 ## Notes
 

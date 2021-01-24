@@ -6,7 +6,14 @@
   align-items: center;
 
   padding: var(--rs-24);
-  margin-bottom: 11.5rem;
+
+  /* clamp() calculation
+        min:  96/ 375 = 25.6% or 26vw, 6rem
+        max: 184/1440 = 12.8% or 13vw, 11.5rem
+       diff: (184-96)/(1440-375) = 8.26% or 8vw, 5.5rem
+        avg: 26vw - 13vw = 13vw
+   */
+  margin-bottom: clamp(6rem, 13vw, 11.5rem);
   text-align: center;
 }
 
@@ -15,7 +22,7 @@
         min:  279/ 375 = 74.4% or 74vw, 17rem
         max:  445/1440 = 30.9% or 31vw, 28rem
         diff: (445-279)/(1440-375) = 15.6% or 16vw, 10rem
-        avg:  74vw - 16vw = 58vw
+        avg:  74vw - 31vw = 43vw
    */
   width: clamp(17rem, 43%, 28rem);
   background-color: var(--clr-accent);

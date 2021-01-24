@@ -32,6 +32,10 @@
   font-size: var(--rs-32);
 }
 
+.ls-Intro img {
+  object-fit: cover;
+}
+
 @media (min-width: 700px) {
   .ls-Intro {
     position: relative;
@@ -41,6 +45,8 @@
     min-height: 31.25rem;
     margin-left: auto;
     margin-right: auto;
+
+    padding: unset;
   }
 
   .ls-Intro > picture {

@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
 
-  padding: var(--rs-24);
+  // padding: var(--rs-24);
 
   /* clamp() calculation
         min:  96/ 375 = 25.6% or 26vw, 6rem
@@ -37,7 +37,7 @@
     position: relative;
     flex-direction: row;
 
-    max-width: 69rem;
+    max-width: 77%;
     min-height: 31.25rem;
     margin-left: auto;
     margin-right: auto;
@@ -75,5 +75,11 @@
   .ls-Intro_details > p {
     grid-area: txt;
     margin: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .ls-Intro {
+    max-width: 69rem;
   }
 }

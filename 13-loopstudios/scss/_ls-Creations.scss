@@ -8,9 +8,12 @@
 .ls-Creations > .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
   grid-auto-rows: 1fr;
   grid-gap: 1.5em;
   grid-auto-flow: dense;
+
+  // padding: var(--rs-24);
 }
 
 .ls-Creations figure {
@@ -18,6 +21,15 @@
 }
 
 @media (min-width: 700px) {
+  .ls-Creations > .gallery {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(calc(min(16em, 100%)), 1fr)
+    );
+  }
+}
+
+@media (min-width: 900px) {
   .ls-Creations {
     display: flex;
     flex-direction: column;
@@ -34,5 +46,9 @@
   .ls-Creations > h1 {
     font-size: var(--rs-48);
     line-height: var(--lh-hdr-large);
+  }
+
+  .ls-Creations > .gallery {
+    padding: 0;
   }
 }

@@ -32,6 +32,11 @@
   color: var(--clr-fg);
 }
 
+.ls section {
+  padding-left: var(--rs-24);
+  padding-right: var(--rs-24);
+}
+
 .ls h1,
 .ls h2,
 .ls .menu li {

@@ -132,3 +132,11 @@ Developers choice, suggestions:
 - blah, wasted ages trying to position the `ls-Intro_details` first using flex,
   then using negative margins and padding, gave up on the padding and switched
   to using absolute position and a grid and voila!
+
+## Issues
+
+Need to rethink/rewrite the hamburger menu:
+
+1. the logo needs to be retained at the top of the screen (so the whole navbar
+   needs to appear and be fixed, just as on the desktop)
+1. when it opens, the 'x' can be scrolled off the top of the page

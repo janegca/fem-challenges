@@ -144,3 +144,5 @@ Need to rethink/rewrite the hamburger menu:
 1. the logo needs to be retained at the top of the screen (so the whole navbar
    needs to appear and be fixed, just as on the desktop)
 1. when it opens, the 'x' can be scrolled off the top of the page
+
+AARGGGHHH ... need a rethink on spacing, padding for sections!!!

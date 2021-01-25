@@ -82,15 +82,15 @@ Grid Image
 
 ## Naming Decisions
 
-| Class        | Description     | Tag | Element(s)                        |
-| ------------ | --------------- | --- | --------------------------------- |
-| ls           | Loopstudios     | div | ls-\* classes                     |
-| ls-Hero      | Hero section    | div | .ls-Hero_navbar                   |
-|              |                 |     | .ls-Hero_hdr-wrap                 |
-| ls-HeroNav   | Hero Navigation | nav | .toggler .hamburger .menu         |
-| ls-Intro     | Introduction    | div | picture, .ls-Intro_details [h1 p] |
-| ls-Creations | Creations       | div | h1, button, img\*                 |
-| ls-Footer    | Footer          | div | img, p, .menu                     |
+| Class        | Description     | Tag     | Element(s)                               |
+| ------------ | --------------- | ------- | ---------------------------------------- |
+| ls           | Loopstudios     | div     | ls-\* classes                            |
+| ls-Hero      | Hero section    | header  | .ls-Hero_navbar                          |
+|              |                 |         | .ls-Hero_hdr-wrap [h1 ], .full-bleed     |
+| ls-HeroNav   | Hero Navigation | nav     | .toggler .hamburger .menu                |
+| ls-Intro     | Introduction    | section | picture, .ls-Intro_details [h2 p]        |
+| ls-Creations | Creations       | section | h2, button, img\*                        |
+| ls-Footer    | Footer          | footer  | .full-bleed, img, p, .menu, .attribution |
 
 ## Colours
 
@@ -134,9 +134,9 @@ Developers choice, suggestions:
   moment but storing in .scss files for modularity and minification
   - 🔸need to remember to reference images from the project directory and not
     the scss directory
-- blah, wasted ages trying to position the `ls-Intro_details` first using flex,
-  then using negative margins and padding, gave up on the padding and switched
-  to using absolute position and a grid and voila!
+- blah, wasted ages trying to position the `ls-Intro_details` first using
+  `flex`, then using negative margins and padding, gave up on the padding and
+  switched to using absolute position and a grid and voila!
 
 ## Issues
 
@@ -146,4 +146,9 @@ Need to rethink/rewrite the hamburger menu:
    needs to appear and be fixed, just as on the desktop)
 1. when it opens, the 'x' can be scrolled off the top of the page
 
-AARGGGHHH ... need a rethink on spacing, padding for sections!!!
+✔️AARGGGHHH ... need a rethink on spacing, padding for sections!!!
+
+- FIXED this by adding Andy Bell's `full-bleed` utility class to `ls-Header` and
+  `ls-Footer`, allowed the `ls` class to be used as the sizing wrapper for the
+  page which meant I could remove max-width and padding from a number of the
+  other classes

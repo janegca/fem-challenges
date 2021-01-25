@@ -26,7 +26,7 @@
   background-color: var(--clr-accent);
 }
 
-.ls-Intro .ls-Intro_details > h1 {
+.ls-Intro .ls-Intro_details > h2 {
   font-size: var(--rs-32);
 }
 
@@ -68,7 +68,7 @@
     text-align: left;
   }
 
-  .ls-Intro_details > h1 {
+  .ls-Intro_details > h2 {
     grid-area: hdr;
     font-size: var(--rs-48);
   }

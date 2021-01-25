@@ -64,3 +64,18 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+.ls button {
+  border: 1px solid var(--clr-copyright);
+  padding: 13px 43px 13px 38px;
+  margin-top: 34px;
+
+  background-color: var(--clr-accent);
+  text-transform: uppercase;
+}
+
+.ls button:hover,
+.ls button:focus {
+  background-color: var(--clr-fg);
+  color: var(--clr-accent);
+}

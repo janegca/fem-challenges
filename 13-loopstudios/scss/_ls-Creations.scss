@@ -2,7 +2,14 @@
       holds the image gallery
 */
 .ls-Creations {
+  margin-bottom: clamp(6rem, 13vw, 11.5rem);
   text-align: center;
+}
+
+.ls-Creations > div > h2 + button {
+  position: absolute;
+  margin: 0;
+  visibility: hidden;
 }
 
 .ls-Creations .gallery {
@@ -71,5 +78,20 @@
 
   .ls-Creations figcaption {
     transform: translate(2.5rem, -5rem);
+  }
+
+  .ls-Creations > div {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+  }
+
+  .ls-Creations > div > h2 + button {
+    position: static;
+    visibility: visible;
+  }
+
+  .ls-Creations .gallery + button {
+    visibility: hidden;
   }
 }

@@ -82,15 +82,15 @@ Grid Image
 
 ## Naming Decisions
 
-| Class        | Description     | Tag     | Element(s)                               |
-| ------------ | --------------- | ------- | ---------------------------------------- |
-| ls           | Loopstudios     | div     | ls-\* classes                            |
-| ls-Hero      | Hero section    | header  | .ls-Hero_navbar                          |
-|              |                 |         | .ls-Hero_hdr-wrap [h1 ], .full-bleed     |
-| ls-HeroNav   | Hero Navigation | nav     | .toggler .hamburger .menu                |
-| ls-Intro     | Introduction    | section | picture, .ls-Intro_details [h2 p]        |
-| ls-Creations | Creations       | section | h2, button, img\*                        |
-| ls-Footer    | Footer          | footer  | .full-bleed, img, p, .menu, .attribution |
+| Class        | Description     | Tag     | Element(s)                                        |
+| ------------ | --------------- | ------- | ------------------------------------------------- |
+| ls           | Loopstudios     | div     | ls-\* classes                                     |
+| ls-Hero      | Hero section    | header  | .ls-Hero_navbar                                   |
+|              |                 |         | .ls-Hero_hdr-wrap [h1 ], .full-bleed              |
+| ls-HeroNav   | Hero Navigation | nav     | .toggler .hamburger .menu                         |
+| ls-Intro     | Introduction    | section | picture, .ls-Intro_details [h2 p]                 |
+| ls-Creations | Creations       | section | h2, button, img\*                                 |
+| ls-Footer    | Footer          | footer  | .full-bleed, img, p, .menu, .social, .attribution |
 
 ## Colours
 

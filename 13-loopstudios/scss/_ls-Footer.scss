@@ -17,6 +17,10 @@
   padding-top: 56px;
 }
 
+.ls-Footer .menu {
+  margin-bottom: var(--rs-48);
+}
+
 .ls-Footer .menu ul {
   padding-left: 0;
 }
@@ -30,6 +34,15 @@
 
 .ls-Footer .menu li + li {
   margin-top: var(--rs-16);
+}
+
+.ls-Footer .social {
+  display: flex;
+  margin-bottom: var(--rs-16);
+}
+
+.ls-Footer .social a + a {
+  margin-left: var(--rs-16);
 }
 
 .ls-Footer p,

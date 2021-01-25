@@ -35,15 +35,6 @@
   );
 }
 
-@media (min-width: 700px) {
-  .ls-Creations > .gallery {
-    grid-template-columns: repeat(
-      auto-fill,
-      minmax(calc(min(16em, 100%)), 1fr)
-    );
-  }
-}
-
 @media (min-width: 900px) {
   .ls-Creations {
     display: flex;
@@ -52,10 +43,6 @@
     align-items: left;
 
     max-width: 69rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding: unset;
-
     text-align: left;
   }
 

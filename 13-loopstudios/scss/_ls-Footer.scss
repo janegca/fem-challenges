@@ -1,9 +1,43 @@
 /* -- The Footer -- */
 .ls-Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-bottom: 50px;
+
   background-color: var(--clr-fg);
   color: var(--clr-accent);
+  text-align: center;
 }
 
 .ls-Footer > div > img {
-  margin: auto;
+  display: inline-block;
+  padding-top: 56px;
+}
+
+.ls-Footer .menu ul {
+  padding-left: 0;
+}
+
+.ls-Footer .menu li {
+  font-family: inherit;
+  font-size: var(--rs-15);
+  font-weight: var(--fw-body);
+  text-transform: none;
+}
+
+.ls-Footer .menu li + li {
+  margin-top: var(--rs-16);
+}
+
+.ls-Footer p,
+.ls-Footer .attribution {
+  color: var(--clr-overlay);
+}
+
+.ls-Footer .attribution a {
+  text-decoration-line: underline;
+  text-decoration-color: var(--clr-accent);
 }

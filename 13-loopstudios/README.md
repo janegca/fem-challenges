@@ -140,15 +140,13 @@ Developers choice, suggestions:
 
 ## Issues
 
-Need to rethink/rewrite the hamburger menu:
-
-1. the logo needs to be retained at the top of the screen (so the whole navbar
+1. The logo needs to be retained at the top of the screen (so the whole navbar
    needs to appear and be fixed, just as on the desktop)
-1. when it opens, the 'x' can be scrolled off the top of the page
-
-✔️AARGGGHHH ... need a rethink on spacing, padding for sections!!!
-
-- FIXED this by adding Andy Bell's `full-bleed` utility class to `ls-Header` and
-  `ls-Footer`, allowed the `ls` class to be used as the sizing wrapper for the
-  page which meant I could remove max-width and padding from a number of the
-  other classes
+   - ✔️ FIXED: set `z-index: 10` on `.ls-Hero_navbar` to keep it on top, lifts
+     the logo with it
+1. Close 'x' on open hamburger menu can be scrolled off the top of the page
+1. Need a rethink on spacing, padding for sections!!!
+   - ✔️ FIXED this by adding Andy Bell's `full-bleed` utility class to
+     `ls-Header` and `ls-Footer`, allowed the `ls` class to be used as the
+     sizing wrapper for the page which meant I could remove max-width and
+     padding from a number of the other classes

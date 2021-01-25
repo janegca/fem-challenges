@@ -43,6 +43,8 @@
      diff: (192-144)/(1440-375) = 4.5% or 4.5vw,
      avg: 13vw + 4.5vw = 17.5vw */
   width: clamp(9rem, 17.5vw, 12rem);
+
+  z-index: 10;
 }
 
 .ls-Hero_navbar .ls-HeroNav {

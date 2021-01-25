@@ -17,6 +17,9 @@ img {
 /* -- General -- */
 body {
   margin: 0;
+
+  /* required for .full-bleed to work correctly */
+  overflow-x: hidden;
 }
 
 footer {
@@ -27,4 +30,10 @@ footer {
 
 footer > a {
   color: hsl(228, 45%, 44%);
+}
+
+/* -- Utilities -- */
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
 }

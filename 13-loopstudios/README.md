@@ -122,10 +122,11 @@ Developers choice, suggestions:
 
 ## References
 
+[Creating a Full-bleed CSS Utility](https://piccalil.li/tutorial/creating-a-full-bleed-css-utility)
+[CSS In Depth](https://www.manning.com/books/css-in-depth) by Keith J. Grant
+[How to add Gradients to Images with CSS::after](https://peter.coffee/how-to-use-css-pseudo-elements-to-add-a-gradient-to-images)
 [Pure CSS Hamburger Menu & Overlay](https://www.youtube.com/watch?v=DZg6UfS5zYg)
 [Using nested figure elements](https://developer.paciellogroup.com/blog/2011/11/html5-accessibility-chops-using-nested-figure-elements/)
-[How to add Gradients to Images with CSS::after](https://peter.coffee/how-to-use-css-pseudo-elements-to-add-a-gradient-to-images)
-[CSS In Depth](https://www.manning.com/books/css-in-depth) by Keith J. Grant
 
 ## Notes
 

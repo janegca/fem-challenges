@@ -22,7 +22,7 @@
   --lh-hdr-large: 0.97;
   --lh-hdr-small: 0.95;
 
-  --wrap-width: 77%;
+  --wrap-width: 69rem;
 
   /* typography */
   font-family: "Alata", sans-serif;
@@ -32,9 +32,12 @@
   color: var(--clr-fg);
 }
 
-.ls section {
+.ls {
+  max-width: var(--wrap-width);
   padding-left: var(--rs-24);
   padding-right: var(--rs-24);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ls h1,

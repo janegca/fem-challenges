@@ -5,7 +5,7 @@
   text-align: center;
 }
 
-.ls-Creations > .gallery {
+.ls-Creations .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 
@@ -17,6 +17,24 @@
 .ls-Creations figure {
   position: relative;
   margin: 0;
+}
+
+.ls-Creations .gallery figcaption {
+  position: absolute;
+  min-height: var(--rs-48);
+  max-width: 9ch;
+
+  font-size: var(--rs-24);
+  line-height: var(--lh-hdr-large);
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  text-align: left;
+
+  transform: translate(2rem, -4rem);
+}
+
+.ls-Creations .gallery figure img {
+  min-height: 120px;
 }
 
 /* linear gradient overlay on images */
@@ -49,5 +67,9 @@
   .ls-Creations > h2 {
     font-size: var(--rs-48);
     line-height: var(--lh-hdr-large);
+  }
+
+  .ls-Creations figcaption {
+    transform: translate(2.5rem, -5rem);
   }
 }

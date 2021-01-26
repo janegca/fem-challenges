@@ -1,0 +1,97 @@
+/* -- .ls-Hero -- */
+.ls-Hero {
+  /* box-model */
+  min-height: 650px;
+  max-height: 650px;
+
+  /* clamp() calculation
+        min:  96/ 375 = 25.6% or 26vw, 6rem
+        max: 160/1440 = 11.1% or 11vw, 10rem
+       diff: (160-96)/(1440-375) = 6% or 6vw, 5rem
+        avg: 26vw - 11vw = 15vw
+   */
+  margin-bottom: clamp(6rem, 15vw, 10rem);
+
+  padding: var(--rs-24);
+  padding-top: var(--rs-40);
+
+  /* appearance */
+  background-image: url("images/mobile/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--clr-fg);
+  color: var(--clr-accent);
+
+  transition: all 0.5s linear;
+}
+
+.ls-Hero_navbar {
+  display: flex;
+
+  /* 
+    min: 24px/ 375px = 6.4% or 6.4vw, 24/16 = 1.5rem
+    max: 39px/1440px = 2.7% or 2.7vw, 39/16 = 2.4375rem
+    diff: (39-24)/(1440-375) = 1.4% or 1.4vw
+    avg: 6.4vw - 1.4vw = 5vw
+   */
+  max-height: clamp(1.5rem, 5vw, 2.4375rem);
+}
+
+.ls-Hero_navbar > img {
+  /* min: 144px/ 375px = 13% or 13vw, 144/16 = 9rem
+     max: 192px/1440px = 38% or 38vw, 192/16 = 12rem
+     diff: (192-144)/(1440-375) = 4.5% or 4.5vw,
+     avg: 13vw + 4.5vw = 17.5vw */
+  width: clamp(9rem, 17.5vw, 12rem);
+
+  z-index: 10;
+}
+
+.ls-Hero_navbar .ls-HeroNav {
+  margin-left: auto;
+}
+
+.ls-Hero > .ls-Hero_hdr-wrap {
+  /*  clamp() calculation
+        min: 123/375 = 32.8% or 32.8vw, 123/16 = 7.6875rem
+        max: 163/1440 = 11.3% 04 11.3vw, 163/16 = 10.1975rem
+        diff: (163-123)/(1440-375) = 3.8% or 3.8vw
+        avg: 32.8vw - 3.8vw = 29vw
+   */
+  margin-top: clamp(7.6875rem, 28vw, 10.1975rem);
+}
+
+.ls-Hero_hdr-wrap > h1 {
+  /*  clamp() calculation
+        min: 327/375 = 87% or 87vw, 327/16 = 20rem
+        max: 650/1440 = 45% or 45vw, 650/16 = 41rem
+        diff: (650-327)/(1440-375) = 30.3% or 30.3vw
+        avg: 87vw - 30.3vw = 56.7vw
+   */
+  width: clamp(20rem, 56.7vw, 41rem);
+  padding: var(--rs-24);
+  margin: 0;
+
+  border: 1px solid var(--clr-accent);
+  font-size: var(--rs-40);
+}
+
+@media (min-width: 700px) {
+  .ls-Hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("images/desktop/image-hero.jpg");
+    transition: unset;
+  }
+
+  .ls-Hero_navbar,
+  .ls-Hero_hdr-wrap {
+    max-width: var(--wrap-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ls-Hero_hdr-wrap > h1 {
+    font-size: var(--rs-72);
+    line-height: var(--lh-hdr-large);
+  }
+}

@@ -1,0 +1,80 @@
+.ls-Intro {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* clamp() calculation
+        min:  96/ 375 = 25.6% or 26vw, 6rem
+        max: 184/1440 = 12.8% or 13vw, 11.5rem
+       diff: (184-96)/(1440-375) = 8.26% or 8vw, 5.5rem
+        avg: 26vw - 13vw = 13vw
+   */
+  margin-bottom: clamp(6rem, 13vw, 11.5rem);
+  text-align: center;
+}
+
+.ls-Intro_details {
+  /* clamp() calculation
+        min:  279/ 375 = 74.4% or 74vw, 17rem
+        max:  445/1440 = 30.9% or 31vw, 28rem
+        diff: (445-279)/(1440-375) = 15.6% or 16vw, 10rem
+        avg:  74vw - 31vw = 43vw
+   */
+  width: clamp(17rem, 43%, 28rem);
+  background-color: var(--clr-accent);
+}
+
+.ls-Intro .ls-Intro_details > h2 {
+  font-size: var(--rs-32);
+}
+
+.ls-Intro img {
+  object-fit: cover;
+}
+
+@media (min-width: 700px) {
+  .ls-Intro {
+    position: relative;
+    flex-direction: row;
+
+    min-height: 31.25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ls-Intro > picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .ls-Intro_details {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 34rem;
+    height: 64%;
+
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    grid-template-areas:
+      ". . ."
+      ". hdr hdr"
+      ". txt txt";
+
+    text-align: left;
+  }
+
+  .ls-Intro_details > h2 {
+    grid-area: hdr;
+    font-size: var(--rs-48);
+  }
+
+  .ls-Intro_details > p {
+    grid-area: txt;
+    margin: 0;
+  }
+}

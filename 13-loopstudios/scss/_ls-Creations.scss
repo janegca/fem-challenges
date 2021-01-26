@@ -1,0 +1,97 @@
+/* The Creations section
+      holds the image gallery
+*/
+.ls-Creations {
+  margin-bottom: clamp(6rem, 13vw, 11.5rem);
+  text-align: center;
+}
+
+.ls-Creations > div > h2 + button {
+  position: absolute;
+  margin: 0;
+  visibility: hidden;
+}
+
+.ls-Creations .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+  grid-auto-rows: 1fr;
+  grid-gap: 1.5em;
+  grid-auto-flow: dense;
+}
+
+.ls-Creations figure {
+  position: relative;
+  margin: 0;
+}
+
+.ls-Creations .gallery figcaption {
+  position: absolute;
+  min-height: var(--rs-48);
+  max-width: 9ch;
+
+  font-size: var(--rs-24);
+  line-height: var(--lh-hdr-large);
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  text-align: left;
+
+  transform: translate(2rem, -4rem);
+}
+
+.ls-Creations .gallery figure img {
+  min-height: 120px;
+}
+
+/* linear gradient overlay on images */
+.ls-Creations > .gallery picture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+
+@media (min-width: 700px) {
+  .ls-Creations {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+
+    max-width: 69rem;
+    text-align: left;
+  }
+
+  .ls-Creations > h2 {
+    font-size: var(--rs-48);
+    line-height: var(--lh-hdr-large);
+  }
+
+  .ls-Creations figcaption {
+    transform: translate(2.5rem, -5rem);
+  }
+
+  .ls-Creations > div {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+  }
+
+  .ls-Creations > div > h2 + button {
+    position: static;
+    visibility: visible;
+  }
+
+  .ls-Creations .gallery + button {
+    visibility: hidden;
+  }
+}

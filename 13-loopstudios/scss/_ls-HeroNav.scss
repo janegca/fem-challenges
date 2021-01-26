@@ -1,0 +1,186 @@
+.ls-HeroNav {
+  --menu-checkbox: 24px;
+  --menu-speed: 0.75s;
+  --hamburger-line-height: 2px;
+  --transition: all 0.4s ease;
+
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/* the checkbox */
+.ls-HeroNav .toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  width: var(--menu-checkbox);
+  height: var(--menu-checkbox);
+
+  /* position directly over hamburger lines */
+  transform: translate(2px, -5px);
+  cursor: pointer;
+  opacity: 0;
+}
+
+.ls-HeroNav .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: var(--menu-checkbox);
+  height: var(--menu-checkbox);
+  margin-left: auto;
+
+  transition: var(--transition);
+}
+
+/* hamburger middle line */
+.ls-HeroNav .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: var(--hamburger-line-height);
+  background-color: var(--clr-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* hamburger top and bottom lines */
+.ls-HeroNav .hamburger > div::before,
+.ls-HeroNav .hamburger > div::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  z-index: 1;
+
+  width: 100%;
+  height: inherit;
+
+  background: inherit;
+}
+
+.ls-HeroNav .hamburger > div::after {
+  top: 10px;
+}
+
+/* hamburger animation to create 'x' when checked  */
+.ls-HeroNav .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+.ls-HeroNav .toggler:checked + .hamburger > div::before,
+.ls-HeroNav .toggler:checked + .hamburger > div::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.ls-HeroNav .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* show menu overlay with animation */
+.ls-HeroNav .toggler:checked ~ .menu {
+  background-color: var(--clr-fg);
+  visibility: visible;
+}
+
+.ls-HeroNav .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.ls-HeroNav .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition: var(--transition);
+}
+
+/* show the menu text */
+.ls-HeroNav .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  visibility: hidden;
+}
+
+.ls-HeroNav .menu > div {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  min-width: 100vw;
+  min-height: 100vw;
+
+  transform: scale(0);
+  transition: var(--transition);
+}
+
+.ls-HeroNav .menu > div > div {
+  background-color: var(--clr-fg);
+  text-align: left;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.ls-HeroNav .menu ul > li {
+  font-size: var(--rs-24);
+  padding: var(--rs-16);
+}
+
+@media (min-width: 700px) {
+  .ls-HeroNav > * {
+    transition: none;
+  }
+  .ls-HeroNav .toggler,
+  .ls-HeroNav .hamburger {
+    display: none;
+  }
+
+  .ls-HeroNav .menu {
+    position: relative;
+
+    /* align bottom of menu items with logo */
+    margin-top: 0.5em;
+
+    visibility: visible;
+  }
+
+  .ls-HeroNav .menu > div {
+    min-width: unset;
+    transform: unset;
+  }
+
+  .ls-HeroNav .menu > div > div {
+    background-color: transparent;
+    opacity: 1;
+  }
+
+  .ls-HeroNav .menu ul {
+    display: flex;
+  }
+
+  .ls-HeroNav .menu ul > li {
+    font-size: var(--rs-15);
+    padding: unset;
+  }
+
+  .ls-HeroNav .menu ul > li + li {
+    margin-left: var(--rs-32);
+  }
+}

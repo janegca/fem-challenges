@@ -1,0 +1,29 @@
+/* -- Resets -- */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* -- General -- */
+body {
+  margin: 0;
+
+  /* required for .full-bleed to work correctly */
+  overflow-x: hidden;
+}
+
+/* -- Utilities -- */
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}

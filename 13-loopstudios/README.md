@@ -177,9 +177,9 @@ for improvement but I think I will leave it for a refactor exercise.
 
 Also, think I may forgo the single repo pattern for these challenges now that I
 am using SASS for modularization as I can't figure out how to target sub-dirs
-for _Live SASSS Compiler_. Life might be simpler if I just create individual
-repos using a naming strucutre like `fem-jr-proj_name`. Also need to rethink my
-class name strategy; use `.sc-name` for _standard compoenent_, `.sw-name` for
+for _Live SASS Compiler_. Life might be simpler if I just create individual
+repos using a naming structure like `fem-jr-proj_name`. Also need to rethink my
+class name strategy; use `.sc-name` for _standard component_, `.sw-name` for
 _standard wrapper_ and `.ns-name` for project namespace (ns) class names?? Have
 to give it some thought as the names I used in this project are a mishmash of
 different ideas.

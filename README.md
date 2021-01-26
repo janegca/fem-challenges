@@ -5,6 +5,10 @@ Design and coding challenges from
 
 ## Completed Challenges
 
+### Junior Challenges
+
+1. [Loopstudios Landing Page](https://janegca.github.io/fem-challenges/13-loopstudios/index.html)
+
 ### Newbie Challenges
 
 1. [Profile Card](https://janegca.github.io/fem-challenges/01-profile-card/index.html)

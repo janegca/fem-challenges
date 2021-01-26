@@ -2,6 +2,8 @@
 
 [Loopstudios Landing Page](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw)
 
+[Finished Project](https://janegca.github.io/fem-challenges/13-loopstudios/index.html)
+
 ## Criteria
 
 This challenge focuses mostly on HTML & CSS. There's a tiny bit of JS included
@@ -129,16 +131,6 @@ Developers choice, suggestions:
 [Pure CSS Hamburger Menu & Overlay](https://www.youtube.com/watch?v=DZg6UfS5zYg)
 [Using nested figure elements](https://developer.paciellogroup.com/blog/2011/11/html5-accessibility-chops-using-nested-figure-elements/)
 
-## Notes
-
-- decided to use SASS for modular capabilities, writing in pure CSS for the
-  moment but storing in .scss files for modularity and minification
-  - 🔸need to remember to reference images from the project directory and not
-    the scss directory
-- blah, wasted ages trying to position the `ls-Intro_details` first using
-  `flex`, then using negative margins and padding, gave up on the padding and
-  switched to using absolute position and a grid and voila!
-
 ## Issues
 
 1. The logo needs to be retained at the top of the screen (so the whole navbar
@@ -156,3 +148,35 @@ Developers choice, suggestions:
    menu not fully shown
    - ✔️ FIXED: changed `width` on @media query for .ls-Hero_navbar to
      `max-width`
+
+## Notes
+
+- decided to use SASS for modular capabilities, writing in pure CSS for the
+  moment but storing in .scss files for modularity and minification
+  - 🔸need to remember to reference images from the project directory and not
+    the scss directory
+- blah, wasted ages trying to position the `ls-Intro_details` first using
+  `flex`, then using negative margins and padding, gave up on the padding and
+  switched to using absolute position and a grid and voila!
+- used a `figure picture img` pattern for the grid gallery as:
+  - the images needed a linear gradient overlay which can not be styled directly
+    on a replaced element
+  - the images came in two flavours: desktop and mobile, the `picture` tag works
+    well when loading images based on `media` queries
+  - the images needed a text overlay, `figcaption` works great for this and
+    `figure` provides access to pseudo-elements which can be used to create the
+    image linear gradient overlays
+
+This took me a lot longer than I'd anticipated, went down the rabbit hole on a
+few things and got distracted by Keith Grant's _CSS in Depth_ and Andy Bell's
+_CUBE_ methodology (time well spent in both cases). There is still a lot of room
+for improvement but I think I will leave it for a refactor exercise.
+
+Also, think I may forgo the single repo pattern for these challenges now that I
+am using SASS for modularization as I can't figure out how to target sub-dirs
+for _Live SASSS Compiler_. Life might be simpler if I just create individual
+repos using a naming strucutre like `fem-jr-proj_name`. Also need to rethink my
+class name strategy; use `.sc-name` for _standard compoenent_, `.sw-name` for
+_standard wrapper_ and `.ns-name` for project namespace (ns) class names?? Have
+to give it some thought as the names I used in this project are a mishmash of
+different ideas.

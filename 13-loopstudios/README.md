@@ -145,7 +145,8 @@ Developers choice, suggestions:
    needs to appear and be fixed, just as on the desktop)
    - ✔️ FIXED: set `z-index: 10` on `.ls-Hero_navbar` to keep it on top, lifts
      the logo with it
-1. Close 'x' on open hamburger menu can be scrolled off the top of the page
+1. 🔴 Close 'x' on open hamburger menu can be scrolled off the top of the page
+   - no luck disabling the scroll, couldn't get `sticky` to work either 😒
 1. Need a rethink on spacing, padding for sections!!!
    - ✔️ FIXED this by adding Andy Bell's `full-bleed` utility class to
      `ls-Header` and `ls-Footer`, allowed the `ls` class to be used as the
@@ -153,3 +154,5 @@ Developers choice, suggestions:
      padding from a number of the other classes
 1. Look at 700-800px screen sizes, may need to add media query for `ls-Hero`,
    menu not fully shown
+   - ✔️ FIXED: changed `width` on @media query for .ls-Hero_navbar to
+     `max-width`

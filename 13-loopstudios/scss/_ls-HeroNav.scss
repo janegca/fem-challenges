@@ -144,6 +144,9 @@
 }
 
 @media (min-width: 700px) {
+  .ls-HeroNav > * {
+    transition: none;
+  }
   .ls-HeroNav .toggler,
   .ls-HeroNav .hamburger {
     display: none;

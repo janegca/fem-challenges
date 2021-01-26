@@ -45,6 +45,28 @@
   margin-left: var(--rs-16);
 }
 
+.ls-Footer .menu a::after,
+.ls-Footer .social a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 50%;
+  margin-top: 5px;
+  background-color: var(--clr-accent);
+  transform: translateX(50%);
+  visibility: hidden;
+}
+
+.ls-Footer .social a::after {
+  width: 100%;
+  transform: unset;
+}
+
+.ls-Footer a:hover:after,
+.ls-Footer a:focus:after {
+  visibility: visible;
+}
+
 .ls-Footer p,
 .ls-Footer .attribution {
   color: var(--clr-overlay);

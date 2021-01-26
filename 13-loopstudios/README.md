@@ -122,6 +122,7 @@ Developers choice, suggestions:
 
 ## References
 
+[Animated CSS Link Hover Effects Underline](https://codeconvey.com/css-link-hover-effects-underline/)
 [Creating a Full-bleed CSS Utility](https://piccalil.li/tutorial/creating-a-full-bleed-css-utility)
 [CSS In Depth](https://www.manning.com/books/css-in-depth) by Keith J. Grant
 [How to add Gradients to Images with CSS::after](https://peter.coffee/how-to-use-css-pseudo-elements-to-add-a-gradient-to-images)
@@ -150,3 +151,5 @@ Developers choice, suggestions:
      `ls-Header` and `ls-Footer`, allowed the `ls` class to be used as the
      sizing wrapper for the page which meant I could remove max-width and
      padding from a number of the other classes
+1. Look at 700-800px screen sizes, may need to add media query for `ls-Hero`,
+   menu not fully shown

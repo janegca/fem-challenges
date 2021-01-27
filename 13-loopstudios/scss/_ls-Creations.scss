@@ -74,6 +74,15 @@
   );
 }
 
+.ls-Creations > .gallery picture:hover::before {
+  background-color: white;
+  opacity: 0.85;
+}
+
+.ls-Creations > .gallery picture:hover + figcaption {
+  color: var(--clr-fg);
+}
+
 @media (min-width: 700px) {
   .ls-Creations {
     display: flex;

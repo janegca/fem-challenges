@@ -161,6 +161,21 @@
     visibility: visible;
   }
 
+  .ls-HeroNav .menu a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 50%;
+    margin-top: 5px;
+    background-color: var(--clr-accent);
+    transform: translateX(50%);
+    visibility: hidden;
+  }
+
+  .ls-HeroNav a:hover:after {
+    visibility: visible;
+  }
+
   .ls-HeroNav .menu > div {
     min-width: unset;
     transform: unset;

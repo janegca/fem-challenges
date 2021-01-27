@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
 
+  max-height: 30rem;
   padding-bottom: 50px;
 
   background-color: var(--clr-fg);
@@ -84,6 +85,7 @@
       "logo . social"
       "menu . copy"
       ". attrib .";
+    height: 10rem;
   }
 
   .ls-Footer > * {

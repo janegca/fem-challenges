@@ -2,8 +2,22 @@
       holds the image gallery
 */
 .ls-Creations {
-  margin-bottom: clamp(6rem, 13vw, 11.5rem);
+  /* clamp() calculation
+        min:  96/ 375 = 25.6% or 25.6vw,  6.0rem
+        max: 184/1440 = 12.8% or 12.8vw, 11.5rem
+        avg: 25.6vw - 12.8vw = 12.8vw
+   */
+  margin-bottom: clamp(6rem, 12.8vw, 11.5rem);
   text-align: center;
+}
+
+.ls-Creations div {
+  /* clamp() calculation
+        min: 48/ 375 = 12.8% or 12.8vw, 3rem
+        max: 80/1440 =  5.5% or  5.5vw, 5rem
+        avg: 12.8vw - 5.5vw = 7.3vw
+   */
+  margin-bottom: clamp(3rem, 7.3vw, 5rem);
 }
 
 .ls-Creations > div > h2 + button {

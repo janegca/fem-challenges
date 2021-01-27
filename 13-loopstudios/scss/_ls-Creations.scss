@@ -20,6 +20,10 @@
   margin-bottom: clamp(3rem, 7.3vw, 5rem);
 }
 
+.ls-Creations > div > h2 {
+  font-size: var(--rs-48);
+}
+
 .ls-Creations > div > h2 + button {
   position: absolute;
   margin: 0;
@@ -75,7 +79,7 @@
 }
 
 .ls-Creations > .gallery picture:hover::before {
-  background-color: white;
+  background-color: var(--clr-accent);
   opacity: 0.85;
 }
 

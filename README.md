@@ -8,6 +8,7 @@ Design and coding challenges from
 ### Junior Challenges
 
 1. [Loopstudios Landing Page](https://janegca.github.io/fem-challenges/13-loopstudios/index.html)
+1. [Interactive Price Component](https://janegca.github.io/fem-jr-price-comp/index.html)
 
 ### Newbie Challenges
 

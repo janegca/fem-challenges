@@ -10,6 +10,7 @@ Design and coding challenges from
 1. [Loopstudios Landing Page](https://janegca.github.io/fem-challenges/13-loopstudios/index.html)
 1. [Interactive Price Component](https://janegca.github.io/fem-jr-price-comp/index.html)
 1. [Testimonial Grid Section](https://janegca.github.io/fem-jr-testimonial-grid/index.html)
+1. [Fylo Data Storage Component](https://janegca.github.io/fem-jr-fylo-ds/index.html)
 
 ### Newbie Challenges
 
